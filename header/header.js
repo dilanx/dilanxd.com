@@ -1,4 +1,4 @@
-const DISTANCE = 20;
+const DISTANCE = 80;
 
 window.onscroll = function() {scroll()};
 
