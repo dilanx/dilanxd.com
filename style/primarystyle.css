@@ -1,15 +1,3 @@
-:root {
-
-    --header-foreground-dark: #000000E6;
-    --header-foreground-light: #FFFFFFE6;
-    --header-background-dark: #555555CC;
-    --header-background-light: #FFFFFFCC;
-    --header-fontsize-big: 32px;
-    --header-fontsize-mid: 24px;
-    --header-fontsize-small: 18px;
-
-}
-
 #nav {
   overflow: hidden;
   background-color: var(--header-background-light);
@@ -52,6 +40,6 @@ html {
 }
 
 body {
-  font: normal 14px Verdana;
+  font: normal 14px Poppins;
 
 }

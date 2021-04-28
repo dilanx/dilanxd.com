@@ -1,0 +1,27 @@
+@font-face {
+    
+    font-family: Poppins;
+    src: url(fonts/Poppins-Light.ttf);
+    font-weight: normal;
+
+}
+
+@font-face {
+    
+    font-family: Poppins;
+    src: url(fonts/Poppins-Medium.ttf);
+    font-weight: bold;
+
+}
+
+:root {
+
+    --header-foreground-dark: #000000E6;
+    --header-foreground-light: #FFFFFFE6;
+    --header-background-dark: #555555CC;
+    --header-background-light: #FFFFFFCC;
+    --header-fontsize-big: 32px;
+    --header-fontsize-mid: 24px;
+    --header-fontsize-small: 16px;
+
+}
