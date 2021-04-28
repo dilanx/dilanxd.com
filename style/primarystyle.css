@@ -1,13 +1,26 @@
+:root {
+
+    --header-foreground-dark: #000000E6;
+    --header-foreground-light: #FFFFFFE6;
+    --header-background-dark: #555555CC;
+    --header-background-light: #FFFFFFCC;
+    --header-fontsize-big: 32px;
+    --header-fontsize-mid: 24px;
+    --header-fontsize-small: 18px;
+
+}
+
 #nav {
   overflow: hidden;
-  background-color: #ffffff;
-  padding: 80px 10px;
+  background-color: var(--header-background-light);
+  padding: 30px 10px;
   transition: 0.4s;
   position: fixed;
-  width: 95%;
+  width: 100%;
   top: 0;
+  left: 0;
   z-index: 99;
-  
+  backdrop-filter: blur(10px);
 }
 
 #nav a {
@@ -16,22 +29,29 @@
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: var(--header-fontsize-small);
   line-height: 25px;
-  border-radius: 4px;
+  color: var(--header-foreground-dark);
 }
 
 #nav #title {
-  font-size: 35px;
+  font-size: var(--header-fontsize-big);
   font-weight: bold;
+  text-alignment: left;
+  color: var(--header-foreground-dark);
   transition: 0.4s;
 }
 
 #nav-links {
   float: right;
+  padding-right: 30px;
+}
+
+html {
+  scroll-padding-top: 80px;
 }
 
 body {
-  font: normal 12px Arial;
+  font: normal 14px Verdana;
 
 }
