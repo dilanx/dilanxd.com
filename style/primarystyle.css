@@ -1,7 +1,9 @@
+/* NAVIGATION BAR */
+
 #nav {
   overflow: hidden;
   background-color: var(--header-background-light);
-  padding: 30px 10px;
+  padding: 50px 10px;
   transition: 0.4s;
   position: fixed;
   width: 100%;
@@ -11,7 +13,7 @@
   backdrop-filter: blur(10px);
 }
 
-#nav a {
+#nav #title, #nav .page {
   float: left;
   color: black;
   text-align: center;
@@ -28,6 +30,7 @@
   text-alignment: left;
   color: var(--header-foreground-dark);
   transition: 0.4s;
+  padding-left: 75px;
 }
 
 #nav .page {
@@ -41,7 +44,7 @@
 
     display: block;
     content: '';
-    border-bottom: 2px solid var(--header-current);
+    border-bottom: 1px solid var(--header-current);
     transform: scaleX(0);
     transition: transform 250ms ease-out;
     transform-origin: 100% 50%;
@@ -52,7 +55,7 @@
 
     display: block;
     content: '';
-    border-bottom: 2px solid var(--header-current);
+    border-bottom: 1px solid var(--header-current);
     transform: scaleX(1);
 
 }
@@ -64,8 +67,194 @@
 
 #nav-links {
   float: right;
-  padding-right: 30px;
+  padding-right: 50px;
 }
+
+
+/* CONTENT BLOCK */
+
+.content {
+
+    margin-top: 150px;
+    padding: 15px 15px 2500px;
+
+}
+
+
+/* NEWS BLOCK */
+
+.newsblock {
+
+    max-width: 1300px;
+    height: 425px;
+    margin: auto;
+    position: relative;
+
+}
+
+.newsblock .mini {
+
+    font-size: 20px;
+    text-align: left;
+
+}
+
+.newsblock .mini .aaa {
+
+    font-weight: 800;
+
+}
+
+.newsblock .main {
+
+    font-weight: bold;
+    font-size: 64px;
+    text-align: center;
+    line-height: 20%;
+
+}
+
+.newsblock .sub {
+
+    font-weight: normal;
+    font-size: 32px;
+    text-align: center;
+    
+}
+
+.newsblock .button {
+
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: bold;
+    width: 200px;
+    height: 75px;
+    text-align: center;
+    line-height: 75px;
+    text-decoration: none;
+    margin: 0;
+    padding: 0px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+.newsblock .button:hover {
+
+    background-color: #333333;
+
+}
+
+.newsline {
+
+    max-width: 1300px;
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+
+}
+
+
+/* SECTION STUFF */
+
+.displayblock {
+
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.left {
+    
+    float: left;
+    flex: 50%;
+
+}
+
+.right {
+
+    float: left;
+    width: 50%;
+
+}
+
+.section-header {
+
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: left;
+
+}
+
+.section-description {
+
+    font-family: Poppins;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: left;
+    
+}
+
+.section-link {
+
+    font-family: Poppins;
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    float: left;
+    padding-bottom: 10px;
+
+}
+
+.section-link::after {
+
+    display: block;
+    content: '';
+    border-bottom: 1px solid white;
+
+}
+
+.section-link:hover {
+
+    color: #e0e0e0;
+
+}
+
+.section-link:hover::after {
+
+    border-bottom: 1px solid #e0e0e0;
+
+}
+
+.section-light {
+
+    color: white;
+
+}
+
+.section-dark {
+
+    color: black;
+
+}
+
+
+
+/* GITHUB BLOCK */
+
+
 
 html {
   scroll-padding-top: 80px;

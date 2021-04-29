@@ -11,8 +11,9 @@ function scroll() {
         document.getElementById("nav").style.padding = "5px 10px";
         document.getElementById("nav").style.backgroundColor = style.getPropertyValue('--header-background-dark');
         document.getElementById("title").style.fontSize = style.getPropertyValue('--header-fontsize-mid');
+        document.getElementById("title").style.color = style.getPropertyValue('--header-foreground-light');
         
-        var eles = document.getElementsByTagName('a');
+        var eles = document.getElementsByClassName('page');
         
         for (var i = 0; i < eles.length; i++){
         
@@ -24,11 +25,12 @@ function scroll() {
         
     } else {
     
-        document.getElementById("nav").style.padding = "30px 10px";
+        document.getElementById("nav").style.padding = "50px 10px";
         document.getElementById("nav").style.backgroundColor = style.getPropertyValue('--header-background-light');
         document.getElementById("title").style.fontSize = style.getPropertyValue('--header-fontsize-big');
+        document.getElementById("title").style.color = style.getPropertyValue('--header-foreground-dark');
         
-        var eles = document.getElementsByTagName('a');
+        var eles = document.getElementsByClassName('page');
         
         for (var i = 0; i < eles.length; i++){
         
