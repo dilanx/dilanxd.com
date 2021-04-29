@@ -23,5 +23,7 @@
     --header-fontsize-big: 32px;
     --header-fontsize-mid: 24px;
     --header-fontsize-small: 16px;
+    
+    --header-current: var(--header-foreground-dark)
 
 }

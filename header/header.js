@@ -20,6 +20,8 @@ function scroll() {
         
         }
         
+        document.body.style.setProperty('--header-current', style.getPropertyValue('--header-foreground-light'))
+        
     } else {
     
         document.getElementById("nav").style.padding = "30px 10px";
@@ -33,7 +35,22 @@ function scroll() {
             eles[i].style.color = style.getPropertyValue('--header-foreground-dark');
         
         }
+        
+        document.body.style.setProperty('--header-current', style.getPropertyValue('--header-foreground-dark'))
     
     }
     
+}
+
+var pages = document.getElementById("nav-links").getElementsByTagName('a');
+
+for (var i = 0; i < pages.length; i++) {
+
+    if (window.location.pathname === pages[i].getAttribute('href')) {
+    
+        pages[i].className += " active";
+        console.log("test")
+    
+    }
+
 }
