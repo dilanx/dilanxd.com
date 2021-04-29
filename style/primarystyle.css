@@ -11,6 +11,7 @@
   left: 0;
   z-index: 99;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 #nav #title, #nav .page {
