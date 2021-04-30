@@ -185,7 +185,7 @@
 .right {
 
     float: left;
-    width: 50%;
+    flex: 50%;
 
 }
 
@@ -215,6 +215,7 @@
     color: white;
     text-decoration: none;
     float: left;
+    padding-right: 20px;
     padding-bottom: 10px;
 
 }
@@ -224,6 +225,7 @@
     display: block;
     content: '';
     border-bottom: 1px solid white;
+    padding-top: 5px;
 
 }
 
