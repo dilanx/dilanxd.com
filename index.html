@@ -16,6 +16,7 @@
 <script> 
 $(function(){
   $("#header").load("/header/header.html"); 
+  $("#footer").load("/header/footer.html");
 });
 </script>
 
@@ -23,7 +24,7 @@ $(function(){
 <body>
 
 
-<div id="header" class="nav"></div>
+<div id="header"></div>
 
 
 <div class="content">
@@ -148,6 +149,30 @@ $(function(){
 
 </div>
 
+<div class="displayblock bg-mcshaders3 bg-img">
+    
+    <div class="left">
+        <img class="image-map1" src="/images/map1.png"></img>
+    </div>
+            
+    <div class="right">
+        <p class="section-header section-light">Minecraft Maps</p>
+        <p class="section-description section-light">
+        
+        Parkour maps. Puzzle maps. Game maps. I've made them all. They're really old now,
+        though, but still good. Played by YouTubers like DanTDM, CaptainSparklez, and more.
+        
+        </p>
+        <a class="section-link" href="/maps/">
+        <i data-feather="arrow-up-right" style="vertical-align: middle;"></i>
+        Learn more
+        </a>
+    </div>
+
+</div>
+
+<hr class="newsline">
+
 <div class="displayblock bg-internet bg-img">
     
     <div class="left">
@@ -179,6 +204,10 @@ $(function(){
 </script>
   
 <h1 style="text-align: center;">I'll continue working on this when I have time</h1>
+
 </div>
+
+<div id="footer"></div>
+
 </body>
 </html>
