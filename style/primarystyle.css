@@ -116,6 +116,40 @@
 
 }
 
+/* HEADER BLOCKS */
+
+.headerblock {
+
+    max-width: 1300px;
+    margin: auto;
+    position: relative;
+
+}
+
+.headerblock .uppermini {
+
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.headerblock .mega {
+
+    font-weight: bold;
+    font-size: 64px;
+    text-align: center;
+
+}
+
+.headerblock .mini {
+
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+
+}
+
 
 /* NEWS BLOCK */
 
