@@ -1,0 +1,78 @@
+{
+    "title": "Dilan Status",
+    "notices": [],
+    "blocks": [
+        {
+            "section_name": "SERVERS",
+            "content": [
+                {
+                    "name": "Strawberry Server",
+                    "status": "Operational"
+                },
+                {
+                    "name": "Blueberry Server",
+                    "status": "Offline"
+                },
+                {
+                    "name": "Cringeberry Server (FTP Only)",
+                    "status": "Operational"
+                }
+            ]
+        },
+        {
+            "section_name": "MINECRAFT",
+            "content": [
+                {
+                    "name": "Minecraft Private Server",
+                    "status": "Offline"
+                }
+            ]
+        },
+        {
+            "section_name": "BOTS",
+            "content": [
+                {
+                    "name": "Gamer Bot",
+                    "status": "Temporarily Offline",
+                    "description": "GamerBot's sleeping for a bit. He'll be back soon."
+                }
+            ]
+        },
+        {
+            "section_name": "OTHER THINGS",
+            "content": [
+                {
+                    "name": "dilanxd.com",
+                    "status": "Operational"
+                },
+                {
+                    "name": "Dilan (Human)",
+                    "status": "Unfortunately Operational"
+                }
+            ]
+        }
+
+    ],
+
+    "settings": {
+
+        "default_color_map": {
+
+            "Operational": "#50c878",
+            "Unfortunately Operational": "#50c878",
+            "Online": "#50c878",
+            "Offline": "#828282",
+            "Temporarily Offline": "#c8392c",
+            "Under Maintenance": "#7393b3"
+
+        },
+
+        "notice_colors": {
+
+            "red": "#c8392c",
+            "blue": "#7393b3"
+
+        }
+
+    }
+}
