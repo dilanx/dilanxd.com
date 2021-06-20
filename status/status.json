@@ -43,7 +43,8 @@
             "content": [
                 {
                     "name": "dilanxd.com",
-                    "status": "Operational"
+                    "status": "Operational",
+                    "description": "old.dilanxd.com scheduled for termination in April 2022."
                 },
                 {
                     "name": "Dilan (Human)",
