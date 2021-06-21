@@ -6,15 +6,15 @@
             "section_name": "SERVERS",
             "content": [
                 {
-                    "name": "Strawberry Server",
+                    "name": "Strawberry",
                     "status": "Operational"
                 },
                 {
-                    "name": "Blueberry Server",
+                    "name": "Blueberry",
                     "status": "Offline"
                 },
                 {
-                    "name": "Cringeberry Server (FTP Only)",
+                    "name": "Cringeberry (FTP Only)",
                     "status": "Operational"
                 }
             ]
