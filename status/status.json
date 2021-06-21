@@ -14,7 +14,11 @@
                     "status": "Offline"
                 },
                 {
-                    "name": "Cringeberry (FTP Only)",
+                    "name": "Cringeberry 1 (FTP Only)",
+                    "status": "Operational"
+                },
+                {
+                    "name": "Cringeberry 2 (SQL Only)",
                     "status": "Operational"
                 }
             ]
