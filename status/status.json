@@ -1,13 +1,19 @@
 {
     "title": "Dilan Status",
-    "notices": [],
+    "notices": [
+        {
+            "title": "Temporarily Offline Notice",
+            "color": "red",
+            "text": "Strawberry Server is temporarily offline for now. All services running on it will just be disabled until it's back up."
+        }
+    ],
     "blocks": [
         {
             "section_name": "SERVERS",
             "content": [
                 {
                     "name": "Strawberry",
-                    "status": "Operational"
+                    "status": "Under Maintenance"
                 },
                 {
                     "name": "Blueberry",
