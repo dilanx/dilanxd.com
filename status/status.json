@@ -20,11 +20,11 @@
                     "status": "Offline"
                 },
                 {
-                    "name": "Cringeberry 1 (FTP Only)",
+                    "name": "Raspberry (FTP Only)",
                     "status": "Operational"
                 },
                 {
-                    "name": "Cringeberry 2 (SQL Only)",
+                    "name": "Blackberry (SQL Only)",
                     "status": "Operational"
                 }
             ]
