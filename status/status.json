@@ -34,11 +34,18 @@
             "content": [
                 {
                     "name": "Small Minecraft Private Server",
-                    "status": "Offline"
+                    "status": "Offline",
                 },
                 {
                     "name": "Large Minecraft Private Server",
-                    "status": "Offline"
+                    "minecraft": {
+                        "show_name": true,
+                        "show_player_count": true,
+                        "show_player_names": true,
+                        "name": "Server I-8",
+                        "description": "Drehmal with friends",
+                        "ip": "large.mc.dilanxd.com:25569"
+                    }
                 }
             ]
         },
