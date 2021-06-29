@@ -12,19 +12,19 @@
             "section_name": "SERVERS",
             "content": [
                 {
+                    "name": "Vanilla",
+                    "status": "Offline"
+                },
+                {
                     "name": "Strawberry",
                     "status": "Under Maintenance"
                 },
                 {
-                    "name": "Blueberry",
-                    "status": "Offline"
-                },
-                {
-                    "name": "Raspberry (FTP Only)",
+                    "name": "Chocolate",
                     "status": "Operational"
                 },
                 {
-                    "name": "Blackberry (SQL Only)",
+                    "name": "Mint",
                     "status": "Operational"
                 }
             ]
@@ -33,7 +33,11 @@
             "section_name": "MINECRAFT",
             "content": [
                 {
-                    "name": "Minecraft Private Server",
+                    "name": "Small Minecraft Private Server",
+                    "status": "Offline"
+                },
+                {
+                    "name": "Large Minecraft Private Server",
                     "status": "Offline"
                 }
             ]
@@ -58,7 +62,7 @@
                 },
                 {
                     "name": "Dilan (human)",
-                    "status": "Unfortunately Operational"
+                    "status": "Operational"
                 }
             ]
         }
