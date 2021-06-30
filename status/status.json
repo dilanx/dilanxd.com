@@ -34,7 +34,14 @@
             "content": [
                 {
                     "name": "Small Minecraft Private Server",
-                    "status": "Offline"
+                    "minecraft": {
+                        "show_name": true,
+                        "show_player_count": true,
+                        "show_player_names": false,
+                        "name": "Server K-1A",
+                        "description": "Plugin Store Testing Server 1.14.4",
+                        "ip": "testing.blockhead7360.com"
+                    }
                 },
                 {
                     "name": "Large Minecraft Private Server",
