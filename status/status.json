@@ -33,7 +33,7 @@
             "section_name": "MINECRAFT",
             "content": [
                 {
-                    "name": "Small Minecraft Private Server",
+                    "name": "Minecraft Private Server 1",
                     "minecraft": {
                         "show_name": true,
                         "show_player_count": true,
@@ -44,7 +44,7 @@
                     }
                 },
                 {
-                    "name": "Large Minecraft Private Server",
+                    "name": "Minecraft Private Server 2",
                     "minecraft": {
                         "show_name": true,
                         "show_player_count": true,
