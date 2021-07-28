@@ -84,7 +84,7 @@
     font-family: Poppins;
     font-weight: normal;
     font-size: 20px;
-    
+
 
 }
 
@@ -102,7 +102,7 @@
     border: 3px solid gray;
     margin-top: 50px;
     margin-bottom: 50px;
-    
+
 
 }
 
@@ -189,7 +189,7 @@
     font-weight: normal;
     font-size: 32px;
     text-align: center;
-    
+
 }
 
 .newsblock .button {
@@ -229,7 +229,7 @@
     border: 1px solid black;
     margin-top: 50px;
     margin-bottom: 50px;
-    
+
 
 }
 
@@ -238,23 +238,23 @@
 
 .displayblock {
 
-    display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 20px;
 
 }
 
 .left {
-    
+
     float: left;
-    flex: 50%;
+    width: 50%;
 
 }
 
 .right {
 
     float: left;
-    flex: 50%;
+    width: 50%;
 
 }
 
@@ -273,7 +273,7 @@
     font-weight: normal;
     font-size: 18px;
     text-align: left;
-    
+
 }
 
 .section-link {
