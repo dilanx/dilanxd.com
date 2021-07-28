@@ -121,16 +121,9 @@
 .headerblock {
 
     max-width: 1300px;
+    padding: 50px 0 250px 0;
     margin: auto;
     position: relative;
-
-}
-
-.headerblock .uppermini {
-
-    font-weight: normal;
-    font-size: 18px;
-    text-align: center;
 
 }
 
@@ -139,6 +132,7 @@
     font-weight: bold;
     font-size: 64px;
     text-align: center;
+    line-height: 20%;
 
 }
 
@@ -150,13 +144,34 @@
 
 }
 
+.headerblock .link {
+
+    font-family: Poppins;
+    font-weight: normal;
+    font-size: 22px;
+    color: #D2042D;
+    text-decoration: none;
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+.headerblock .link:hover {
+
+    color: gray;
+
+}
+
 
 /* NEWS BLOCK */
 
 .newsblock {
 
     max-width: 1300px;
-    height: 425px;
+    height: 360px;
     margin: auto;
     position: relative;
 
@@ -178,7 +193,7 @@
 .newsblock .main {
 
     font-weight: bold;
-    font-size: 64px;
+    font-size: 54px;
     text-align: center;
     line-height: 20%;
 
@@ -187,7 +202,7 @@
 .newsblock .sub {
 
     font-weight: normal;
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
 
 }
@@ -221,27 +236,54 @@
 
 }
 
-.newsline {
+.shortline {
+
+    max-width: 1130px;
+    color: black;
+    text-align: center;
+    border: 1px solid #808080;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.longline {
 
     max-width: 1300px;
     color: black;
     text-align: center;
-    border: 1px solid black;
-    margin-top: 50px;
-    margin-bottom: 50px;
-
+    border: 2px solid black;
+    margin: 50px auto;
 
 }
 
+.longline.text-above {
+    margin-top: 0;
+}
+
+.longline.text-below {
+    margin-bottom: 0;
+}
+
+.linesub {
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+
+}
 
 /* SECTION STUFF */
 
 .displayblock {
 
+    margin: 20px auto;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
-
+    max-width: 1800px;
 }
 
 .left {
