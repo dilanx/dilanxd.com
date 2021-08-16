@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Direct Confirmation</title>
+        <link rel="stylesheet" href="/style/definitions.css">
+        <link rel="stylesheet" href="/style/primarystyle.css">
+    </head>
+    <body style="padding-top: 100px;">
+
+        <div class="newsblock">
+
+            <img src="/images/loading.gif" alt="Please wait..." id="waiting-image"/>
+            <p class="main" id="waiting-title">Just one second...</p>
+
+            <p class="sub" id="waiting-text">Please wait a bit while you're request is being processed.</p>
+            <p class="sub" id="sub" style="font-size: 18px;"></p>
+
+        </div>
+
+        <script>
+
+            var error = function() {
+
+                document.getElementById("waiting-image").src = "/images/x.png";
+                document.getElementById("waiting-title").innerText = "Something went wrong :(";
+                document.getElementById("waiting-text").innerText = "It looks like there was some sort of issue completing your request.";
+                document.getElementById("sub").innerText = "Contact Dilan with the URL in your address bar for help.";
+
+            }
+
+            var success = function() {
+
+                document.getElementById("waiting-image").src = "/images/checkmark.png";
+                document.getElementById("waiting-title").innerText = "Thanks for waiting!";
+                document.getElementById("waiting-text").innerText = "Your request was processed! You can go now, bye.";
+
+            }
+
+            const urlSearchParams = new URLSearchParams(window.location.search);
+            const params = Object.fromEntries(urlSearchParams.entries());
+
+            document.getElementById("sub").innerText = params["label"];
+
+            if (Object.keys(params).length !== 3) {
+                error();
+            }
+
+            else if (!("label" in params && "name" in params && "unique" in params)) {
+                error();
+            }
+
+            else {
+                var url = "https://script.google.com/macros/s/AKfycbxxFvbs-OWdJ0Ajp-MmrPThGZtaAGc4b8386qZhFsl27EMkcnv6B_IHtDclPp0RvfBw/exec";
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', url);
+
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.onreadystatechange = function() {
+
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        success();
+                    }
+
+                }
+
+                var encoded = Object.keys(params).map(function(k) {
+                    return encodeURIComponent(k) + "=" + encodeURIComponent(params[k]);
+                }).join('&');
+
+                xhr.send(encoded);
+            }
+
+        </script>
+    </body>
+</html>

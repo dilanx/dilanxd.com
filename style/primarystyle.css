@@ -236,6 +236,13 @@
 
 }
 
+.newsblock img {
+    margin: 0 auto;
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+
 .shortline {
 
     max-width: 1130px;
