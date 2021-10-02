@@ -67,7 +67,7 @@
   text-alignment: left;
   color: var(--header-foreground-dark);
   transition: 0.4s;
-  padding-left: 75px;
+  margin-left: 75px;
 }
 
 #nav .page {
