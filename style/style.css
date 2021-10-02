@@ -309,7 +309,7 @@
     padding: 20px 0;
 }
 
-.section .normaltext {
+.section .normal {
     font-weight: normal;
     font-size: 20px;
     text-align: center;
@@ -328,6 +328,16 @@
     font-weight: normal;
     font-size: 28px;
     text-align: left;
+}
+
+.section a {
+    text-decoration: underline;
+    color: inherit;
+    opacity: 1;
+}
+
+.section a:hover {
+    opacity: 0.6;
 }
 
 .section .column2 {
