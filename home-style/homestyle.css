@@ -45,12 +45,27 @@
     background-color: #404040;
 }
 
+.bg-white {
+    background-color: white;
+    border: 4px solid black;
+}
+
 .image-voidstone {
 
     display: block;
     max-width: 50%;
     max-height: 50%;
     padding: 64px 0;
+    margin: 0 auto;
+
+}
+
+.image-sgdg {
+
+    display: block;
+    max-width: 40%;
+    max-height: 40%;
+    padding: 90px 0;
     margin: 0 auto;
 
 }

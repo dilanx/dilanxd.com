@@ -446,6 +446,10 @@
     padding-bottom: 10px;
 }
 
+.section-link.section-dark {
+    color: black;
+}
+
 .section-link::after {
     display: block;
     content: '';
@@ -453,12 +457,16 @@
     padding-top: 5px;
 }
 
+.section-link.section-dark::after {
+    border-bottom: 1px solid black;
+}
+
 .section-link:hover {
-    color: #e0e0e0;
+    color: #FF9999;
 }
 
 .section-link:hover::after {
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #FF9999;
 }
 
 .section-light {
