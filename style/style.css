@@ -462,11 +462,11 @@
 }
 
 .section-link:hover {
-    color: #FF9999;
+    color: #D2042D;
 }
 
 .section-link:hover::after {
-    border-bottom: 1px solid #FF9999;
+    border-bottom: 1px solid #D2042D;
 }
 
 .section-light {
