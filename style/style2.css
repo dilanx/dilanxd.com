@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-Light.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-Medium.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-Bold.ttf);
+    font-weight: 800;
+}
+:root {
+    --nav-bg-l: #FFFFFFCC;
+    --nav-bg-d: #111111CC;
+    --nav-fg-l: #000000E6;
+    --nav-fg-d: #FFFFFFE6;
+    --nav-bg-c: var(--nav-bg-l);
+    --nav-fg-c: var(--nav-fg-l);
+}
+
+#nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    background-color: var(--nav-bg-c);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+#nav .nav-title {
+    font-size: 24px;
+    text-align: center;
+    color: var(--nav-fg-c);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 100px;
+}
+
+#nav .nav-links {
+    margin-left: auto;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#nav .nav-links ul {
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+}
+
+#nav .nav-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#nav .nav-links li a {
+    color: var(--nav-fg-c);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#nav .nav-links li a:after {
+    display: block;
+    content: '';
+    border-bottom: 1px solid var(--nav-fg-c);
+    transform: scaleX(0);
+    transition: transform 250ms ease-out;
+    transform-origin: 100% 50%;
+}
+
+#nav .nav-links li.text a.active:after {
+    display: block;
+    content: '';
+    border-bottom: 1px solid var(--nav-fg-c);
+    transform: scaleX(1);
+}
+
+#nav .nav-links li.text :not(a.active):hover:after {
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+}
+
+#nav .nav-links li.icon a {
+    opacity: 1;
+    transition: opacity 150ms;
+}
+
+#nav .nav-links li.icon a:hover {
+    opacity: 0.6;
+}
+
+#nav .nav-links li a i {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+body {
+    font-family: Poppins;
+    margin: 0;
+}
