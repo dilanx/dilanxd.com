@@ -1,16 +1,36 @@
 <div id="nav">
-    <a class="nav-title" href="/">Dilan N</a>
-    <div class="nav-links">
-        <ul>
-            <li class="text"><a href="/">Projects</a></li>
+    <a id="nav-title" href="/">Dilan N</a>
+    <div id="nav-show">
+        <button class="layer-1" onclick="toggleNav()">
+            <div class="layer-2"></div>
+        </button>
+    </div>
+    <div id="nav-links-desktop" class="nav-links">
+        <ul class="text">
+            <li><a href="/test">Test</a></li>
+            <li><a href="/projects">Projects</a></li>
         </ul>
-        <ul>
-            <li class="icon"><a href="/"><i class="fab fa-instagram"></i></a></li>
-            <li class="icon"><a href="/"><i class="fab fa-github"></i></a></li>
-            <li class="icon"><a href="/"><i class="fab fa-twitch"></i></a></li>
-            <li class="icon"><a href="/"><i class="fab fa-linkedin"></i></a></li>
+        <ul class="icon">
+            <li><a href="https://instagram.com/dilan4k"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://github.com/dilanx"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://twitch.tv/blockhead7360"><i class="fab fa-twitch"></i></a></li>
+            <li><a href="https://linkedin.com/in/dilann"><i class="fab fa-linkedin"></i></a></li>
         </ul>
     </div>
     <script src="/base/header.js"></script>
     <script>update();</script>
+</div>
+<div id="nav-overlay">
+    <div id="nav-links-mobile" class="nav-links">
+        <ul class="text">
+            <li><a href="/test">Test</a></li>
+            <li><a href="/projects">Projects</a></li>
+        </ul>
+        <ul class="icon">
+            <li><a href="https://instagram.com/dilan4k"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://github.com/dilanx"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://twitch.tv/blockhead7360"><i class="fab fa-twitch"></i></a></li>
+            <li><a href="https://linkedin.com/in/dilann"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </div>
 </div>
