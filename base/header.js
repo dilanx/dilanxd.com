@@ -43,6 +43,13 @@ function toggleNav() {
     }
 }
 
+window.onresize = () => {
+    let e = document.getElementById('nav-overlay');
+    if (e.style.height === '100%') {
+        toggleNav();
+    }
+}
+
 let pageElements = document.getElementsByClassName('nav-links');
 
 for (let i = 0; i < pageElements.length; i++) {

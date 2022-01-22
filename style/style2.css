@@ -179,10 +179,258 @@
     margin: 80px 0;
 }
 
+#footer-contents {
+    background-color: #222222;
+    margin: 0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#footer-contents p {
+    display: block;
+    margin: 5px;
+    color: #A0A0A0;
+}
+
+#footer-contents a {
+    color: #E0E0E0;
+    text-decoration: none;
+}
+
+#footer-contents a:hover {
+    text-decoration: underline;
+}
+
+.heading-block {
+    padding: 200px 20px;
+    color: black;
+}
+
+.heading-block.dark {
+    color: white;
+}
+
+.heading-block .title {
+    font-size: 56px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.heading-block .subtitle {
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 1200px;
+}
+
+.display-block {
+    height: 560px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    overflow: hidden;
+}
+
+.display-block .image {
+    height: 250px;
+}
+
+.display-block .image img {
+    width: auto;
+    height: 250px;
+
+    display: block;
+    margin: 0 auto;
+}
+
+.display-block .text {
+    margin: 20px 0;
+    color: black;
+    text-align: center;
+}
+
+.display-block .text.dark {
+    color: white;
+}
+
+.display-block .text .title {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.display-block .text .description {
+    font-size: 18px;
+    margin: 0;
+}
+
+.display-block .text .links {
+    margin: 20px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.display-block .text .links a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    margin: 8px 8px;
+    opacity: 1;
+    transition: opacity 150ms;
+}
+
+.display-block .text .links a i {
+    margin-right: 5px;
+}
+
+.display-block .text .links a:after {
+    display: block;
+    content: '';
+    border-bottom: 1px solid;
+    border-bottom-color: inherit;
+    transform: scaleX(0);
+    transition: transform 250ms ease-out;
+    transform-origin: 100% 50%;
+}
+
+.display-block .text .links a:hover:after {
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+}
+
+.display-block .tag {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+}
+
+.display-block .tag.dark {
+    color: white;
+    opacity: 0.5;
+}
+
+.section {
+    display: block;
+    padding: 0 20px;
+}
+
+.section .text {
+    line-height: 200%;
+    margin: 20px 0;
+}
+
+.section .text.large {
+    font-size: 32px;
+    margin: 0;
+}
+
+.section .text.bold {
+    font-weight: bold;
+}
+
+.section.width-small .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section.height-medium {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section a {
+    color: #DE3163;
+    text-decoration: none;
+
+}
+
+.section a:hover {
+    text-decoration: underline;
+}
+
+.continue-link {
+    margin: 10px;
+    text-align: center;
+}
+
+.continue-link p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.continue-link a {
+    color: #DE3163;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: opacity 150ms;
+}
+
+.continue-link a:hover {
+    opacity: 1;
+}
+
+.notice {
+    display: block;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.notice-contents {
+    margin: 20px;
+    border: 2px solid #FF4F4B;
+    border-radius: 10px;
+}
+
+.notice .title {
+    margin: 0;
+    background: #FF4F4B;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.notice .description {
+    margin: 0;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.notice .description a {
+    color: #FF4F4B;
+    text-decoration: none;
+}
+
+.notice .description a:hover {
+    text-decoration: underline;
+}
+
+
 @media only screen and (min-width: 800px) {
 
     .nav-links ul {
         margin: 0 10px;
+    }
+
+    #nav-title {
+        margin: 0 100px;
     }
 
     #nav-links-desktop {
@@ -245,6 +493,53 @@
     .nav-links li a i {
         font-size: 24px;
         vertical-align: middle;
+    }
+
+    .heading-block {
+        padding: 250px 20px;
+    }
+
+    .heading-block .title {
+        font-size: 64px;
+    }
+
+    .display-block {
+        height: 320px;
+    }
+
+    .display-block .content {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    .display-block .image {
+        flex: 40%;
+    }
+
+    .display-block .text {
+        flex: 60%;
+        text-align: left;
+    }
+
+    .display-block .text .title {
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    .display-block .text .links {
+        text-align: left;
+    }
+
+    .display-block .tag {
+        font-size: 18px;
+        right: 20px;
+        bottom: 10px;
+    }
+
+    .notice .title {
+        padding: 5px 20px;
+        text-align: left;
     }
 
 }
