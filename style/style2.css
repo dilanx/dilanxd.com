@@ -359,22 +359,107 @@
     padding: 0 20px;
 }
 
+.section.header-above {
+    margin-top: 150px;
+}
+
+.section .heading {
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.section .heading .title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.section .heading .subtitle {
+    margin: 0;
+    font-size: 14px;
+}
+
 .section .text {
     line-height: 200%;
-    margin: 20px 0;
+    padding: 10px 0;
+    margin: 0;
 }
 
 .section .text.large {
     font-size: 32px;
-    margin: 0;
+}
+
+.section .text.semilarge {
+    font-size: 24px;
+}
+
+.section .text.medium {
+    font-size: 20px;
+}
+
+.section .text.small {
+    font-size: 16px;
 }
 
 .section .text.bold {
     font-weight: bold;
 }
 
+.section .bubbles {
+    display: block;
+}
+
+.section .bubbles a {
+    text-decoration: none;
+    display: block;
+    margin: 20px 0;
+    padding: 0;
+    opacity: 1;
+    transition: opacity 150ms;
+}
+
+.section .bubbles a:hover {
+    opacity: 0.6;
+}
+
+.section .bubble {
+    height: 112px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    color: black;
+    padding: 4px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section .bubble.dark {
+    color: white;
+}
+
+.section .bubble .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section .bubble .description {
+  font-size: 14px;
+  margin: 0;
+}
+
 .section.width-small .content {
     max-width: 800px;
+    margin: 0 auto;
+}
+
+.section.width-medium .content {
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -383,13 +468,17 @@
     padding-bottom: 50px;
 }
 
-.section a {
-    color: #DE3163;
-    text-decoration: none;
-
+.section.height-small {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.section a:hover {
+.section .text a {
+    color: #DE3163;
+    text-decoration: none;
+}
+
+.section .text a:hover {
     text-decoration: underline;
 }
 
@@ -563,6 +652,20 @@
         font-size: 18px;
         right: 20px;
         bottom: 10px;
+    }
+
+    .section .heading {
+        text-align: left;
+    }
+
+    .section .bubbles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .section .bubbles a {
+        margin: 0;
     }
 
     .notice .title {
