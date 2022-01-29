@@ -363,19 +363,19 @@
     margin-top: 150px;
 }
 
-.section .heading {
+.section .label {
     margin: 0;
     padding: 20px 0;
     text-align: center;
 }
 
-.section .heading .title {
+.section .label .title {
     margin: 0;
     font-size: 24px;
     font-weight: bold;
 }
 
-.section .heading .subtitle {
+.section .label .subtitle {
     margin: 0;
     font-size: 14px;
 }
@@ -404,6 +404,15 @@
 
 .section .text.bold {
     font-weight: bold;
+}
+
+.section .text.center {
+    text-align: center;
+}
+
+.section .text.spacious {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .section .bubbles {
@@ -540,6 +549,10 @@
     text-decoration: underline;
 }
 
+.spacer.large {
+    height: 300px;
+}
+
 @media only screen and (min-width: 800px) {
 
     .nav-links ul {
@@ -654,7 +667,7 @@
         bottom: 10px;
     }
 
-    .section .heading {
+    .section .label {
         text-align: left;
     }
 
