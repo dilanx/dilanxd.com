@@ -2,16 +2,29 @@
 <html>
     <head>
         <title>404 - Dilan Nair</title>
-        <link rel="stylesheet" href="/style/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/style/style2.css">
+        <link rel="stylesheet" href="/fontawesome/css/all.css">
     </head>
 
-    <body style="padding-top: 100px;">
-        <div class="news-block">
-            <p class="main">Oh shoot.</p>
-            <p class="sub">The page you're looking for wasn't found.</p>
-            <p class="sub" style="font-size: 18px;">404 - page not found</p>
-            <a class="button" href="/">Back to home</a>
+    <body>
+        <div class="heading-block less-padding">
+            <div class="content">
+                <p class="title" id="404-message">404 Error</p>
+                <p class="subtitle">
+                    The page you're looking for wasn't found.
+                </p>
+                <p class="button">
+                    <a href="/">RETURN TO HOME</a>
+                </p>
+            </div>
         </div>
+        <script>
+            var msgs = ['Oh shoot.', 'Wait a second.', 'Hmm, wait.', 'What a shame.', 'Um, about that.', 'Aw shoot.', 'How unfortunate.', 'Nope, doesn\'t exist.'];
+
+            let msg = msgs[Math.floor(Math.random() * msgs.length)];
+            document.getElementById('404-message').innerText = msg;
+        </script>
     </body>
 
 </html>
