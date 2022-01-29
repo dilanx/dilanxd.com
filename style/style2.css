@@ -422,20 +422,15 @@
     text-decoration: underline;
 }
 
-
 @media only screen and (min-width: 800px) {
 
     .nav-links ul {
         margin: 0 10px;
     }
 
-    #nav-title {
-        margin: 0 100px;
-    }
-
     #nav-links-desktop {
         margin-left: auto;
-        margin-right: 100px;
+        margin-right: 50px;
         display: flex;
         align-items: center;
     }
@@ -540,6 +535,18 @@
     .notice .title {
         padding: 5px 20px;
         text-align: left;
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+
+    #nav-title {
+        margin: 0 100px;
+    }
+
+    #nav-links-desktop {
+        margin-right: 100px;
     }
 
 }
