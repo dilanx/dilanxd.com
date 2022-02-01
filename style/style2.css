@@ -586,7 +586,7 @@
         transition: none;
     }
 
-    .nav-links li a:after {
+    .nav-links ul.text li a:after {
         display: block;
         content: '';
         border-bottom: 1px solid var(--nav-fg-c);
@@ -619,6 +619,7 @@
     .nav-links li a i {
         font-size: 24px;
         vertical-align: middle;
+        margin: 0;
     }
 
     .heading-block {
