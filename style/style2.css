@@ -356,6 +356,7 @@
 .section {
   display: block;
   padding: 0 20px;
+  --link-color: #DE3163;
 }
 
 .section.header-above {
@@ -482,11 +483,57 @@ margin: 0;
 }
 
 .section .text a {
-  color: #DE3163;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 .section .text a:hover {
+  text-decoration: underline;
+}
+
+.section .subsection {
+  padding: 20px;
+}
+
+.section .subsection .title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.section .columns-3 {
+  display: block;
+  padding: 0;
+}
+
+.section .column {
+  padding: 4px 0;
+  margin: 12px 0;
+}
+
+.section .link-list p.title {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 4px 0;
+  padding: 0;
+}
+
+.section .link-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section .link-list li {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.section .link-list li a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.section .link-list li a:hover {
   text-decoration: underline;
 }
 
@@ -550,6 +597,29 @@ margin: 0;
 
 .spacer.large {
   height: 300px;
+}
+
+.search-bar {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  font: normal 24px Poppins;
+  border: 2px solid silver;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 640px;
+  padding: 5px 10px;
+  outline: none;
+  transition: border-color 150ms;
+}
+
+.search-bar:hover {
+  /*border-color: black;*/
+  cursor: not-allowed;
+}
+
+.search-bar:focus {
+  border-color: #DE3163;
 }
 
 @media only screen and (min-width: 800px) {
@@ -671,6 +741,10 @@ margin: 0;
     text-align: left;
   }
 
+  .section .label.center {
+    text-align: center;
+  }
+
   .section .bubbles {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -679,6 +753,17 @@ margin: 0;
 
   .section .bubbles a {
     margin: 0;
+  }
+
+  .section .columns-3 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section .column {
+    padding: 4px 0;
+    margin: 12px 0;
+    flex: 1;
   }
 
   .notice .title {
