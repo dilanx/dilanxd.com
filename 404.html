@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>404 - Dilan Nair</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/style/style2.css">
-    <link rel="stylesheet" href="/fontawesome/css/all.css">
-  </head>
+    <head>
+        <title>404 - Dilan Nair</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/style/style2.css" />
+        <link rel="stylesheet" href="/fontawesome/css/all.css" />
+    </head>
 
-  <body>
-    <div class="heading-block less-padding">
-      <div class="content">
-        <p class="title" id="404-message">404 Error</p>
-        <p class="subtitle">
-          The page you're looking for wasn't found.
-        </p>
-        <div class="button">
-          <a href="/">RETURN HOME</a>
+    <body>
+        <div class="heading-block less-padding">
+            <div class="content">
+                <p class="title" id="404-message">404 Error</p>
+                <p class="subtitle">
+                    The page you're looking for wasn't found.
+                </p>
+                <div class="button">
+                    <a href="/">RETURN HOME</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="notice">
-      <div class="notice-contents">
-        <p class="title">
-          PARDON THE BROKEN LINKS
-        </p>
-        <p class="description">
-          I'm completely redesigning my website from scratch. Like, literally. I'm manually coding everything in vanilla HTML, CSS, and JavaScript (it's fun though). When completed, the new site will feature a completely new navigation system, a redesigned layout, and a ton of other cool things. It'll all be mobile-friendly, too (unlike the old site). Until it's done, you might encounter a lot of broken links as you click through things. They'll all be resolved soon as I continue developing. Thanks for waiting!
-        </p>
-      </div>
-    </div>
-    
-    <script>
-      var msgs = ['Oh shoot.', 'Wait a second.', 'Hmm, wait.', 'What a shame.', 'Um, about that.', 'Aw shoot.', 'How unfortunate.', 'Nope, doesn\'t exist.'];
+        <div class="notice">
+            <div class="notice-contents">
+                <p class="title">PARDON THE BROKEN LINKS</p>
+                <p class="description">
+                    I'm completely redesigning my website from scratch. Like,
+                    literally. I'm manually coding everything in vanilla HTML,
+                    CSS, and JavaScript (it's fun though). When completed, the
+                    new site will feature a completely new navigation system, a
+                    redesigned layout, and a ton of other cool things. It'll all
+                    be mobile-friendly, too (unlike the old site). Until it's
+                    done, you might encounter a lot of broken links as you click
+                    through things. They'll all be resolved soon as I continue
+                    developing. Thanks for waiting!
+                </p>
+            </div>
+        </div>
 
-      let msg = msgs[Math.floor(Math.random() * msgs.length)];
-      document.getElementById('404-message').innerText = msg;
-    </script>
-  </body>
+        <script>
+            var msgs = [
+                'Oh shoot.',
+                'Wait a second.',
+                'Hmm, wait.',
+                'What a shame.',
+                'Um, about that.',
+                'Aw shoot.',
+                'How unfortunate.',
+                "Nope, doesn't exist.",
+            ];
+
+            let msg = msgs[Math.floor(Math.random() * msgs.length)];
+            document.getElementById('404-message').innerText = msg;
+        </script>
+    </body>
 </html>
