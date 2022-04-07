@@ -430,11 +430,11 @@
     text-align: center;
 }
 
-.section.text.left {
+.section .text.left {
     text-align: left;
 }
 
-.section.text.right {
+.section .text.right {
     text-align: right;
 }
 
