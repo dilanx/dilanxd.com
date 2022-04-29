@@ -9,10 +9,15 @@ const NAV_H_S = style.getPropertyValue('--nav-h-s');
 
 var nav = document.getElementById('nav');
 var body = document.body;
-window.onscroll = () => {update();}
+window.onscroll = () => {
+    update();
+};
 
 function update() {
-    if (document.body.scrollTop > DISTANCE || document.documentElement.scrollTop < DISTANCE) {
+    if (
+        document.body.scrollTop > DISTANCE ||
+        document.documentElement.scrollTop < DISTANCE
+    ) {
         body.style.setProperty('--nav-bg-c', NAV_BG_L);
         body.style.setProperty('--nav-fg-c', NAV_FG_L);
         body.style.setProperty('--nav-h-c', NAV_H_L);
@@ -32,8 +37,7 @@ function toggleNav() {
         s.className = '';
         b.style.overflow = 'auto';
         update();
-    }
-    else {
+    } else {
         e.style.height = '100%';
         s.className = 'open';
         b.style.overflow = 'hidden';
@@ -48,14 +52,16 @@ window.onresize = () => {
     if (e.style.height === '100%') {
         toggleNav();
     }
-}
+};
 
 let pageElements = document.getElementsByClassName('nav-links');
 
 for (let i = 0; i < pageElements.length; i++) {
     let pages = pageElements[i].getElementsByTagName('a');
     for (let j = 0; j < pages.length; j++) {
-        if (window.location.pathname.startsWith(pages[j].getAttribute('href'))) {
+        if (
+            window.location.pathname.startsWith(pages[j].getAttribute('href'))
+        ) {
             pages[j].classList.add('active');
         }
     }
