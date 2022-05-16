@@ -595,17 +595,23 @@
     display: block;
     margin: 20px auto;
     max-width: 800px;
+    --color: #ff4f4b;
+}
+
+.notice.black {
+    --color: #000000;
 }
 
 .notice-contents {
     margin: 20px;
-    border: 2px solid #ff4f4b;
+    border: 2px solid var(--color);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .notice .title {
     margin: 0;
-    background: #ff4f4b;
+    background: var(--color);
     color: white;
     padding: 5px;
     text-align: center;
@@ -620,7 +626,7 @@
 }
 
 .notice .description a {
-    color: #ff4f4b;
+    color: var(--color);
     text-decoration: none;
 }
 
