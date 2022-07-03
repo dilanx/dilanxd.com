@@ -2,13 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Dilan Nair</title>
-    <meta property="og:title" content="Dilan Nair" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
       content="Hey, I'm Dilan, a software developer and university student."
     />
+    <meta name="keywords" content="Dilan, Nair" />
+    <meta name="author" content="Dilan Nair" />
+    <meta property="og:title" content="Dilan Nair" />
     <meta
       property="og:description"
       content="Hey, I'm Dilan, a software developer and university student."
@@ -19,19 +21,20 @@
       property="og:image"
       content="https://www.dilanxd.com/images/profile_white.png"
     />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="/style/style.css" />
     <script
       src="https://kit.fontawesome.com/272ac1b8d8.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?" />
     <script>
       $(function () {
-        $('#header').load('/base/header.html');
-        $('#footer').load('/base/footer.html');
+        $("#header").load("/base/header.html");
+        $("#footer").load("/base/footer.html");
       });
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-2T5NF1VGGK"
@@ -41,9 +44,9 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
+      gtag("js", new Date());
 
-      gtag('config', 'G-2T5NF1VGGK');
+      gtag("config", "G-2T5NF1VGGK");
     </script>
   </head>
   <body>
