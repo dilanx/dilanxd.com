@@ -20,8 +20,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script>
       $(function () {
-        $("#header").load("/base/header.html");
-        $("#footer").load("/base/footer.html");
+        $('#header').load('/base/header.html');
+        $('#footer').load('/base/footer.html');
       });
     </script>
     <script
@@ -33,12 +33,18 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "G-2T5NF1VGGK");
+      gtag('config', 'G-2T5NF1VGGK');
     </script>
   </head>
   <body>
+    <script>
+      if (localStorage.getItem('dark-mode') === 'true') {
+        document.body.classList.add('dark');
+      }
+    </script>
+
     <div id="header"></div>
 
     <div class="section width-medium height-small header-above">
@@ -84,11 +90,73 @@
               <p class="description">A Discord bot you can talk to.</p>
             </div>
           </a>
-          <a href="/timemanager">
+          <a href="/rise-together">
             <div class="bubble" style="background-color: #fff9f9">
-              <p class="title">Time Titles</p>
+              <p class="title">Rise Together (TBA)</p>
+              <p class="description">More information coming soon.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section width-medium height-small">
+      <div class="content">
+        <div class="label">
+          <p class="title">DEVELOPER TOOLS</p>
+          <p class="subtitle">
+            Tools I've developed for developers of all kinds&#8212;programmers,
+            website creators, etc.
+          </p>
+        </div>
+        <div class="bubbles">
+          <a href="https://github.com/dilanx/choccystatus" target="_blank">
+            <div class="bubble" style="background-color: #fafafa">
+              <p class="title">CRACO</p>
               <p class="description">
-                Easily log time for your projects and tasks. Coming soon.
+                An easy and comprehensible configuration layer for Create React
+                App.
+              </p>
+            </div>
+          </a>
+          <a href="https://dilanxd.com/authentication" target="_blank">
+            <div class="bubble" style="background-color: #fafafa">
+              <p class="title">auth.dilanxd.com</p>
+              <p class="description">
+                An simple yet secure authentication API (invite only).
+              </p>
+            </div>
+          </a>
+          <a href="https://github.com/dilanx/choccystatus" target="_blank">
+            <div class="bubble" style="background-color: #fafafa">
+              <p class="title">ChoccyStatus</p>
+              <p class="description">
+                A customizable, JSON-based status page for static sites.
+              </p>
+            </div>
+          </a>
+          <a href="https://github.com/dilanx/dilanscript" target="_blank">
+            <div class="bubble" style="background-color: fafafa">
+              <p class="title">DilanScript 2</p>
+              <p class="description">
+                A super easy-to-use data storage or configuration file with
+                parser API. This is kind of discontinued, though.
+              </p>
+            </div>
+          </a>
+          <a href="https://github.com/dilanx/gamerlanguage" target="_blank">
+            <div class="bubble" style="background-color: #fafafa">
+              <p class="title">Gamer Language</p>
+              <p class="description">
+                An esoteric joke programming language for gamers.
+              </p>
+            </div>
+          </a>
+          <a href="https://github.com/dilanx/hyper-pastelle" target="_blank">
+            <div class="bubble" style="background-color: #fafafa">
+              <p class="title">hyper-pastelle</p>
+              <p class="description">
+                A nice pastel-type theme for the Hyper terminal.
               </p>
             </div>
           </a>
@@ -118,81 +186,6 @@
               <p class="description">
                 The premier student organization for software and game
                 development at Northwestern University.
-              </p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="section width-medium height-small">
-      <div class="content">
-        <div class="label">
-          <p class="title">GAMES</p>
-          <p class="subtitle">
-            Video games I've been working on or have made in the past
-          </p>
-        </div>
-        <div class="bubbles">
-          <a href="/game-coming-soon">
-            <div class="bubble dark" style="background-color: #191970">
-              <p class="title">Game (TBD)</p>
-              <p class="description">Coming soon.</p>
-            </div>
-          </a>
-          <a href="/flapxd">
-            <div class="bubble" style="background-color: #e0ffe0">
-              <p class="title">FlapXD</p>
-              <p class="description">
-                A stupidly simple Flappy Bird rip-off with same-screen
-                multiplayer.
-              </p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="section width-medium height-small">
-      <div class="content">
-        <div class="label">
-          <p class="title">DEVELOPER TOOLS</p>
-          <p class="subtitle">
-            Tools I've developed for developers of all kinds&#8212;programmers,
-            website creators, etc.
-          </p>
-        </div>
-        <div class="bubbles">
-          <a href="https://github.com/dilanx/choccystatus" target="_blank">
-            <div class="bubble" style="background-color: #fafafa">
-              <p class="title">ChoccyStatus</p>
-              <p class="description">
-                A customizable, JSON-based status page for static sites.
-              </p>
-            </div>
-          </a>
-          <a href="https://github.com/dilanx/dilanscript" target="_blank">
-            <div class="bubble" style="background-color: #fafafa">
-              <p class="title">DilanScript 2</p>
-              <p class="description">
-                A super easy-to-use data storage or configuration file with
-                parser API. This is kind of discontinued, though.
-              </p>
-            </div>
-          </a>
-          <a href="https://github.com/dilanx/gamerlanguage" target="_blank">
-            <div class="bubble" style="background-color: #fafafa">
-              <p class="title">Gamer Language</p>
-              <p class="description">
-                An esoteric joke programming language for gamers.
-              </p>
-            </div>
-          </a>
-          <a href="https://github.com/dilanx/hyper-pastelle" target="_blank">
-            <div class="bubble" style="background-color: #fafafa">
-              <p class="title">hyper-pastelle</p>
-              <p class="description">
-                A nice pastel-type theme for the Hyper terminal.
               </p>
             </div>
           </a>

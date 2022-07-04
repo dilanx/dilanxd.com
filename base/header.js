@@ -69,33 +69,3 @@ for (let i = 0; i < pageElements.length; i++) {
     }
   }
 }
-
-var darkModeButton = document.getElementById('dark-mode-button');
-var darkModeIcon = document.getElementById('dark-mode-icon');
-
-function setDarkMode(darkMode) {
-  if (darkMode) {
-    body.classList.add('dark');
-    localStorage.setItem('dark-mode', 'true');
-    darkModeIcon.className = 'fas fa-sun';
-  } else {
-    body.classList.remove('dark');
-    localStorage.setItem('dark-mode', 'false');
-    darkModeIcon.className = 'fas fa-moon';
-  }
-  NAV_BG_L = style.getPropertyValue('--nav-bg-l');
-  NAV_BG_D = style.getPropertyValue('--nav-bg-d');
-  NAV_FG_L = style.getPropertyValue('--nav-fg-l');
-  NAV_FG_D = style.getPropertyValue('--nav-fg-d');
-  NAV_C_L = style.getPropertyValue('--nav-c-l');
-  NAV_C_D = style.getPropertyValue('--nav-c-d');
-  update();
-}
-
-if (localStorage.getItem('dark-mode') === 'true') {
-  setDarkMode(true);
-}
-
-darkModeButton.addEventListener('click', () => {
-  setDarkMode(!body.classList.contains('dark'));
-});

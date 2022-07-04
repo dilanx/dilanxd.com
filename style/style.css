@@ -39,17 +39,12 @@ body {
   --nav-h-c: var(--nav-h-l);
 
   /* LIGHT THEME */
-  --background: #ffffff;
+  --background-secondary: #fafafa;
   --text-primary: black;
-}
-
-body.dark {
-  /* DARK THEME */
-  --nav-bg-l: #1d1e20e6;
-  --nav-fg-l: #ffffffe6;
-  --nav-c-l: #1d1e20;
-  --background: #1d1e20;
-  --text-primary: white;
+  --text-primary-dark: white;
+  --link: #de3163;
+  --bg-light-cyan: #f9ffff;
+  --fg-light-cyan: #3498db;
 }
 
 body {
@@ -349,12 +344,16 @@ body {
 
 .display-block .text {
   margin: 20px 0;
-  color: black;
+  color: var(--text-primary);
   text-align: center;
 }
 
 .display-block .text.dark {
-  color: white;
+  color: var(--text-primary-dark);
+}
+
+.display-block.match-theme .text {
+  color: var(--text-primary);
 }
 
 .display-block .text .title {
@@ -435,10 +434,18 @@ body {
   opacity: 0.5;
 }
 
+.display-block .labels {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .section {
   display: block;
   padding: 0 20px;
-  --link-color: #de3163;
 }
 
 .section.header-above {
@@ -449,6 +456,7 @@ body {
   margin: 0;
   padding: 20px 0;
   text-align: center;
+  color: var(--text-primary);
 }
 
 .section .label .title {
@@ -466,6 +474,7 @@ body {
   line-height: 200%;
   padding: 10px 0;
   margin: 0;
+  color: var(--text-primary);
 }
 
 .section .text.large {
@@ -518,15 +527,11 @@ body {
   transition: opacity 150ms;
 }
 
-.section .bubbles a:hover {
-  opacity: 0.6;
-}
-
 .section .bubble {
   height: 112px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  color: black;
+  color: var(--text-primary);
   padding: 4px 20px;
   border-radius: 5px;
   display: flex;
@@ -536,10 +541,20 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  outline: 2px solid transparent;
+  transition: outline 100ms;
+}
+
+.section .bubble:hover {
+  outline-color: var(--link);
 }
 
 .section .bubble.dark {
-  color: white;
+  color: var(--text-primary-dark);
+}
+
+.section .bubble.match-theme {
+  color: var(--text-primary);
 }
 
 .section .bubble .title {
@@ -574,7 +589,7 @@ body {
 }
 
 .section .text a {
-  color: var(--link-color);
+  color: var(--link);
   text-decoration: none;
 }
 
@@ -621,7 +636,7 @@ body {
 
 .section .link-list li a {
   text-decoration: none;
-  color: var(--link-color);
+  color: var(--link);
 }
 
 .section .link-list li a:hover {
@@ -639,7 +654,7 @@ body {
 }
 
 .continue-link a {
-  color: #de3163;
+  color: var(--link);
   text-decoration: none;
   opacity: 0.5;
   transition: opacity 150ms;
