@@ -4,8 +4,6 @@ var NAV_BG_L = style.getPropertyValue('--nav-bg-l');
 var NAV_BG_D = style.getPropertyValue('--nav-bg-d');
 var NAV_FG_L = style.getPropertyValue('--nav-fg-l');
 var NAV_FG_D = style.getPropertyValue('--nav-fg-d');
-var NAV_C_L = style.getPropertyValue('--nav-c-l');
-var NAV_C_D = style.getPropertyValue('--nav-c-d');
 const NAV_H_L = style.getPropertyValue('--nav-h-l');
 const NAV_H_S = style.getPropertyValue('--nav-h-s');
 
@@ -22,12 +20,10 @@ function update() {
   ) {
     body.style.setProperty('--nav-bg-c', NAV_BG_L);
     body.style.setProperty('--nav-fg-c', NAV_FG_L);
-    body.style.setProperty('--nav-c-c', NAV_C_L);
     body.style.setProperty('--nav-h-c', NAV_H_L);
   } else {
     body.style.setProperty('--nav-bg-c', NAV_BG_D);
     body.style.setProperty('--nav-fg-c', NAV_FG_D);
-    body.style.setProperty('--nav-c-c', NAV_C_D);
     body.style.setProperty('--nav-h-c', NAV_H_S);
   }
 }
@@ -45,9 +41,8 @@ function toggleNav() {
     e.style.height = '100%';
     s.className = 'open';
     b.style.overflow = 'hidden';
-    body.style.setProperty('--nav-bg-c', NAV_BG_L);
-    body.style.setProperty('--nav-fg-c', NAV_FG_L);
-    body.style.setProperty('--nav-c-c', NAV_C_L);
+    body.style.setProperty('--nav-bg-c', '#000000e6');
+    body.style.setProperty('--nav-fg-c', NAV_FG_D);
     body.style.setProperty('--nav-h-c', NAV_H_L);
   }
 }

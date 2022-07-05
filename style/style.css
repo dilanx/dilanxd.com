@@ -29,11 +29,8 @@ body {
   --nav-bg-d: #111111e6;
   --nav-fg-l: #000000e6;
   --nav-fg-d: #ffffffe6;
-  --nav-c-l: #ffffff;
-  --nav-c-d: #111111;
   --nav-bg-c: var(--nav-bg-l);
   --nav-fg-c: var(--nav-fg-l);
-  --nav-c-c: var(--nav-c-l);
   --nav-h-l: 135px;
   --nav-h-s: 45px;
   --nav-h-c: var(--nav-h-l);
@@ -87,29 +84,6 @@ body {
   opacity: 0.6;
 }
 
-#dark-mode-button {
-  outline: none;
-  border: none;
-  background: none;
-  padding: 3px;
-  cursor: pointer;
-  color: var(--nav-c-c);
-  background-color: var(--nav-fg-c);
-  display: flex;
-  align-items: center;
-  border-radius: 4px;
-  opacity: 0.25;
-  transition: opacity 150ms;
-}
-
-#dark-mode-button:hover {
-  opacity: 1;
-}
-
-#dark-mode-icon {
-  font-size: 14px;
-}
-
 #nav-show {
   margin-left: auto;
   margin-right: 50px;
@@ -160,7 +134,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--nav-bg-l);
+  background-color: #000000e6;
   overflow-y: hidden;
   transition: height 0.5s;
   backdrop-filter: blur(10px);
@@ -198,7 +172,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: var(--nav-fg-c);
+  color: var(--nav-fg-d);
 }
 
 .nav-links ul.text li a {
@@ -801,6 +775,10 @@ body {
   .nav-links ul.icon li a:hover,
   .nav-links ul.icon li button:hover {
     opacity: 0.6;
+  }
+
+  .nav-links a {
+    color: var(--nav-fg-c);
   }
 
   .nav-links li a i {
