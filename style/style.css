@@ -1,5 +1,11 @@
 @font-face {
   font-family: Poppins;
+  src: url(fonts/Poppins-ExtraLight.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Poppins;
   src: url(fonts/Poppins-Light.ttf);
   font-weight: normal;
 }
@@ -47,6 +53,26 @@ body {
 body {
   background-color: var(--background);
   transition: background-color 200ms ease;
+}
+
+span.l {
+  font-weight: 300;
+}
+
+span.m {
+  font-weight: 500;
+}
+
+span.b {
+  font-weight: bold;
+}
+
+span.h {
+  font-weight: 800;
+}
+
+span.u {
+  text-decoration: underline;
 }
 
 #nav {
@@ -422,6 +448,12 @@ body {
   padding: 0 20px;
 }
 
+.section .content.elevated {
+  padding: 24px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 12px;
+}
+
 .section.header-above {
   margin-top: 150px;
 }
@@ -453,6 +485,7 @@ body {
 
 .section .text.large {
   font-size: 32px;
+  text-align: center;
 }
 
 .section .text.semilarge {
@@ -460,7 +493,8 @@ body {
 }
 
 .section .text.medium {
-  font-size: 20px;
+  font-size: 16px;
+  text-align: center;
 }
 
 .section .text.small {
@@ -471,8 +505,17 @@ body {
   font-weight: bold;
 }
 
+.section .text.light {
+  font-weight: 300;
+}
+
 .section .text.center {
   text-align: center;
+}
+
+.section .text.medium.separate-small {
+  text-align: center;
+  font-size: 16px;
 }
 
 .section .text.left {
@@ -486,6 +529,48 @@ body {
 .section .text.spacious {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.section .text.no-padding {
+  padding: 0;
+}
+
+.section .text-container {
+  display: block;
+  text-align: center;
+}
+
+.section .text-container p {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.section .text-container .socials {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.section .text-container .socials a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: var(--link);
+  opacity: 0.5;
+  transition: opacity 150ms;
+}
+
+.section .text-container .socials a:hover {
+  opacity: 1;
+}
+
+.section .text-container .socials a i {
+  margin: 0;
+  padding: 0;
 }
 
 .section .bubbles {
@@ -550,6 +635,10 @@ body {
 .section.width-medium .content {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.section .content.elevated {
+  margin: 24px auto;
 }
 
 .section.height-medium {
@@ -839,6 +928,28 @@ body {
 
   .section .label.center {
     text-align: center;
+  }
+
+  .section .text.large {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .section .text.large.right {
+    text-align: right;
+  }
+
+  .section .text.medium {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .section .text-container {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    gap: 20px;
   }
 
   .section .bubbles {
