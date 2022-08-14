@@ -12,13 +12,10 @@
 
 <Navigation />
 
-<Heading
-  title="Hey there, I'm Dilan."
-  subtitle="full stack software developer"
-/>
+<Heading title="Hey there, I'm Dilan." />
 
 <Display backgroundColor="#0a3a2a" linkColor="#92ddc8" dark featured>
-  <DisplayImage src="/images/craco.png" alt="CRACO" slot="image" />
+  <DisplayImage src="/images/craco.png" alt="CRACO logo" slot="image" />
   <svelte:fragment slot="text">
     <DisplayTitle>CRACO</DisplayTitle>
     <DisplayDescription>
@@ -64,7 +61,7 @@
 <Display backgroundColor="#262626" linkColor="#d8b4fe" dark featured>
   <DisplayImage
     src="/images/calendar-solid.png"
-    alt="Plan Northwestern"
+    alt="Plan Northwestern logo"
     slot="image"
   />
   <svelte:fragment slot="text">
@@ -111,5 +108,70 @@
       image="https://img.shields.io/github/stars/dilanx/plan-northwestern?color=red"
       alt="Plan Northwestern GitHub stars"
     />
+  </svelte:fragment>
+</Display>
+
+<Display
+  backgroundImage="
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url('/images/mcshaders1.jpg')
+  "
+  linkColor="#ffff8f"
+  dark
+  featured
+>
+  <DisplayImage
+    src="/images/dmslauncher.png"
+    alt="DMSLauncher screenshot"
+    slot="image"
+  />
+  <svelte:fragment slot="text">
+    <DisplayTitle>DMSLauncher</DisplayTitle>
+    <DisplayDescription>
+      An automatic modded client updater and launcher for Minecraft.
+    </DisplayDescription>
+  </svelte:fragment>
+  <svelte:fragment slot="links">
+    <DisplayLink
+      to="https://github.com/dilanx/dmslauncher"
+      newTab
+      icon="fab fa-github">View on GitHub</DisplayLink
+    >
+  </svelte:fragment>
+</Display>
+
+<Display
+  backgroundImage="
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url('/images/discord.png')
+  "
+  linkColor="#b8beff"
+  dark
+  featured
+>
+  <DisplayImage
+    src="/images/switchpresence.png"
+    alt="SwitchPresence logo"
+    slot="image"
+  />
+  <svelte:fragment slot="text">
+    <DisplayTitle>SwitchPresence</DisplayTitle>
+    <DisplayDescription>
+      A cross-platform desktop application that allows you to display Nintendo
+      Switch games as your current activity on Discord.
+    </DisplayDescription>
+  </svelte:fragment>
+  <svelte:fragment slot="links">
+    <DisplayLink
+      to="https://github.com/dilanx/switchpresence"
+      newTab
+      icon="fab fa-github">View on GitHub</DisplayLink
+    >
   </svelte:fragment>
 </Display>

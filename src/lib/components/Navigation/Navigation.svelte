@@ -31,6 +31,7 @@
     body = document.body;
     window.onscroll = () => update();
     window.onresize = () => (open = false);
+    update();
   });
 </script>
 
