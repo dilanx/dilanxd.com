@@ -1,0 +1,24 @@
+$nav-bg-big: #ffffffe6;
+$nav-bg: #111111e6;
+$nav-fg-big: #000000e6;
+$nav-fg: #ffffffe6;
+$nav-h-big: 135px;
+$nav-h: 45px;
+
+@mixin sm {
+  @media (max-width: 799px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 800px) {
+    @content;
+  }
+}
+
+@mixin lg2 {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
