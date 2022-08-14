@@ -5,6 +5,9 @@ $nav-fg: #ffffffe6;
 $nav-h-big: 135px;
 $nav-h: 45px;
 
+$text-primary: black;
+$text-primary-dark: white;
+
 @mixin sm {
   @media (max-width: 799px) {
     @content;

@@ -22,13 +22,14 @@
 
   .heading-block {
     padding: 200px 20px;
+    color: theme.$text-primary;
 
     &.lessPadding {
       padding: 100px 20px;
     }
 
     &.dark {
-      color: white;
+      color: theme.$text-primary-dark;
     }
 
     .content {
