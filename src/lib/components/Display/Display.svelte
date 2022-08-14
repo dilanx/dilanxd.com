@@ -4,12 +4,18 @@
   export let dark: boolean | undefined = undefined;
   export let linkColor: string | undefined = undefined;
   export let sublinkColor: string | undefined = undefined;
-  export let tag: string | undefined = undefined;
-  export let tagDark: boolean | undefined = undefined;
+
+  export let featured: boolean | undefined = undefined;
+
+  let tag: string | undefined = undefined;
+
+  if (featured) {
+    tag = 'FEATURED PROJECT';
+  }
 </script>
 
 <div
-  class="display-block"
+  class="display"
   style:background-image={backgroundImage}
   style:background-color={backgroundColor}
 >
@@ -37,14 +43,14 @@
     </div>
   {/if}
   {#if tag}
-    <p class="tag" class:dark={tagDark}>{tag}</p>
+    <p class="tag" class:dark>{tag}</p>
   {/if}
 </div>
 
 <style lang="scss">
   @use '../../theme';
 
-  .display-block {
+  .display {
     height: 600px;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,7 +95,7 @@
       top: 15px;
       display: flex;
       align-items: center;
-      gap: 8;
+      gap: 8px;
     }
 
     .tag {
@@ -109,7 +115,7 @@
   }
 
   @include theme.lg {
-    .display-block {
+    .display {
       height: 320px;
 
       .content {

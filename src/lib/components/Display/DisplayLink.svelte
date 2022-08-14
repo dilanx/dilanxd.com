@@ -7,7 +7,7 @@
 
 <a href={to} target={newTab ? '_blank' : ''} class:sublink>
   {#if icon}
-    <i class:icon />
+    <i class={icon} />
   {/if}
   <slot />
 </a>
