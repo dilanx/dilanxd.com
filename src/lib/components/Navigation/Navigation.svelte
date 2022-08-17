@@ -35,8 +35,8 @@
   });
 </script>
 
-<div class="main" class:big>
-  <NavTitle {big} />
+<div class="main" class:big class:open>
+  <NavTitle {big} {open} />
 
   <NavDesktopLinks {big} />
   <NavMobileBurger
@@ -50,6 +50,7 @@
 <div class="overlay" class:open>
   <NavMobileLinks {big} />
 </div>
+<div class="space" />
 
 <style lang="scss">
   @use '../../theme';
@@ -72,6 +73,11 @@
       background-color: theme.$nav-bg-big;
       height: theme.$nav-h-big;
     }
+
+    &.open {
+      background-color: theme.$nav-bg-overlay;
+      height: theme.$nav-h-big;
+    }
   }
 
   .overlay {
@@ -80,19 +86,23 @@
     position: fixed;
     margin: 0;
     z-index: 100;
-    top: theme.$nav-h-big;
+
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #000000e6;
+    background-color: theme.$nav-bg-overlay;
     overflow-y: hidden;
     transition: height 0.5s;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 
     &.open {
-      height: 100%;
+      height: calc(100vh - theme.$nav-h-big);
     }
+  }
+
+  .space {
+    height: theme.$nav-h-big;
   }
 
   @include theme.lg {

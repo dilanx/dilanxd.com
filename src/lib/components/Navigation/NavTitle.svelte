@@ -1,8 +1,9 @@
 <script lang="ts">
   export let big: boolean;
+  export let open: boolean;
 </script>
 
-<div class:big>
+<div class:big class:open>
   <a href="/">Dilan N</a>
 </div>
 
@@ -29,7 +30,7 @@
     transition: opacity 150ms;
     color: theme.$nav-fg;
 
-    .big & {
+    .big:not(.open) & {
       color: theme.$nav-fg-big;
     }
 

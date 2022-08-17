@@ -40,7 +40,7 @@
 
     background: theme.$nav-fg;
 
-    .big & {
+    .big:not(.open) & {
       background: theme.$nav-fg-big;
     }
   }

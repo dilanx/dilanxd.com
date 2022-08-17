@@ -30,22 +30,38 @@ body {
   font-family: Poppins;
 }
 
-span.l {
-  font-weight: 300;
+.s.light {
+  font-weight: 300 !important;
 }
 
-span.m {
-  font-weight: 500;
+.s.medium {
+  font-weight: 500 !important;
 }
 
-span.b {
-  font-weight: bold;
+.s.bold {
+  font-weight: bold !important;
 }
 
-span.h {
-  font-weight: 800;
+.s.heavy {
+  font-weight: 800 !important;
 }
 
-span.u {
-  text-decoration: underline;
+.s.underline {
+  text-decoration: underline !important;
+}
+
+.s.left {
+  text-align: left !important;
+}
+
+.s.center {
+  text-align: center !important;
+}
+
+.s.right {
+  text-align: right !important;
+}
+
+.s.no-padding {
+  padding: 0 !important;
 }

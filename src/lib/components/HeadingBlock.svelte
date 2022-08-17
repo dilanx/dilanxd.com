@@ -5,7 +5,7 @@
   export let dark = false;
 </script>
 
-<div class="heading" class:lessPadding class:dark>
+<div class="heading-block" class:lessPadding class:dark>
   <div class="content">
     {#if title}
       <h1>{title}</h1>
@@ -18,14 +18,14 @@
 </div>
 
 <style lang="scss">
-  @use '../../theme';
+  @use '../theme';
 
-  .heading {
-    padding: 200px 20px;
+  .heading-block {
+    padding: 100px 20px 200px 20px;
     color: theme.$text-primary;
 
     &.lessPadding {
-      padding: 100px 20px;
+      padding: 50px 20px 100px 20px;
     }
 
     &.dark {
@@ -53,11 +53,11 @@
   }
 
   @include theme.lg {
-    .heading {
-      padding: 250px 20px;
+    .heading-block {
+      padding: 125px 20px 250px 20px;
 
       &.lessPadding {
-        padding: 100px 20px;
+        padding: 50px 20px 100px 20px;
       }
 
       h1 {

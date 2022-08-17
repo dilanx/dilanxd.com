@@ -4,9 +4,26 @@ $nav-fg-big: #000000e6;
 $nav-fg: #ffffffe6;
 $nav-h-big: 135px;
 $nav-h: 45px;
+$nav-bg-overlay: #000000e6;
 
 $text-primary: black;
 $text-primary-dark: white;
+$link-primary: #de3163;
+$link-secondary: #c82c59;
+
+$footer-bg: #222222;
+$footer-primary: #a0a0a0;
+$footer-link: #e0e0e0;
+
+$widths: (
+  s: 800px,
+  m: 1000px,
+);
+
+$heights: (
+  s: 20px,
+  m: 50px,
+);
 
 @mixin sm {
   @media (max-width: 799px) {
