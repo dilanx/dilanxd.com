@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ContinueLink from '$lib/components/ContinueLink.svelte';
+  import ContinueLink from '$lib/components/ContinueLinks.svelte';
   import Display from '$lib/components/Display.svelte';
   import Section from '$lib/components/Section.svelte';
   import ContentCard from '$lib/components/ContentCard.svelte';
@@ -12,6 +12,10 @@
   import Heading from '$lib/components/Heading.svelte';
   import Text from '$lib/components/Text.svelte';
 </script>
+
+<svelte:head>
+  <title>Dilan Nair</title>
+</svelte:head>
 
 <Navigation />
 
@@ -158,7 +162,14 @@
   </p>
 </Display>
 
-<ContinueLink to="/projects">See all projects</ContinueLink>
+<ContinueLink
+  links={[
+    {
+      to: '/projects',
+      text: 'See all projects',
+    },
+  ]}
+/>
 
 <Section ws hs>
   <Heading h2>A bit about me . . .</Heading>
@@ -186,8 +197,26 @@
       Outside of computer science, I have a strong interest in tech, adventure
       and story-driven video games, and music.
     </Text>
+    <ContinueLink
+      links={[
+        {
+          to: 'https://instagram.com/dilan4k',
+          text: 'Get in touch',
+          icon: 'fab fa-instagram',
+        },
+        {
+          to: 'https://github.com/sponsors/dilanx',
+          text: 'Support my work',
+          icon: 'fas fa-heart',
+        },
+        {
+          to: 'https://dilan.blog',
+          text: 'Check out my blog',
+          icon: 'fas fa-book',
+        },
+      ]}
+    />
   </ContentCard>
-  <ContinueLink to="https://dilan.blog">Check out my blog</ContinueLink>
 </Section>
 
 <Section ws hs>
@@ -203,7 +232,14 @@
     <a href="/attributions#beta-testers">beta testers</a>
     as well!
   </Text>
-  <ContinueLink to="/attributions">See all attributions</ContinueLink>
+  <ContinueLink
+    links={[
+      {
+        to: '/attributions',
+        text: 'See all attributions',
+      },
+    ]}
+  />
 </Section>
 
 <Footer />

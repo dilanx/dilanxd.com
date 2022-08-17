@@ -1,12 +1,16 @@
 <script lang="ts">
   import Bubble from '$lib/components/Bubble.svelte';
   import BubbleContainer from '$lib/components/BubbleContainer.svelte';
-  import ContinueLink from '$lib/components/ContinueLink.svelte';
+  import ContinueLink from '$lib/components/ContinueLinks.svelte';
   import Footer from '$lib/components/Footer.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Navigation from '$lib/components/Navigation/Navigation.svelte';
   import Section from '$lib/components/Section.svelte';
 </script>
+
+<svelte:head>
+  <title>Projects - Dilan Nair</title>
+</svelte:head>
 
 <Navigation />
 
@@ -165,8 +169,14 @@
   </BubbleContainer>
 </Section>
 
-<ContinueLink margin to="https://github.com/dilanx"
-  >Check out my projects on GitHub</ContinueLink
->
+<ContinueLink
+  margin
+  links={[
+    {
+      to: 'https://github.com/dilanx',
+      text: 'Check out my projects on GitHub',
+    },
+  ]}
+/>
 
 <Footer />

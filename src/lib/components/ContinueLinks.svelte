@@ -1,14 +1,23 @@
 <script lang="ts">
-  export let to: string;
+  import type { ContinueLink } from '$lib/common';
+
+  export let links: ContinueLink[];
 
   export let margin = false;
 </script>
 
 <div class:margin>
-  <a href={to}>
-    <slot />
-    <i class="fas fa-arrow-right" />
-  </a>
+  {#each links as { to, text, icon }}
+    <a href={to}>
+      {#if icon}
+        <i class={icon} />
+        {text}
+      {:else}
+        {text}
+        <i class={icon || 'fas fa-arrow-right'} />
+      {/if}
+    </a>
+  {/each}
 </div>
 
 <style lang="scss">
@@ -17,6 +26,9 @@
   div {
     margin: 8px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     &.margin {
       margin: 24px;
     }
@@ -40,6 +52,10 @@
 
     &:active {
       background-color: #e0e2e4;
+    }
+
+    i {
+      margin: 0 4px;
     }
   }
 </style>
