@@ -17,7 +17,7 @@
     bottom: 0;
     background-color: #000000e6;
     overflow-y: hidden;
-    transition: height 0.5s;
+    transition: height 0.5s ease-in-out;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
   }
