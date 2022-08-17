@@ -175,6 +175,7 @@
     {
       to: 'https://github.com/dilanx',
       text: 'Check out my projects on GitHub',
+      icon: 'fab fa-github',
     },
   ]}
 />
