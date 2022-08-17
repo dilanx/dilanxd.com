@@ -12,7 +12,7 @@
     "lint": "prettier --check --plugin-search-dir=. .",
     "format": "prettier --write --plugin-search-dir=. .",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -t true"
   },
   "devDependencies": {
     "@dilanx/config": "^1.1.0",
