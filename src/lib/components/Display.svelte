@@ -154,6 +154,7 @@
         }
 
         &:not(.sublink) {
+          margin: 0 4px;
           padding: 4px 8px;
           border-radius: 12px;
           transition: all 150ms;
