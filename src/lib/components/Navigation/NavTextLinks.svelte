@@ -7,7 +7,7 @@
 <ul class:big>
   <NavTextLink to="/projects" title="Projects" />
   <NavTextLink to="https://dilan.blog" title="Blog" />
-  <NavTextLink to="https://status.dilanxd.com" title="Status" />
+  <NavTextLink to="https://dilan.statuspage.io" title="Status" />
 </ul>
 
 <style lang="scss">
