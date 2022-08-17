@@ -148,25 +148,21 @@
         color: inherit;
         text-decoration: none;
         display: inline-block;
-        margin: 8px;
 
         i {
           margin-right: 5px;
         }
 
         &:not(.sublink) {
-          &:after {
-            display: block;
-            content: '';
-            border-bottom: 1px solid;
-            border-bottom-color: inherit;
-            transform: scaleX(0);
-            transition: transform 250ms ease-out;
-            transform-origin: 100% 50%;
+          padding: 4px 8px;
+          border-radius: 12px;
+          transition: all 150ms;
+          &:hover {
+            background-color: rgba(240, 242, 244, 0.16);
           }
-          &:hover:after {
-            transform: scaleX(1);
-            transform-origin: 0% 50%;
+
+          &:active {
+            background-color: rgba(240, 242, 244, 0.3);
           }
         }
 
