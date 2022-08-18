@@ -1,7 +1,9 @@
 <script lang="ts">
   export let to: string | undefined = undefined;
+  export let newTab = false;
   export let title: string;
   export let description: string | undefined = undefined;
+  export let role: string | undefined = undefined;
 
   export let backgroundColor: string | undefined = undefined;
   export let backgroundImage: string | undefined = undefined;
@@ -11,7 +13,7 @@
   export let dark = false;
 </script>
 
-<a href={to}>
+<a href={to} target={newTab ? '_blank' : undefined}>
   <div
     class:dark
     style:background-color={backgroundColor || defaultColor}
@@ -21,6 +23,9 @@
     <p class="title">{title}</p>
     {#if description}
       <p class="desc">{description}</p>
+    {/if}
+    {#if role}
+      <p class="role">{role}</p>
     {/if}
   </div>
 </a>
@@ -71,6 +76,14 @@
     .desc {
       font-size: 14px;
       margin: 0;
+    }
+
+    .role {
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      margin: 0;
+      opacity: 0.64;
     }
   }
 

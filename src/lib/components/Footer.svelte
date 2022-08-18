@@ -1,17 +1,17 @@
-<div>
+<footer>
   <p>Copyright &#169; 2022 Dilan Nair</p>
   <p>
-    <a href="https://dilan.blog">Blog</a> |
     <a href="https://dilan.statuspage.io">System Status</a> |
-    <a href="https://github.com/sponsors/dilanx">Sponsor</a>
-    | <a href="/attributions">Attributions</a> | <a href="/contact">Contact</a>
+    <a href="https://github.com/sponsors/dilanx">Sponsor</a> |
+    <a href="/privacy">Privacy</a>
+    | <a href="/attributions">Attributions</a>
   </p>
-</div>
+</footer>
 
 <style lang="scss">
   @use '../theme';
 
-  div {
+  footer {
     background-color: theme.$footer-bg;
     margin: 0;
     padding: 20px;

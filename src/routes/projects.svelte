@@ -4,7 +4,7 @@
   import ContinueLink from '$lib/components/ContinueLinks.svelte';
   import Footer from '$lib/components/Footer.svelte';
   import Heading from '$lib/components/Heading.svelte';
-  import Navigation from '$lib/components/Navigation/Navigation.svelte';
+  import Navigation from '$lib/components/Navigation.svelte';
   import Section from '$lib/components/Section.svelte';
 </script>
 
@@ -28,6 +28,7 @@
   <BubbleContainer>
     <Bubble
       to="https://www.plan-nu.com"
+      newTab
       title="Plan Northwestern"
       description="Plan your years at Northwestern University."
       backgroundColor="#262626"
@@ -35,6 +36,7 @@
     />
     <Bubble
       to="https://github.com/dilanx/dmslauncher"
+      newTab
       title="DMSLauncher"
       description="The better way to launch your modded game."
       backgroundImage="
@@ -47,6 +49,7 @@
     />
     <Bubble
       to="https://github.com/dilanx/switchpresence"
+      newTab
       title="SwitchPresence"
       description="Display your Nintendo Switch games as your Discord activity."
       backgroundImage="
@@ -78,6 +81,7 @@
   <BubbleContainer>
     <Bubble
       to="https://github.com/dilanx/craco"
+      newTab
       title="CRACO"
       description="An easy and comprehensible configuration layer for Create React App."
     />
@@ -87,16 +91,19 @@
     />
     <Bubble
       to="https://github.com/dilanx/choccystatus"
+      newTab
       title="ChoccyStatus"
       description="A customizable, JSON-based status page for static sites."
     />
     <Bubble
       to="https://github.com/dilanx/config"
+      newTab
       title="config"
       description="Maintain consistency across your projects with consistent styling and configuration."
     />
     <Bubble
       to="https://github.com/dilanx/gamerlanguage"
+      newTab
       title="GamerLanguage"
       description="An esoteric joke programming language for gamers."
     />
@@ -119,6 +126,7 @@
   <BubbleContainer>
     <Bubble
       to="https://voidstone.dilanxd.com"
+      newTab
       title="Voidstone Software"
       description="Quality custom software and game modifications curated to your taste."
       backgroundColor="black"
@@ -126,6 +134,7 @@
     />
     <Bubble
       to="https://www.sgdgroup.org"
+      newTab
       title="SGDG"
       description="The premier student organization for software and game development at Northwestern University."
       backgroundColor="f9ffff"
@@ -163,6 +172,31 @@
           rgba(0, 0, 0, 0.2)
         ),
         url('/images/mcshaders3.jpg')
+      "
+      dark
+    />
+  </BubbleContainer>
+</Section>
+<Section
+  wm
+  hs
+  label={{
+    title: 'THIRD PARTY',
+    subtitle: "Things I've made for others or helped others make",
+  }}
+>
+  <BubbleContainer>
+    <Bubble
+      to="https://www.overture.games"
+      newTab
+      title="Overture Games"
+      role="WEBSITE DEVELOPER"
+      backgroundImage="
+        linear-gradient(
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url('/images/overture-games.jpg')
       "
       dark
     />

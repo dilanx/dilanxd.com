@@ -1,0 +1,123 @@
+<script lang="ts">
+  import Footer from '$lib/components/Footer.svelte';
+  import Heading from '$lib/components/Heading.svelte';
+  import IconTitle from '$lib/components/IconTitle.svelte';
+  import Navigation from '$lib/components/Navigation.svelte';
+  import Section from '$lib/components/Section.svelte';
+  import Text from '$lib/components/Text.svelte';
+</script>
+
+<svelte:head>
+  <title>Privacy Policy - Dilan Nair</title>
+</svelte:head>
+
+<Navigation />
+
+<Heading h1 hidden>Privacy Policy</Heading>
+
+<Section ws hm>
+  <IconTitle icon="fas fa-lock">The story of how I sold your data.</IconTitle>
+
+  <Text md class="s center">
+    (I'm just kidding. Who would I even sell it to??)
+  </Text>
+  <Text sm class="s center">
+    Below, you'll find everything you need to know about what happens with the
+    data you provide to the applications or services created or run by me. If
+    you have any further questions or concerns, feel free to <a
+      href="https://instagram.com/dilan4k">message me on Instagram</a
+    > at any time.
+  </Text>
+
+  <Text sm class="s medium center">Last updated 2022-08-17</Text>
+</Section>
+
+<Section ws hs>
+  <Heading h2 id="about-the-author" class="s light">Prologue</Heading>
+  <Text sm>
+    This privacy policy, written by Dilan Nair ("I", "me", "my") for the end
+    users ("you", "your") is intended to outline the data collection and usage
+    practices of all of the applications and services created and currently
+    managed by Dilan Nair ("service", "services"). Authentication takes place
+    only on auth.dilanxd.com ("authentication system") through redirects from
+    the services.
+  </Text>
+</Section>
+
+<Section ws hs>
+  <Heading h2 id="about-the-authentication-system" class="s light">
+    Chapter 1: About the authentication system
+  </Heading>
+  <Text sm>
+    The authentication system serves as the bridge between the service you're
+    using and your data. You will only log in on <span class="s medium"
+      >auth.dilanxd.com</span
+    >. Do NOT log in if you are not on this domain or if the site is not secured
+    (ensure that the lock symbol is present in your browser's address bar).
+  </Text>
+</Section>
+
+<Section ws hs>
+  <Heading h2 id="collected-personal-data" class="s light">
+    Chapter 2: Collected personal data
+  </Heading>
+  <Text sm>
+    When creating an account through the authentication system, you only have
+    the option to continue using your Google account. Currently, there are no
+    other options. Using a third-party like Google to authenticate allows for a
+    significantly more secure and reliable authentication experience for you as
+    opposed to a custom one. There's no point in developing one from the ground
+    up when Google's robust system already exists.
+  </Text>
+
+  <Text sm>
+    After authenticating with Google, some basic user information is sent to my
+    authentication system. Your email address is then linked to a unique user ID
+    for you within my database. No other data is collected or stored, including
+    any sensitive information like passwords. Only your Google account's primary
+    email address is saved. Any other stored data is only what you specifically
+    provide within any service.
+  </Text>
+</Section>
+
+<Section ws hs>
+  <Heading h2 id="data-access" class="s light">Chapter 3: Data access</Heading>
+
+  <Text sm>
+    Only authorized services can access the data you provide, and this is only
+    possible through my API. All services are created and maintained by me and
+    trusted contributors. Access to the authentication system's developer
+    interface is not given to any third party.
+  </Text>
+
+  <Text sm>
+    All services that use the authentication system will have a sign out button
+    of some sort. Using that button will sign you out of the service and the
+    authentication system. You can manually sign out of the authentication
+    system by visiting <span class="s medium"
+      >auth.dilanxd.com/authenticate/logout</span
+    >. Signing out of the authentication system will NOT sign you out of all of
+    the services. The services will automatically lose access within
+    approximately 3 days. If the service is a web application accessed within
+    the browser, you can clear the service's cookies to revoke access
+    immediately.
+  </Text>
+</Section>
+
+<Section ws hs>
+  <Heading h2 id="data-access" class="s light">Chapter 4: Security</Heading>
+
+  <Text sm>
+    Don't share your Google account password with anyone else. Although, if you
+    did, you'd probably have bigger issues to worry about than those related to
+    my services.
+  </Text>
+
+  <Text sm>
+    If you have any reason to believe your account is compromised, notify me
+    immediately so we can resolve the issue. You can also let me know if you
+    have any other questions about my security and data collection practices!
+  </Text>
+</Section>
+
+<Footer />

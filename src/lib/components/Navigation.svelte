@@ -1,10 +1,10 @@
 <script lang="ts">
   import { onMount } from 'svelte';
 
-  import NavDesktopLinks from './NavDesktopLinks.svelte';
-  import NavMobileBurger from './NavMobileBurger.svelte';
-  import NavMobileLinks from './NavMobileLinks.svelte';
-  import NavTitle from './NavTitle.svelte';
+  import NavDesktopLinks from './_navigation/NavDesktopLinks.svelte';
+  import NavMobileBurger from './_navigation/NavMobileBurger.svelte';
+  import NavMobileLinks from './_navigation/NavMobileLinks.svelte';
+  import NavTitle from './_navigation/NavTitle.svelte';
 
   let body: HTMLElement | undefined = undefined;
 
@@ -53,7 +53,7 @@
 <div class="space" />
 
 <style lang="scss">
-  @use '../../theme';
+  @use '../theme';
 
   .main {
     position: fixed;

@@ -5,8 +5,7 @@
   import ContentCard from '$lib/components/ContentCard.svelte';
   import { ext, gh } from '$lib/common';
   import HeadingBlock from '../lib/components/HeadingBlock.svelte';
-  import Navigation from '../lib/components/Navigation/Navigation.svelte';
-  import TitleWithSocials from '$lib/components/TitleWithSocials.svelte';
+  import Navigation from '../lib/components/Navigation.svelte';
   import { socials } from '$lib/socials';
   import Footer from '$lib/components/Footer.svelte';
   import Heading from '$lib/components/Heading.svelte';
@@ -172,9 +171,9 @@
 />
 
 <Section ws hs>
-  <Heading h2>A bit about me . . .</Heading>
+  <Heading h2 large class="s left">A bit about me . . .</Heading>
   <ContentCard>
-    <TitleWithSocials h3 socials={socials.dilan}>Dilan Nair</TitleWithSocials>
+    <Heading h3 large socials={socials.dilan}>Dilan Nair</Heading>
     <Text sm>
       I'm a third-year undergraduate student at Northwestern University studying
       computer science. I've been a CS enjoyer for over 9 years, working on
@@ -191,11 +190,14 @@
       <span class="s medium">Software and Game Development Group</span>
       at Northwestern University, one of the largest student-run computer science
       organizations on campus focusing on the collaborative development of software
-      applications and interactive entertainment.
+      applications and interactive entertainment. Outside of computer science, I
+      have a strong interest in tech, adventure and story-driven video games, and
+      music.
     </Text>
     <Text sm>
-      Outside of computer science, I have a strong interest in tech, adventure
-      and story-driven video games, and music.
+      If you ever need to contact me (including for any technical support for
+      any of my apps and services), the best way to do so is by messaging me on
+      Instagram.
     </Text>
     <ContinueLink
       links={[
@@ -220,14 +222,14 @@
 </Section>
 
 <Section ws hs>
-  <Heading h2 class="s right">. . . and my team.</Heading>
+  <Heading h2 large class="s right">. . . and my team.</Heading>
   <ContentCard>
-    <TitleWithSocials h3 socials={socials.defne}>Defne Deda</TitleWithSocials>
-    <Text md class="s light no-padding">
+    <Heading h3 large socials={socials.defne}>Defne Deda</Heading>
+    <Text md noPadding centerOnMobile class="s light">
       digital artist and graphics designer
     </Text>
   </ContentCard>
-  <Text sm class="s center no-padding">
+  <Text sm noPadding class="s center">
     Thanks to all of the
     <a href="/attributions#beta-testers">beta testers</a>
     as well!

@@ -1,48 +1,51 @@
 <script lang="ts">
+  import type { SocialIconLink } from '$lib/common';
+  import HeadingSocials from './_heading/HeadingSocials.svelte';
+  import HeadingText from './_heading/HeadingText.svelte';
+
   export let h1 = false;
   export let h2 = false;
+  export let h3 = false;
   export let hidden = false;
-
+  export let large = false;
+  export let id: string | undefined = undefined;
   let className: string | undefined = undefined;
   export { className as class };
+  export let socials: SocialIconLink[] | undefined = undefined;
 </script>
 
-{#if h1}
-  <h1 class:hidden class={className}><slot /></h1>
-{/if}
-
-{#if h2}
-  <h2 class:hidden class={className}><slot /></h2>
+{#if socials}
+  <div class="container" class:large>
+    <HeadingText {h1} {h2} {h3} {hidden} {large} {id} {className}
+      ><slot /></HeadingText
+    >
+    <HeadingSocials {large} {socials} />
+  </div>{:else}
+  <HeadingText {h1} {h2} {h3} {hidden} {large} {id} {className}
+    ><slot /></HeadingText
+  >
 {/if}
 
 <style lang="scss">
   @use '../theme';
 
-  h2 {
-    color: theme.$text-primary;
-    padding: 10px 0;
-    margin: 0;
-    font-size: 32px;
-    text-align: center;
-    font-weight: bold;
-  }
-
-  @include theme.lg {
-    h2 {
-      font-size: 40px;
-      text-align: left;
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    &.large {
+      display: block;
     }
   }
 
-  .hidden {
-    position: absolute;
-    clip: rect(1px, 1px, 1px, 1px);
-    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
-    clip-path: inset(0px 0px 99.9% 99.9%);
-    overflow: hidden;
-    height: 1px;
-    width: 1px;
-    padding: 0;
-    border: 0;
+  @include theme.lg {
+    .container,
+    .container.large {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+    }
   }
 </style>
