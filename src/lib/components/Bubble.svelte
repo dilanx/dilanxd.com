@@ -56,7 +56,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    outline: 4px solid transparent;
+    background-origin: border-box;
+    border: 4px solid transparent;
     transition: outline 50ms;
 
     &.dark {
@@ -64,7 +65,7 @@
     }
 
     &:hover {
-      outline-color: theme.$link-primary;
+      border-color: theme.$link-primary;
     }
 
     .title {

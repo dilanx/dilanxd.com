@@ -86,10 +86,8 @@
     position: fixed;
     margin: 0;
     z-index: 100;
-
+    top: theme.$nav-h-big;
     left: 0;
-    right: 0;
-    bottom: 0;
     background-color: theme.$nav-bg-overlay;
     overflow-y: hidden;
     transition: height 0.5s;
