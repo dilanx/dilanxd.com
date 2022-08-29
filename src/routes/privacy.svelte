@@ -5,6 +5,8 @@
   import Navigation from '$lib/components/Navigation.svelte';
   import Section from '$lib/components/Section.svelte';
   import Text from '$lib/components/Text.svelte';
+
+  let c = 1;
 </script>
 
 <svelte:head>
@@ -29,7 +31,7 @@
     > at any time.
   </Text>
 
-  <Text sm class="s medium center">Last updated 2022-08-17</Text>
+  <Text sm class="s medium center">Last updated 2022-08-29</Text>
 </Section>
 
 <Section ws hs>
@@ -45,8 +47,28 @@
 </Section>
 
 <Section ws hs>
+  <Heading h2 id="services-that-access-data" class="s light">
+    Chapter {c++}: Services that access your user data
+  </Heading>
+  <Text sm>
+    The following services may access your user data through auth.dilanxd.com:
+
+    <ul>
+      <li>Plan Northwestern (read, write)</li>
+    </ul>
+
+    All other services do not access your user data, therefore the privacy
+    policy is not applicable. However, Google Analytics may be used within the
+    service to track and anonymously report website traffic and demographics.
+    Refer to
+    <a href="https://policies.google.com/privacy">Google's privacy policy</a> for
+    information on how they collect data.
+  </Text>
+</Section>
+
+<Section ws hs>
   <Heading h2 id="about-the-authentication-system" class="s light">
-    Chapter 1: About the authentication system
+    Chapter {c++}: About the authentication system
   </Heading>
   <Text sm>
     The authentication system serves as the bridge between the service you're
@@ -59,7 +81,7 @@
 
 <Section ws hs>
   <Heading h2 id="collected-personal-data" class="s light">
-    Chapter 2: Collected personal data
+    Chapter {c++}: Collected personal data
   </Heading>
   <Text sm>
     When creating an account through the authentication system, you only have
@@ -81,7 +103,9 @@
 </Section>
 
 <Section ws hs>
-  <Heading h2 id="data-access" class="s light">Chapter 3: Data access</Heading>
+  <Heading h2 id="data-access" class="s light">
+    Chapter {c++}: Data access
+  </Heading>
 
   <Text sm>
     Only authorized services can access the data you provide, and this is only
@@ -105,7 +129,9 @@
 </Section>
 
 <Section ws hs>
-  <Heading h2 id="data-access" class="s light">Chapter 4: Security</Heading>
+  <Heading h2 id="data-access" class="s light">
+    Chapter {c++}: Security
+  </Heading>
 
   <Text sm>
     Don't share your Google account password with anyone else. Although, if you
