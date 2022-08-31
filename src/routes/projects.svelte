@@ -62,9 +62,12 @@
       dark
     />
     <Bubble
-      title="Mobile app (TBA)"
-      description="More information coming soon."
-      backgroundColor="#fff9f9"
+      to="https://chrome.google.com/webstore/detail/paste-list/nolfbfhaicjldjodgafpaheehkolchdf"
+      newTab
+      title="Paste List"
+      description="Simplify your browser's clipboard."
+      backgroundImage="linear-gradient(to right, #dd3e54, #6be585)"
+      dark
     />
   </BubbleContainer>
 </Section>

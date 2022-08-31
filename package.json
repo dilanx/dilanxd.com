@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "prettier": "@dilanx/config/prettier",
   "scripts": {
-    "dev": "vite dev",
+    "dev": "vite dev --open",
     "build": "vite build",
     "package": "svelte-kit package",
     "preview": "vite preview",
