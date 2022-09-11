@@ -18,11 +18,8 @@
 <Heading h1 hidden>Privacy Policy</Heading>
 
 <Section ws hm>
-  <IconTitle icon="fas fa-lock">The story of how I sold your data.</IconTitle>
+  <IconTitle icon="fas fa-lock">Privacy</IconTitle>
 
-  <Text md class="s center">
-    (I'm just kidding. Who would I even sell it to??)
-  </Text>
   <Text sm class="s center">
     Below, you'll find everything you need to know about what happens with the
     data you provide to the applications or services created or run by me. If
