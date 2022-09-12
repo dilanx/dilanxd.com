@@ -1,10 +1,12 @@
 {
   "name": "dilanx-site",
-  "version": "2.0.1",
+  "version": "2.0.0",
   "prettier": "@dilanx/config/prettier",
   "scripts": {
     "dev": "vite dev --open",
-    "prebuild": "git diff-index --quiet HEAD && npm --no-git-tag-version version patch && git add package*.json && git commit -m '$npm_package_version'",
+    "preversion": "git diff-index --quiet HEAD || (echo 'Dirty working directory' && exit 1)",
+    "version": "git add package*.json && git commit -m \"$npm_package_version\"",
+    "prebuild": "npm --no-git-tag-version version patch",
     "build": "vite build",
     "package": "svelte-kit package",
     "preview": "vite preview",
