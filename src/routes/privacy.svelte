@@ -1,7 +1,7 @@
 <script lang="ts">
   import Footer from '$lib/components/Footer.svelte';
   import Heading from '$lib/components/Heading.svelte';
-  import IconTitle from '$lib/components/IconTitle.svelte';
+  import ImageTitle from '$lib/components/ImageTitle.svelte';
   import Navigation from '$lib/components/Navigation.svelte';
   import Section from '$lib/components/Section.svelte';
   import Text from '$lib/components/Text.svelte';
@@ -18,7 +18,7 @@
 <Heading h1 hidden>Privacy Policy</Heading>
 
 <Section ws hm>
-  <IconTitle icon="fas fa-lock">Privacy</IconTitle>
+  <ImageTitle images={['fas fa-lock']}>Privacy</ImageTitle>
 
   <Text sm class="s center">
     Below, you'll find everything you need to know about what happens with the
@@ -32,7 +32,7 @@
 </Section>
 
 <Section ws hs>
-  <Heading h2 id="about-the-author" class="s light">Prologue</Heading>
+  <Heading h2 anchor="prologue" class="s light">Prologue</Heading>
   <Text sm>
     This privacy policy, written by Dilan Nair ("I", "me", "my") for the end
     users ("you", "your") is intended to outline the data collection and usage
@@ -44,7 +44,7 @@
 </Section>
 
 <Section ws hs>
-  <Heading h2 id="services-that-access-data" class="s light">
+  <Heading h2 anchor="services-that-access-your-user-data" class="s light">
     Chapter {c++}: Services that access your user data
   </Heading>
   <Text sm>
@@ -64,7 +64,7 @@
 </Section>
 
 <Section ws hs>
-  <Heading h2 id="about-the-authentication-system" class="s light">
+  <Heading h2 anchor="about-the-authentication-system" class="s light">
     Chapter {c++}: About the authentication system
   </Heading>
   <Text sm>
@@ -77,7 +77,7 @@
 </Section>
 
 <Section ws hs>
-  <Heading h2 id="collected-personal-data" class="s light">
+  <Heading h2 anchor="collected-personal-data" class="s light">
     Chapter {c++}: Collected personal data
   </Heading>
   <Text sm>
@@ -100,7 +100,7 @@
 </Section>
 
 <Section ws hs>
-  <Heading h2 id="data-access" class="s light">
+  <Heading h2 anchor="data-access" class="s light">
     Chapter {c++}: Data access
   </Heading>
 
@@ -126,7 +126,7 @@
 </Section>
 
 <Section ws hs>
-  <Heading h2 id="data-access" class="s light">
+  <Heading h2 anchor="security" class="s light">
     Chapter {c++}: Security
   </Heading>
 

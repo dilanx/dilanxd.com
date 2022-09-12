@@ -3,7 +3,6 @@
   src: url(/fonts/Poppins-ExtraLight.ttf);
   font-weight: 300;
 }
-
 @font-face {
   font-family: Poppins;
   src: url(/fonts/Poppins-Light.ttf);
@@ -44,6 +43,10 @@ body {
 
 .s.heavy {
   font-weight: 800 !important;
+}
+
+.s.italic {
+  font-style: oblique !important;
 }
 
 .s.underline {

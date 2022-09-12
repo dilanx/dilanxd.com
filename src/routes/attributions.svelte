@@ -18,7 +18,7 @@
 <Heading h1>Attributions</Heading>
 
 <Section ws hs>
-  <Heading h2 id="contributors" class="s left">Contributors</Heading>
+  <Heading h2 anchor="contributors" class="s left">Contributors</Heading>
 
   <ContentGroup sm>
     <Heading h3 socials={socials.defne}>Defne Deda</Heading>
@@ -32,13 +32,13 @@
 </Section>
 
 <Section ws hs>
-  <Heading h2 id="beta-testers" class="s left">Beta Testers</Heading>
+  <Heading h2 anchor="beta-testers" class="s left">Beta Testers</Heading>
 
   <Text xs noPadding>Coming soon</Text>
 </Section>
 
 <Section ws hs>
-  <Heading h2 id="other-acknowledgements" class="s left"
+  <Heading h2 anchor="other-acknowledgements" class="s left"
     >Other Acknowledgements</Heading
   >
 

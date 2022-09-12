@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { SocialIconLink } from '$lib/common';
+  import HeadingAnchor from './_heading/HeadingAnchor.svelte';
   import HeadingSocials from './_heading/HeadingSocials.svelte';
   import HeadingText from './_heading/HeadingText.svelte';
 
@@ -8,7 +9,7 @@
   export let h3 = false;
   export let hidden = false;
   export let large = false;
-  export let id: string | undefined = undefined;
+  export let anchor: string | undefined = undefined;
   let className: string | undefined = undefined;
   export { className as class };
   export let socials: SocialIconLink[] | undefined = undefined;
@@ -16,14 +17,17 @@
 
 {#if socials}
   <div class="container" class:large>
-    <HeadingText {h1} {h2} {h3} {hidden} {large} {id} {className}
-      ><slot /></HeadingText
-    >
-    <HeadingSocials {large} {socials} />
-  </div>{:else}
-  <HeadingText {h1} {h2} {h3} {hidden} {large} {id} {className}
-    ><slot /></HeadingText
-  >
+    <HeadingText {h1} {h2} {h3} {hidden} {large} {anchor} {className}>
+      <slot />
+    </HeadingText>
+    {#if socials}
+      <HeadingSocials {large} {socials} />
+    {/if}
+  </div>
+{:else}
+  <HeadingText {h1} {h2} {h3} {hidden} {large} {anchor} {className}>
+    <slot />
+  </HeadingText>
 {/if}
 
 <style lang="scss">

@@ -1,23 +1,34 @@
 <script lang="ts">
+  import HeadingAnchor from './HeadingAnchor.svelte';
+
   export let h1: boolean;
   export let h2: boolean;
   export let h3: boolean;
   export let hidden: boolean;
   export let large: boolean;
-  export let id: string | undefined;
+  export let anchor: string | undefined;
   export let className: string | undefined;
 </script>
 
 {#if h1}
-  <h1 class:hidden class:large {id} class={className}><slot /></h1>
+  <h1 class:hidden class:large class={className}>
+    <slot />
+    <HeadingAnchor {anchor} />
+  </h1>
 {/if}
 
 {#if h2}
-  <h2 class:hidden class:large {id} class={className}><slot /></h2>
+  <h2 class:hidden class:large class={className}>
+    <slot />
+    <HeadingAnchor {anchor} />
+  </h2>
 {/if}
 
 {#if h3}
-  <h3 class:hidden class:large {id} class={className}><slot /></h3>
+  <h3 class:hidden class:large class={className}>
+    <slot />
+    <HeadingAnchor {anchor} />
+  </h3>
 {/if}
 
 <style lang="scss">
