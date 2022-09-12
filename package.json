@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite dev --open",
     "preversion": "git diff-index --quiet HEAD || (echo 'Dirty working directory' && exit 1)",
-    "version": "git add package*.json && git commit -m \"$npm_package_version\"",
+    "version": "git add package*.json && git commit -m \"$npm_package_version\" && git push",
     "postversion": "npm run build",
     "build": "VITE_SITE_VERSION=$npm_package_version vite build",
     "package": "svelte-kit package",
