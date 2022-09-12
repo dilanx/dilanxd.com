@@ -1,5 +1,8 @@
 <footer>
   <p>Copyright &#169; 2022 Dilan Nair</p>
+  <p class="version">
+    SITE VERSION {import.meta.env.VITE_SITE_VERSION || 'UNKNOWN'}
+  </p>
   <p>
     <a href="https://dilan.statuspage.io">System Status</a> |
     <a href="https://github.com/sponsors/dilanx">Sponsor</a> |
@@ -23,6 +26,11 @@
     display: block;
     margin: 5px;
     color: theme.$footer-primary;
+
+    &.version {
+      font-weight: bold;
+      color: theme.$footer-secondary;
+    }
   }
 
   a {

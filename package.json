@@ -6,15 +6,15 @@
     "dev": "vite dev --open",
     "preversion": "git diff-index --quiet HEAD || (echo 'Dirty working directory' && exit 1)",
     "version": "git add package*.json && git commit -m \"$npm_package_version\"",
-    "prebuild": "npm --no-git-tag-version version patch",
-    "build": "vite build",
+    "postversion": "npm run build",
+    "build": "VITE_SITE_VERSION=$npm_package_version vite build",
     "package": "svelte-kit package",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --check --plugin-search-dir=. .",
     "format": "prettier --write --plugin-search-dir=. .",
-    "predeploy": "npm run build",
+    "predeploy": "npm --no-git-tag-version version patch",
     "deploy": "gh-pages -d build -t true"
   },
   "devDependencies": {
