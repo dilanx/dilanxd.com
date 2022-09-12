@@ -4,7 +4,7 @@
   "prettier": "@dilanx/config/prettier",
   "scripts": {
     "dev": "vite dev --open",
-    "prebuild": "npm --sign-git-tag version patch",
+    "prebuild": "npm version patch",
     "build": "vite build",
     "package": "svelte-kit package",
     "preview": "vite preview",
