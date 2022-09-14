@@ -77,8 +77,7 @@
       text: 'Read the official article by Northwestern Engineering!',
     },
     {
-      to: 'https://github.com/dilanx/plan-northwestern/blob/main/SALAD.md',
-      newTab: true,
+      to: '/plan-nu-salad-merge/',
       icon: 'fas fa-object-group',
       sublink: true,
       text: 'salad.nu is joining forces with Plan Northwestern this fall',
