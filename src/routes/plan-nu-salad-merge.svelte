@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Divider from '$lib/components/Divider.svelte';
   import Footer from '$lib/components/Footer.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import ImageTitle from '$lib/components/ImageTitle.svelte';
@@ -40,195 +41,171 @@
   >
     salad.nu joins Plan Northwestern
   </ImageTitle>
-  <Text md class="s center">
-    <a href="https://www.plan-nu.com">Plan Northwestern</a>, a 4 year course
-    planning tool, and <a href="https://www.salad.nu">salad.nu</a>, a quarter
-    course scheduling tool, will be integrated with each other this fall.
-  </Text>
-</Section>
-
-<Section ws hs>
-  <Heading h2 anchor="whats-happening">What's happening?</Heading>
-  <Text sm>
-    salad.nu is a super useful tool for Northwestern students to schedule their
-    classes for a given quarter. Andy, the creator of salad.nu, will be
-    graduating and is handing off the project to someone who'd like to maintain
-    it going forward. Thus, the project will be merged with Plan Northwestern to
-    provide an enhanced user experience.
-  </Text>
-</Section>
-
-<Section ws hs>
-  <Heading h2 anchor="whats-changing-with-salad-nu">
-    What's changing with salad.nu?
-  </Heading>
-  <Text sm>
-    You can expect the new version to have everything you love about salad.nu,
-    including the easiness of just navigating to the site and being able to see
-    your schedule and search for courses instantly. This version will have a
-    bunch of new features.
-  </Text>
-  <Text sm>
-    <ul>
-      <li>
-        <Text sm class="s bold">Multiple schedules</Text>
-        <Text sm noPadding>
-          If you're like me, you've probably created multiple version's of a
-          schedule for an upcoming quarter by stuffing all of the different
-          courses on one screen and then hoping that you'll remember which
-          belongs with which. Fret no more, because thanks to Plan
-          Northwestern's URL data storage system, schedule data will be saved in
-          the URL, making your schedule savable and sharable. You can send the
-          link to a friend so they can view a copy of your schedule, or swap it
-          out with another link to view another schedule of yours.
-        </Text>
-      </li>
-      <li>
-        <Text sm class="s bold">Sync across your devices</Text>
-        <Text sm noPadding>
-          With the account system introduced in Plan Northwestern v1.2, you can
-          save up to 5 plans to your account and view them across devices. Using
-          this same system, you'll be able to save 10 schedules to your account
-          in the same way.
-        </Text>
-      </li>
-      <li>
-        <Text sm class="s bold">Powerful search</Text>
-        <Text sm noPadding>
-          Plan Northwestern will bring its powerful search functionality to
-          scheduling. Here are some advanced search features you can choose to
-          use as needed:
-          <ul>
-            <li>Filter by subject</li>
-            <li>Filter by meeting days and time frames</li>
-            <li>Filter by course components (lecture, discussion, etc.)</li>
-            <li>Filter by instructor</li>
-            <li>Filter by location</li>
-            <li>
-              Search shortcuts ('cs' brings up 'COMP_SCI' courses, 'ea' brings
-              up both 'GEN_ENG 205' and 'GEN_ENG 206', etc.)
-            </li>
-          </ul>
-        </Text>
-      </li>
-      <li>
-        <Text sm class="s bold">Custom course sections</Text>
-        <Text sm noPadding>
-          You'll be able to add custom course sections to schedules linked to
-          your account.
-        </Text>
-      </li>
-      <li>
-        <Text sm class="s bold">Better export options</Text>
-        <Text sm noPadding>
-          You'll be able to export your schedule as an image at full resolution,
-          regardless of the device you're on. No more need for manual
-          screenshots! You'll also be able to export your schedule as an ICS
-          file, which you can import into your calendar app of choice, including
-          Google Calendar, Apple Calendar, and Outlook.
-        </Text>
-      </li>
-      <li>
-        <Text sm class="s bold">More course data</Text>
-        <Text sm noPadding>
-          Combining the detailed course data used in Plan Northwestern with
-          specific quarter data, you'll be able to get more information about
-          course on your schedule.
-        </Text>
-      </li>
-      <li>
-        <Text sm class="s bold">Latest course data</Text>
-        <Text sm noPadding>
-          Section data will be refreshed from CAESAR weekly so you're always up
-          to date with the latest course section changes.
-        </Text>
-      </li>
-      <li>
-        <Text sm class="s bold">Intuitive user interface</Text>
-        <Text sm noPadding>
-          Easily return to your schedule instantly when you visit the site, and
-          switch between your plan and your schedule as needed.
-        </Text>
-      </li>
-      <li>
-        <Text sm class="s bold">Seamless integration</Text>
-        <Text sm noPadding>Move courses between your plan and schedule.</Text>
-      </li>
-      <li>
-        <Text sm class="s bold">Built-in feedback submission</Text>
-        <Text sm noPadding>
-          Share your feedback with me without even leaving the site. That
-          includes bug reports, feature requests, and general feedback.
-        </Text>
-      </li>
-    </ul>
-  </Text>
-  <Text sm>
-    <span class="s italic">
-      All features listed above are tentative and may not be implemented exactly
-      as described here.
+  <Text sm class="s center">
+    <span style="color: #646464;">
+      RELEASING <span class="s heavy">FALL 2022</span> IN TIME FOR WINTER COURSES
     </span>
   </Text>
+  <Text sm>
+    Together, <a href="https://www.plan-nu.com">Plan Northwestern</a>, a 4 year
+    course planning tool, and <a href="https://www.salad.nu">salad.nu</a>, a
+    quarter course scheduling tool, help thousands of Northwestern students
+    every week plan out their Northwestern journey. To make the user experience
+    for these tools even better, salad.nu will be merged with Plan Northwestern.
+  </Text>
+  <Text sm>
+    You can expect the new version to have everything you love about both tools,
+    including the easiness of just navigating to the site and being able to see
+    your plan or schedule and search for courses instantly. The experience will
+    only get better. Below, you can find some of the new features.
+  </Text>
+  <Text sm>
+    This project is developed in partnership with <span class="s bold"
+      >Northwestern Computer Science</span
+    >,
+    <span class="s bold">Northwestern's Office of the Registrar</span>, and
+    <span class="s bold">Northwestern IT</span>.
+  </Text>
 </Section>
 
+<Divider />
+
 <Section ws hs>
-  <Heading h2 anchor="will-this-be-too-complex">
-    Will this be too complex?
+  <Heading h2 anchor="multiple-schedules-and-devices">
+    Multiple schedules and devices
   </Heading>
   <Text sm>
-    Not at all. Plan Northwestern and salad.nu are easy to use right now, and
-    it'll stay that way. A lot of the heavy work will be done for you
-    automatically in the background. Your browser will still remember and load
-    your most recent plan and schedule. You don't need an account at all. If you
-    choose to make one to access your plans across devices and easily switch
-    between multiple schedules rather than switching out URLs, all you have to
-    do is sign in with an existing Google account. All of your saved data will
-    appear before your eyes, ready to use right away. You'll just need to use
-    the site as you normally would. New features that enhance the experience
-    will only be where they're convenient and easy to use.
+    Thanks to Plan Northwestern's secure account system, you'll be able to save
+    multiple schedules to your account, easily switch between them, and view
+    them across different devices. Also, just like Plan Northwestern, the
+    schedule data is saved in the URL, which you can save or share with others.
   </Text>
-</Section>
-
-<Section ws hs>
-  <Heading h2 anchor="can-i-help">Can I help?</Heading>
   <Text sm>
-    Yes, please! <a href="https://forms.gle/oqcm8q2qvX615Fry9"
-      >You can sign up to help beta test the software here.</a
-    > You'll get access to early versions and will be tasked with using it and finding
-    any bugs and glitches. If you're interested in contributing and have experience
-    with TypeScript and React (and optionally Tailwind CSS), contact me on Instagram
-    or Discord.
+    You can still use the site and access all of the course data without making
+    an account.
   </Text>
 </Section>
 
 <Section ws hs>
-  <Heading h2 anchor="how-can-i-reach-you">How can I reach you?</Heading>
+  <Heading h2 anchor="powerful-search">Powerful search</Heading>
   <Text sm>
-    If you'd like to talk about this more or share your ideas with me, feel free
-    to get in touch by messaging me on Instagram at <a
-      href="https://instagram.com/dilan4k">instagram.com/dilan4k</a
-    >. Alternatively, you can message me on Discord at Dilan#1000 (you'll need
-    to join the
-    <a href="https://discord.gg/aERJFBAhyP">Northwestern Discord Server</a> first).
-    You're always welcome to ask any questions you have about this project.
+    Plan Northwestern will bring its powerful search functionality to
+    scheduling. Here are some advanced search features you can choose to use as
+    needed:
+
+    <ul>
+      <li>Filter by subject</li>
+      <li>Filter by meeting days and time frames</li>
+      <li>Filter by course components (lecture, discussion, etc.)</li>
+      <li>Filter by instructor</li>
+      <li>Filter by location</li>
+      <li>
+        Search shortcuts ('cs' brings up 'COMP_SCI' courses, 'ea' brings up both
+        'GEN_ENG 205' and 'GEN_ENG 206', etc.)
+      </li>
+    </ul>
+
+    You can mix and match filters and search with text while filters are active.
   </Text>
 </Section>
 
 <Section ws hs>
-  <Heading h2 anchor="when-will-this-be-completed">
-    When will this be completed?
+  <Heading h2 anchor="a-crazy-amount-of-course-data">
+    A crazy amount of course data
   </Heading>
   <Text sm>
-    The new version will be available this fall (2022) with the Winter 2023
-    courses.
+    Thanks to our partnership with Northwestern's Office of the Registrar and
+    Northwestern IT, Plan Northwestern has all of the class data right from
+    CAESAR. For each class, you'll be able to view information like course
+    descriptions, prerequisites, units, enrollment capacity, meeting dates and
+    times, meeting locations, enrollment requirements, instructor information
+    (name, campus address, office hours, etc.), and more. Rather than listing
+    all of the data at once, you'll be able to customize your course view to
+    show only the information you actually want to see. Course data will be
+    automatically updated often to ensure that you always have the most
+    up-to-date information.
   </Text>
 </Section>
 
 <Section ws hs>
-  <Heading h2 anchor="whos-working-on-this">Who's working on this?</Heading>
+  <Heading h2 anchor="present-and-past-schedules">
+    Present and past schedules
+  </Heading>
   <Text sm>
-    Me, <a href="/">Dilan</a>!
+    New course information for the upcoming quarter will be available on the
+    site right when it's released. Right when CAESAR gets it, you'll get it on
+    Plan Northwestern, too. When this happens, your past schedules will still be
+    available.
   </Text>
+</Section>
+
+<Section ws hs>
+  <Heading h2 anchor="custom-sections">Custom sections</Heading>
+  <Text sm>
+    You'll be able to add your own custom course sections to schedules that are
+    linked to your account!
+  </Text>
+</Section>
+
+<Section ws hs>
+  <Heading h2 anchor="better-export-options">Better export options</Heading>
+  <Text sm>
+    You'll be able to export your schedule as an image at full resolution,
+    regardless of the device you're on. No more need for manual screenshots!
+    You'll also be able to export your schedule to your calendar app of choice,
+    including Google Calendar, Apple Calendar, and Outlook.
+  </Text>
+</Section>
+
+<Section ws hs>
+  <Heading h2 anchor="intuitive-user-interface">
+    Intuitive user interface
+  </Heading>
+  <Text sm>
+    Easily return to your schedule instantly when you visit the site, and switch
+    between your plan and your schedule as needed. Quickly find exactly what you
+    need, drag and drop things, and more!
+  </Text>
+</Section>
+
+<Section ws hs>
+  <Heading h2 anchor="seamless-integration">Seamless integration</Heading>
+  <Text sm>Move courses between your plan and your schedule.</Text>
+</Section>
+
+<Section ws hs>
+  <Heading h2 anchor="built-in-feedback-submission"
+    >Built-in feedback submission</Heading
+  >
+  <Text sm>
+    Share your feedback without even leaving the site. That includes bug
+    reports, feature requests, and other general feedback.
+  </Text>
+</Section>
+
+<Divider />
+
+<Section ws hm>
+  <Text sm>
+    If you'd like to talk about this more, share your ideas with me, or
+    contribute to the project, feel free to get in touch by <a
+      href="https://instagram.com/dilan4k">messaging me on Instagram</a
+    >. You can also message me on Discord at Dilan#1000 (you'll need to join the
+    <a href="https://discord.gg/aERJFBAhyP">Northwestern Discord Server</a>
+    first). If you're interested, you can
+    <a href="https://forms.gle/oqcm8q2qvX615Fry9"
+      >sign up to help beta test the software</a
+    >! You'll get access to early versions and will be tasked with using it and
+    finding any bugs and glitches. Also, thanks to our automatic data refreshing
+    system, this project can live on for years beyond my graduation.
+  </Text>
+
+  <Text sm>
+    I hope you're as excited for this as I am. It'll be an amazing update with a
+    ton of cool things that make planning and scheduling at this school a lot
+    more enjoyable and productive.
+  </Text>
+  <Text sm class="s right">- Dilan Nair, McCormick class of 2024</Text>
 </Section>
 
 <Footer />
