@@ -119,9 +119,7 @@
     CAESAR. For each class, you'll be able to view information like course
     descriptions, prerequisites, units, enrollment capacity, meeting dates and
     times, meeting locations, enrollment requirements, instructor information
-    (name, campus address, office hours, etc.), and more. Rather than listing
-    all of the data at once, you'll be able to customize your course view to
-    show only the information you actually want to see. Course data will be
+    (name, campus address, office hours, etc.), and more. Course data will be
     automatically updated often to ensure that you always have the most
     up-to-date information.
   </Text>
@@ -136,14 +134,6 @@
     site right when it's released. Right when CAESAR gets it, you'll get it on
     Plan Northwestern, too. When this happens, your past schedules will still be
     available.
-  </Text>
-</Section>
-
-<Section ws hs>
-  <Heading h2 anchor="custom-sections">Custom sections</Heading>
-  <Text sm>
-    You'll be able to add your own custom course sections to schedules that are
-    linked to your account!
   </Text>
 </Section>
 
