@@ -43,7 +43,7 @@
   </ImageTitle>
   <Text sm class="s center">
     <span style="color: #646464;">
-      RELEASING <span class="s heavy">FALL 2022</span> IN TIME FOR WINTER COURSES
+      RELEASING <span class="s heavy">NOVEMBER 1 2022</span>
     </span>
   </Text>
   <Text sm>
