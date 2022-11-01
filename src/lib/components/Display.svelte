@@ -2,6 +2,7 @@
   import type { DisplayLabel, DisplayLink } from '$lib/common';
 
   export let backgroundColor: string | undefined = undefined;
+  export let borderColor: string | undefined = undefined;
   export let backgroundImage: string | undefined = undefined;
 
   export let dark = false;
@@ -37,6 +38,7 @@
   class="display"
   style:background-image={backgroundImage}
   style:background-color={backgroundColor}
+  style:border={borderColor ? `4px solid ${borderColor}` : undefined}
 >
   <div class="content">
     <div class="image">
@@ -47,7 +49,7 @@
       {#if regularLinks.length !== 0}
         <div class="links" style:color={linkColor}>
           {#each regularLinks as { to, newTab, icon, text }}
-            <a href={to} target={newTab ? '_blank' : ''}>
+            <a class:dark href={to} target={newTab ? '_blank' : ''}>
               {#if icon}
                 <i class={icon} />
               {/if}
@@ -98,7 +100,7 @@
     align-items: center;
     padding: 20px;
     margin: 20px 10px;
-    border-radius: 5px;
+    border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
       rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     overflow: hidden;
@@ -159,11 +161,18 @@
           border-radius: 12px;
           transition: all 150ms;
           &:hover {
-            background-color: rgba(240, 242, 244, 0.16);
+            background-color: rgba(140, 142, 144, 0.16);
+
+            &.dark {
+              background-color: rgba(240, 242, 244, 0.16);
+            }
           }
 
           &:active {
-            background-color: rgba(240, 242, 244, 0.3);
+            background-color: rgba(140, 142, 144, 0.3);
+            &.dark {
+              background-color: rgba(240, 242, 244, 0.3);
+            }
           }
         }
 

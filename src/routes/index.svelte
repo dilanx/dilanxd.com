@@ -67,8 +67,8 @@
 <Display
   backgroundColor="#262626"
   links={[
-    ext('Use Plan NU', 'https://plan-nu.com'),
-    gh('dilanx/plan-northwestern'),
+    ext('Use paper.nu', 'https://www.paper.nu'),
+    gh('dilanx/paper.nu'),
     {
       to: 'https://www.mccormick.northwestern.edu/news/articles/2022/02/undergraduate-launches-course-planning-web-application/',
       newTab: true,
@@ -76,40 +76,28 @@
       sublink: true,
       text: 'Read the official article by Northwestern Engineering!',
     },
-    {
-      to: '/plan-nu-salad-merge/',
-      icon: 'fas fa-object-group',
-      sublink: true,
-      text: 'salad.nu is joining forces with Plan Northwestern this fall',
-    },
   ]}
-  linkColor="#d8b4fe"
+  linkColor="#ffffff"
   labels={[
-    {
-      to: 'https://www.mccormick.northwestern.edu/computer-science/',
-      image:
-        'https://img.shields.io/badge/sponsored-Northwestern%20Department%20of%20CS-blueviolet',
-      alt: 'Project sponsored by the Northwestern University Department of Computer Science',
-    },
     {
       to: 'https://github.com/dilanx/plan-northwestern',
       image:
         'https://img.shields.io/github/stars/dilanx/plan-northwestern?color=red',
-      alt: 'Plan Northwestern GitHub stars',
+      alt: 'paper.nu GitHub stars',
     },
   ]}
   dark
   featured
 >
   <img
-    src="/images/calendar-solid.png"
+    src="/images/paper-thick-white.png"
     alt="Plan Northwestern logo"
     slot="image"
   />
-  <h2>Plan Northwestern</h2>
+  <h2>paper.nu</h2>
   <p>
-    An online tool used by thousands of Northwestern students to plan their
-    school years.
+    An online tool used by thousands of Northwestern students to plan and
+    schedule their courses.
   </p>
 </Display>
 
