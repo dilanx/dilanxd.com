@@ -27,10 +27,9 @@
 >
   <BubbleContainer>
     <Bubble
-      to="https://www.plan-nu.com"
-      newTab
-      title="Plan Northwestern"
-      description="Plan your years at Northwestern University."
+      to="/paper-nu"
+      title="paper.nu"
+      description="Plan your courses at Northwestern University."
       backgroundColor="#262626"
       dark
     />

@@ -28,7 +28,7 @@
     > at any time.
   </Text>
 
-  <Text sm class="s medium center">Last updated 2022-08-29</Text>
+  <Text sm class="s medium center">Last updated 2022-10-31</Text>
 </Section>
 
 <Section ws hs>
@@ -51,7 +51,7 @@
     The following services may access your user data through auth.dilanxd.com:
 
     <ul>
-      <li>Plan Northwestern (read, write)</li>
+      <li>paper.nu (read, write)</li>
     </ul>
 
     All other services do not access your user data, therefore the privacy

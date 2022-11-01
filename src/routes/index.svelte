@@ -3,7 +3,7 @@
   import Display from '$lib/components/Display.svelte';
   import Section from '$lib/components/Section.svelte';
   import ContentCard from '$lib/components/ContentCard.svelte';
-  import { ext, gh } from '$lib/common';
+  import { ext, gh, lm } from '$lib/common';
   import HeadingBlock from '../lib/components/HeadingBlock.svelte';
   import Navigation from '../lib/components/Navigation.svelte';
   import { socials } from '$lib/socials';
@@ -67,6 +67,7 @@
 <Display
   backgroundColor="#262626"
   links={[
+    lm('paper-nu'),
     ext('Use paper.nu', 'https://www.paper.nu'),
     gh('dilanx/paper.nu'),
     {

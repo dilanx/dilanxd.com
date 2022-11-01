@@ -12,6 +12,12 @@ export interface DisplayLabel {
   alt: string;
 }
 
+export const lm = (route: string): DisplayLink => ({
+  to: route,
+  text: 'Learn More',
+  icon: 'fas fa-arrow-right',
+});
+
 export const gh = (repo: string): DisplayLink => ({
   to: 'https://github.com/' + repo,
   newTab: true,
