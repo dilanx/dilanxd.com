@@ -1,4 +1,4 @@
-import{S as N,i as P,s as b,a as w,x as l,u as q,G as C,h as $,c as S,y as _,v as y,b as m,z as c,f as g,t as v,C as x}from"../chunks/index-09afa4d5.js";import{N as F,H,F as M}from"../chunks/Navigation-7b389da5.js";import{S as z}from"../chunks/Space-8e616423.js";function D(d){let a;return{c(){a=q("Paper")},l(t){a=y(t,"Paper")},m(t,o){m(t,a,o)},d(t){t&&$(a)}}}function E(d){let a,t,o,s,i,r,p,f,u;return t=new F({}),s=new H({props:{h1:!0,$$slots:{default:[D]},$$scope:{ctx:d}}}),r=new z({props:{lg:!0}}),f=new M({}),{c(){a=w(),l(t.$$.fragment),o=w(),l(s.$$.fragment),i=q(`
+import{S as N,i as P,s as b,a as w,x as l,u as q,G as C,h as $,c as S,y as _,v as y,b as m,z as c,f as g,t as v,C as x}from"../chunks/index-09afa4d5.js";import{N as F,H,F as M}from"../chunks/Navigation-84cd0ae1.js";import{S as z}from"../chunks/Space-8e616423.js";function D(d){let a;return{c(){a=q("Paper")},l(t){a=y(t,"Paper")},m(t,o){m(t,a,o)},d(t){t&&$(a)}}}function E(d){let a,t,o,s,i,r,p,f,u;return t=new F({}),s=new H({props:{h1:!0,$$slots:{default:[D]},$$scope:{ctx:d}}}),r=new z({props:{lg:!0}}),f=new M({}),{c(){a=w(),l(t.$$.fragment),o=w(),l(s.$$.fragment),i=q(`
 
 More info coming soon
 
