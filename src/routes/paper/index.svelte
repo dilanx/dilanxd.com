@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>paper.nu - Dilan Nair</title>
+  <title>Paper - Dilan Nair</title>
 </svelte:head>
 
 <Navigation />

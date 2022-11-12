@@ -67,8 +67,8 @@
 <Display
   backgroundColor="#262626"
   links={[
-    lm('paper-nu'),
-    ext('Use paper.nu', 'https://www.paper.nu'),
+    lm('paper'),
+    ext('Use Paper', 'https://www.paper.nu'),
     gh('dilanx/paper.nu'),
     {
       to: 'https://www.mccormick.northwestern.edu/news/articles/2022/02/undergraduate-launches-course-planning-web-application/',
@@ -95,7 +95,7 @@
     alt="Plan Northwestern logo"
     slot="image"
   />
-  <h2>paper.nu</h2>
+  <h2>Paper</h2>
   <p>
     An online tool used by thousands of Northwestern students to plan and
     schedule their courses.
