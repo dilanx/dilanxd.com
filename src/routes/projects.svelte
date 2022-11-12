@@ -27,7 +27,7 @@
 >
   <BubbleContainer>
     <Bubble
-      to="/paper-nu"
+      to="/paper"
       title="paper.nu"
       description="Plan your courses at Northwestern University."
       backgroundColor="#262626"
