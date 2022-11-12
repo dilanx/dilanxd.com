@@ -6,4 +6,4 @@
   <title>Paper Change Log - Dilan Nair</title>
 </svelte:head>
 
-<Redirect to="https://github.com/dilanx/paper.nu" />
+<Redirect to="https://github.com/dilanx/paper.nu/blob/main/CHANGELOG.md" />
