@@ -13,8 +13,6 @@
   <title>Privacy Policy - Dilan Nair</title>
 </svelte:head>
 
-<Navigation />
-
 <Heading h1 hidden>Privacy Policy</Heading>
 
 <Section ws hm>
@@ -23,8 +21,8 @@
   <Text sm class="s center">
     Below, you'll find everything you need to know about what happens with the
     data you provide to the applications or services created or run by me. If
-    you have any further questions or concerns, feel free to <a
-      href="https://instagram.com/dilan4k">message me on Instagram</a
+    you have any further questions or concerns, feel free to send an email to <a
+      href="mailto:support@dilanxd.com">support@dilanxd.com</a
     > at any time.
   </Text>
 
@@ -142,5 +140,3 @@
     have any other questions about my security and data collection practices!
   </Text>
 </Section>
-
-<Footer />

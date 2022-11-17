@@ -12,8 +12,6 @@
   <title>Plan Northwestern x salad.nu - Dilan Nair</title>
 </svelte:head>
 
-<Navigation />
-
 <Heading h1 hidden>Plan Northwestern x salad.nu</Heading>
 
 <Section ws hm>
@@ -197,5 +195,3 @@
   </Text>
   <Text sm class="s right">- Dilan Nair, McCormick class of 2024</Text>
 </Section>
-
-<Footer />

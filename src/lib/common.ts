@@ -42,10 +42,4 @@ export interface SectionLabel {
   subtitle?: string;
 }
 
-export interface ContinueLink {
-  to: string;
-  text: string;
-  icon?: string;
-}
-
 export type Ostring = string | undefined;

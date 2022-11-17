@@ -1,18 +1,14 @@
 <script lang="ts">
   import Bubble from '$lib/components/Bubble.svelte';
   import BubbleContainer from '$lib/components/BubbleContainer.svelte';
-  import ContinueLink from '$lib/components/ContinueLinks.svelte';
-  import Footer from '$lib/components/Footer.svelte';
   import Heading from '$lib/components/Heading.svelte';
-  import Navigation from '$lib/components/Navigation.svelte';
+  import LinkButtons from '$lib/components/LinkButtons.svelte';
   import Section from '$lib/components/Section.svelte';
 </script>
 
 <svelte:head>
   <title>Projects - Dilan Nair</title>
 </svelte:head>
-
-<Navigation />
 
 <Heading h1 hidden>Projects</Heading>
 
@@ -28,7 +24,7 @@
   <BubbleContainer>
     <Bubble
       to="/paper"
-      title="paper.nu"
+      title="Paper"
       description="Plan your courses at Northwestern University."
       backgroundColor="#262626"
       dark
@@ -65,8 +61,7 @@
       newTab
       title="Paste List"
       description="Simplify your browser's clipboard."
-      backgroundImage="linear-gradient(to right, #dd3e54, #6be585)"
-      dark
+      backgroundImage="linear-gradient(to right, #ffe9e9, #e9ffe9)"
     />
   </BubbleContainer>
 </Section>
@@ -127,16 +122,12 @@
 >
   <BubbleContainer>
     <Bubble
-      to="https://voidstone.dilanxd.com"
-      newTab
       title="Voidstone Software"
       description="Quality custom software and game modifications curated to your taste."
       backgroundColor="black"
       dark
     />
     <Bubble
-      to="https://www.sgdgroup.org"
-      newTab
       title="SGDG"
       description="The premier student organization for software and game development at Northwestern University."
       backgroundColor="f9ffff"
@@ -205,7 +196,7 @@
   </BubbleContainer>
 </Section>
 
-<ContinueLink
+<LinkButtons
   margin
   links={[
     {
@@ -215,5 +206,3 @@
     },
   ]}
 />
-
-<Footer />

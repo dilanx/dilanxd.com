@@ -4,9 +4,16 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%sveltekit.assets%/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
+    <style>
+      #site-content {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+    </style>
     %sveltekit.head%
   </head>
   <body>
-    <div>%sveltekit.body%</div>
+    <div id="site-content">%sveltekit.body%</div>
   </body>
 </html>

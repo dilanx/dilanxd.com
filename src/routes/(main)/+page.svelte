@@ -1,14 +1,10 @@
 <script lang="ts">
-  import ContinueLink from '$lib/components/ContinueLinks.svelte';
-  import Display from '$lib/components/Display.svelte';
-  import Section from '$lib/components/Section.svelte';
-  import ContentCard from '$lib/components/ContentCard.svelte';
   import { ext, gh, lm } from '$lib/common';
-  import HeadingBlock from '../lib/components/HeadingBlock.svelte';
-  import Navigation from '../lib/components/Navigation.svelte';
-  import { socials } from '$lib/socials';
-  import Footer from '$lib/components/Footer.svelte';
+  import Display from '$lib/components/Display.svelte';
   import Heading from '$lib/components/Heading.svelte';
+  import HeadingBlock from '$lib/components/HeadingBlock.svelte';
+  import LinkButtons from '$lib/components/LinkButtons.svelte';
+  import Section from '$lib/components/Section.svelte';
   import Text from '$lib/components/Text.svelte';
 </script>
 
@@ -16,9 +12,33 @@
   <title>Dilan Nair</title>
 </svelte:head>
 
-<Navigation />
-
-<HeadingBlock title="Hey there, I'm Dilan." />
+<HeadingBlock title="Hey there, I'm Dilan.">
+  <LinkButtons
+    mobileVertical
+    links={[
+      {
+        to: '#about',
+        text: 'About me',
+        icon: 'fas fa-face-smile',
+      },
+      {
+        to: 'mailto:support@dilanxd.com',
+        text: 'Get in touch',
+        icon: 'fas fa-envelope',
+      },
+      {
+        to: 'https://github.com/sponsors/dilanx',
+        text: 'Support my work',
+        icon: 'fas fa-heart',
+      },
+      {
+        to: 'https://dilan.blog',
+        text: 'Check out my blog',
+        icon: 'fas fa-book',
+      },
+    ]}
+  />
+</HeadingBlock>
 
 <Display
   backgroundColor="#0a3a2a"
@@ -149,7 +169,7 @@
   </p>
 </Display>
 
-<ContinueLink
+<LinkButtons
   links={[
     {
       to: '/projects',
@@ -159,77 +179,46 @@
 />
 
 <Section ws hs>
-  <Heading h2 large class="s left">A bit about me . . .</Heading>
-  <ContentCard>
-    <Heading h3 large socials={socials.dilan}>Dilan Nair</Heading>
-    <Text sm>
-      I'm a third-year undergraduate student at Northwestern University studying
-      computer science. I've been a CS enjoyer for over 9 years, working on
-      <a href="/projects">projects</a>
-      ranging anywhere from desktop and mobile applications to developer tools to
-      websites and web APIs to video games and game mods, many of which you'll find
-      here on my site.
-    </Text>
-    <Text sm>
-      I founded and used to manage
-      <span class="s medium">Voidstone Software</span>
-      , an online store dedicated to the development of private, custom game modifications
-      on request. I'm also the founder and former president of the
-      <span class="s medium">Software and Game Development Group</span>
-      at Northwestern University, one of the largest student-run computer science
-      organizations on campus focusing on the collaborative development of software
-      applications and interactive entertainment. Outside of computer science, I
-      have a strong interest in tech, adventure and story-driven video games, and
-      music.
-    </Text>
-    <Text sm>
-      If you ever need to contact me (including for any technical support for
-      any of my apps and services), the best way to do so is by messaging me on
-      Instagram.
-    </Text>
-    <ContinueLink
-      links={[
-        {
-          to: 'https://instagram.com/dilan4k',
-          text: 'Get in touch',
-          icon: 'fab fa-instagram',
-        },
-        {
-          to: 'https://github.com/sponsors/dilanx',
-          text: 'Support my work',
-          icon: 'fas fa-heart',
-        },
-        {
-          to: 'https://dilan.blog',
-          text: 'Check out my blog',
-          icon: 'fas fa-book',
-        },
-      ]}
-    />
-  </ContentCard>
-</Section>
+  <Heading h2 large class="s left" anchor="about">A bit about me.</Heading>
 
-<Section ws hs>
-  <Heading h2 large class="s right">. . . and my team.</Heading>
-  <ContentCard>
-    <Heading h3 large socials={socials.defne}>Defne Deda</Heading>
-    <Text md noPadding centerOnMobile class="s light">
-      digital artist and graphics designer
-    </Text>
-  </ContentCard>
-  <Text sm noPadding class="s center">
-    Thanks to all of the
-    <a href="/attributions#beta-testers">beta testers</a>
-    as well!
+  <Text sm>
+    Hey, I'm Dilan, a third-year undergraduate student at Northwestern
+    University studying computer science. I've been a CS enjoyer for over 9
+    years, working on
+    <a href="/projects">projects</a>
+    ranging anywhere from desktop and mobile applications to developer tools to websites
+    and web APIs to video games and game mods, many of which you'll find here on
+    my site.
   </Text>
-  <ContinueLink
-    links={[
-      {
-        to: '/attributions',
-        text: 'See all attributions',
-      },
-    ]}
-  />
+  <Text sm>
+    I'm a big proponent of open source software, with my most notable project
+    being <a href="https://github.com/dilanx/craco">CRACO</a>, a mainstream
+    library for React development.
+  </Text>
+  <Text sm>
+    At Northwestern, I created <a href="/paper">Paper</a>, a course planning and
+    scheduling tool sponsored by the university and used by thousands of
+    students. I'm on the tech team for
+    <a href="https://dilloday.com/">Dillo Day (Mayfest Productions)</a>
+    and am also the Web Development Lead for
+    <a href="https://www.wildhacks.net">WildHacks</a>, Northwestern's largest
+    hackathon.
+  </Text>
+  <Text sm>
+    I founded and used to manage
+    <span class="s medium">Voidstone Software</span>, an online store dedicated
+    to the development of private, custom game modifications on request. I'm
+    also the founder and former president of the
+    <span class="s medium">Software and Game Development Group</span>
+    at Northwestern University, one of the largest student-run computer science organizations
+    on campus focusing on the collaborative development of software applications
+    and interactive entertainment. Outside of computer science, I have a strong interest
+    in tech, adventure and story-driven video games, and music.
+  </Text>
+  <Text sm>
+    If you ever need to contact me (including for any technical support for any
+    of my apps and services), send me an email at <a
+      href="mailto:support@dilanxd.com">support@dilanxd.com</a
+    >.
+  </Text>
 </Section>
-
-<Footer />

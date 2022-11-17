@@ -9,12 +9,6 @@
   <title>Paper - Dilan Nair</title>
 </svelte:head>
 
-<Navigation />
-
 <Heading h1>Paper</Heading>
 
 More info coming soon
-
-<Space lg />
-
-<Footer />

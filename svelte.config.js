@@ -13,11 +13,8 @@ const config = {
       assets: 'build',
       fallback: null,
       precompress: false,
+      strict: true,
     }),
-
-    prerender: {
-      default: true,
-    },
 
     trailingSlash: 'always',
   },

@@ -9,3 +9,11 @@ declare namespace App {
   // interface Session {}
   // interface Stuff {}
 }
+
+declare type O<T> = T | undefined;
+
+declare interface LinkButton {
+  to: string;
+  text: string;
+  icon?: string;
+}

@@ -61,7 +61,12 @@
       {#if sublinks.length !== 0}
         <div class="sublinks" style:color={sublinkColor}>
           {#each sublinks as { to, newTab, icon, text }}
-            <a href={to} target={newTab ? '_blank' : ''} class="sublink">
+            <a
+              href={to}
+              target={newTab ? '_blank' : undefined}
+              rel={newTab ? 'noreferrer' : undefined}
+              class="sublink"
+            >
               {#if icon}
                 <i class={icon} />
               {/if}
@@ -75,7 +80,7 @@
   {#if labels}
     <div class="labels">
       {#each labels as { to, image, alt }}
-        <a href={to} target="_blank">
+        <a href={to} target="_blank" rel="noreferrer">
           <img src={image} {alt} />
         </a>
       {/each}

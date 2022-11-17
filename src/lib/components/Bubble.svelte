@@ -82,7 +82,6 @@
     .role {
       font-size: 18px;
       font-weight: 800;
-      letter-spacing: 4px;
       margin: 0;
       opacity: 0.64;
     }

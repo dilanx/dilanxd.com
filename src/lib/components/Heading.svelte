@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { SocialIconLink } from '$lib/common';
-  import HeadingAnchor from './_heading/HeadingAnchor.svelte';
   import HeadingSocials from './_heading/HeadingSocials.svelte';
   import HeadingText from './_heading/HeadingText.svelte';
 

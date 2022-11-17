@@ -1,6 +1,6 @@
 <script lang="ts">
-  export let title: string | undefined = undefined;
-  export let subtitle: string | undefined = undefined;
+  export let title: O<string> = undefined;
+  export let subtitle: O<string> = undefined;
   export let lessPadding = false;
   export let dark = false;
 </script>
@@ -21,11 +21,11 @@
   @use '../theme';
 
   .heading-block {
-    padding: 100px 20px 200px 20px;
+    padding: 100px 20px;
     color: theme.$text-primary;
 
     &.lessPadding {
-      padding: 50px 20px 100px 20px;
+      padding: 50px 20px;
     }
 
     &.dark {
@@ -54,10 +54,10 @@
 
   @include theme.lg {
     .heading-block {
-      padding: 125px 20px 250px 20px;
+      padding: 125px 20px;
 
       &.lessPadding {
-        padding: 50px 20px 100px 20px;
+        padding: 50px 20px;
       }
 
       h1 {

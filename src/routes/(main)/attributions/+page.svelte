@@ -13,8 +13,6 @@
   <title>Attributions - Dilan Nair</title>
 </svelte:head>
 
-<Navigation />
-
 <Heading h1>Attributions</Heading>
 
 <Section ws hs>
@@ -29,12 +27,6 @@
       </ul>
     </Text>
   </ContentGroup>
-</Section>
-
-<Section ws hs>
-  <Heading h2 anchor="beta-testers" class="s left">Beta Testers</Heading>
-
-  <Text xs noPadding>Coming soon</Text>
 </Section>
 
 <Section ws hs>
@@ -67,5 +59,3 @@
 </Section>
 
 <Space lg icon="fas fa-face-flushed" text="Uh what?" />
-
-<Footer />

@@ -1,12 +1,12 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { afterNavigate } from '$app/navigation';
 
   export let to: string;
   export let title: string;
 
   let active = false;
 
-  onMount(() => {
+  afterNavigate(() => {
     active = window.location.pathname.startsWith(to);
   });
 </script>

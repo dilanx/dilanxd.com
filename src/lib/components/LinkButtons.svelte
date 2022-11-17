@@ -1,0 +1,94 @@
+<script lang="ts">
+  export let links: LinkButton[];
+
+  export let margin = false;
+  export let highlight = false;
+  export let mobileVertical = false;
+</script>
+
+<div class:margin class:mobileVertical>
+  {#each links as { to, text, icon }}
+    <a href={to} class:highlight>
+      {#if icon}
+        <i class={icon} />
+        <p>{text}</p>
+      {:else}
+        <p>{text}</p>
+        <i class={icon || 'fas fa-arrow-right'} />
+      {/if}
+    </a>
+  {/each}
+</div>
+
+<style lang="scss">
+  @use '../theme';
+
+  div {
+    margin: 8px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &.margin {
+      margin: 24px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #808080;
+      &.highlight {
+        color: theme.$link-light;
+      }
+      text-decoration: none;
+      transition: opacity 150ms;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0;
+      padding: 8px 16px;
+      border-radius: 12px;
+      transition: all 150ms;
+
+      &:hover {
+        background-color: #f0f2f4;
+        color: black;
+        &.highlight {
+          color: theme.$link-primary;
+        }
+      }
+
+      &:active {
+        background-color: #e0e2e4;
+        color: black;
+        &.highlight {
+          color: theme.$link-primary;
+        }
+      }
+
+      i {
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
+    }
+
+    &.mobileVertical {
+      @include theme.sm {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        i {
+          text-align: center;
+          flex: 30%;
+        }
+
+        p {
+          text-align: left;
+          flex: 70%;
+        }
+      }
+    }
+  }
+</style>
