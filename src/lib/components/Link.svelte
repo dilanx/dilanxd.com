@@ -12,7 +12,3 @@
 <a href={to} {target} {rel}>
   <slot />
 </a>
-
-<style lang="scss">
-  @use '../theme';
-</style>
