@@ -1,0 +1,5 @@
+import{S as p,i as u,s as _,a as d,w as $,q as l,I as h,h as r,c as g,x,r as f,b as c,y as P,f as v,t as w,z as b}from"../../../chunks/index-31298124.js";import"../../../chunks/Navigation.svelte_svelte_type_style_lang-b778aefd.js";import{H as q}from"../../../chunks/Heading-e11582ea.js";/* empty css                                                          */function y(i){let a;return{c(){a=l("Paper")},l(t){a=f(t,"Paper")},m(t,s){c(t,a,s)},d(t){t&&r(a)}}}function H(i){let a,t,s,o;return t=new q({props:{h1:!0,$$slots:{default:[y]},$$scope:{ctx:i}}}),{c(){a=d(),$(t.$$.fragment),s=l(`
+
+More info coming soon`),this.h()},l(e){h("svelte-wpvbj8",document.head).forEach(r),a=g(e),x(t.$$.fragment,e),s=f(e,`
+
+More info coming soon`),this.h()},h(){document.title="Paper - Dilan Nair"},m(e,n){c(e,a,n),P(t,e,n),c(e,s,n),o=!0},p(e,[n]){const m={};n&1&&(m.$$scope={dirty:n,ctx:e}),t.$set(m)},i(e){o||(v(t.$$.fragment,e),o=!0)},o(e){w(t.$$.fragment,e),o=!1},d(e){e&&r(a),b(t,e),e&&r(s)}}}class C extends p{constructor(a){super(),u(this,a,null,H,_,{})}}export{C as default};
