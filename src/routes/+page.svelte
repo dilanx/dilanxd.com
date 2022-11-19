@@ -3,6 +3,7 @@
   import Display from '$lib/components/Display.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import HeadingBlock from '$lib/components/HeadingBlock.svelte';
+  import Link from '$lib/components/Link.svelte';
   import LinkButtons from '$lib/components/LinkButtons.svelte';
   import Section from '$lib/components/Section.svelte';
   import Text from '$lib/components/Text.svelte';
@@ -18,7 +19,7 @@
     links={[
       {
         to: '#about',
-        text: 'About me',
+        text: 'Learn about me',
         icon: 'fas fa-face-smile',
       },
       {
@@ -34,24 +35,30 @@
       {
         to: 'https://dilan.blog',
         text: 'Check out my blog',
-        icon: 'fas fa-book',
+        icon: 'fas fa-book-bookmark',
       },
     ]}
   />
 </HeadingBlock>
 
 <Display
-  backgroundColor="#0a3a2a"
+  backgroundColor="#0c5041"
   links={[
+    {
+      to: 'https://craco.js.org',
+      newTab: true,
+      icon: 'fas fa-book',
+      text: 'Documentation',
+    },
     gh('dilanx/craco'),
     {
       to: 'https://www.npmjs.com/package/@craco/craco',
       newTab: true,
       icon: 'fab fa-npm',
-      text: 'View on npm',
+      text: 'npm',
     },
   ]}
-  linkColor="#92ddc8"
+  linkColor="#b5f3e6"
   labels={[
     {
       to: 'https://npmjs.com/package/@craco/craco',
@@ -185,24 +192,24 @@
     Hey, I'm Dilan, a third-year undergraduate student at Northwestern
     University studying computer science. I've been a CS enjoyer for over 9
     years, working on
-    <a href="/projects">projects</a>
+    <Link to="/projects">projects</Link>
     ranging anywhere from desktop and mobile applications to developer tools to websites
     and web APIs to video games and game mods, many of which you'll find here on
     my site.
   </Text>
   <Text sm>
     I'm a big proponent of open source software, with my most notable project
-    being <a href="https://github.com/dilanx/craco">CRACO</a>, a mainstream
+    being <Link to="https://github.com/dilanx/craco">CRACO</Link>, a mainstream
     library for React development.
   </Text>
   <Text sm>
-    At Northwestern, I created <a href="/paper">Paper</a>, a course planning and
-    scheduling tool sponsored by the university and used by thousands of
+    At Northwestern, I created <Link to="/paper">Paper</Link>, a course planning
+    and scheduling tool sponsored by the university and used by thousands of
     students. I'm on the tech team for
-    <a href="https://dilloday.com/">Dillo Day (Mayfest Productions)</a>
-    and am also the Web Development Lead for
-    <a href="https://www.wildhacks.net">WildHacks</a>, Northwestern's largest
-    hackathon.
+    <Link to="https://dilloday.com/">Dillo Day (Mayfest Productions)</Link>
+    and am also the Director of Web Development for
+    <Link to="https://www.wildhacks.net">WildHacks</Link>, Northwestern's
+    largest hackathon.
   </Text>
   <Text sm>
     I founded and used to manage

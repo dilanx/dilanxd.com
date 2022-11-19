@@ -14,7 +14,7 @@ export interface DisplayLabel {
 
 export const lm = (route: string): DisplayLink => ({
   to: route,
-  text: 'Learn More',
+  text: 'Learn more',
   icon: 'fas fa-arrow-right',
 });
 
@@ -22,7 +22,7 @@ export const gh = (repo: string): DisplayLink => ({
   to: 'https://github.com/' + repo,
   newTab: true,
   icon: 'fab fa-github',
-  text: 'View on GitHub',
+  text: 'GitHub',
 });
 
 export const ext = (text: string, url: string): DisplayLink => ({

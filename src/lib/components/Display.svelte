@@ -49,7 +49,12 @@
       {#if regularLinks.length !== 0}
         <div class="links" style:color={linkColor}>
           {#each regularLinks as { to, newTab, icon, text }}
-            <a class:dark href={to} target={newTab ? '_blank' : ''}>
+            <a
+              class:dark
+              href={to}
+              target={newTab ? '_blank' : ''}
+              rel={newTab ? 'noreferrer' : undefined}
+            >
               {#if icon}
                 <i class={icon} />
               {/if}

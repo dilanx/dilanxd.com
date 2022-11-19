@@ -77,7 +77,7 @@
 >
   <BubbleContainer>
     <Bubble
-      to="https://github.com/dilanx/craco"
+      to="https://craco.js.org"
       newTab
       title="CRACO"
       description="An easy and comprehensible configuration layer for Create React App."
