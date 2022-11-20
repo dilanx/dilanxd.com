@@ -33,10 +33,12 @@
     window.onresize = () => (open = false);
     update();
   });
+
+  const close = () => (open = false);
 </script>
 
 <div class="main" class:big class:open>
-  <NavTitle {big} {open} />
+  <NavTitle {big} {open} on:click={close} />
 
   <NavDesktopLinks {big} />
   <NavMobileBurger
@@ -48,7 +50,7 @@
   />
 </div>
 <div class="overlay" class:open>
-  <NavMobileLinks {big} />
+  <NavMobileLinks {big} on:click={close} />
 </div>
 <div class="space" />
 

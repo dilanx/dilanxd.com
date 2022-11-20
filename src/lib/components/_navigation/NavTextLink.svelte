@@ -12,7 +12,7 @@
 </script>
 
 <li>
-  <a class:active href={to}>{title}</a>
+  <a class:active href={to} on:click>{title}</a>
 </li>
 
 <style lang="scss">

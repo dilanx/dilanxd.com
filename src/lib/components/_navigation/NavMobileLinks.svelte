@@ -6,7 +6,7 @@
 </script>
 
 <div>
-  <NavTextLinks {big} />
+  <NavTextLinks {big} on:click />
   <NavIconLinks {big} />
 </div>
 

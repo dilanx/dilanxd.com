@@ -206,10 +206,11 @@
     At Northwestern, I created <Link to="/paper">Paper</Link>, a course planning
     and scheduling tool sponsored by the university and used by thousands of
     students. I'm on the tech team for
-    <Link to="https://dilloday.com/">Dillo Day (Mayfest Productions)</Link>
-    and am also the Director of Web Development for
+    <Link to="https://dilloday.com/">Mayfest Productions (Dillo Day)</Link>
+    and am the Director of Web Development for
     <Link to="https://www.wildhacks.net">WildHacks</Link>, Northwestern's
-    largest hackathon.
+    largest hackathon. I also serve as an undergraduate teaching assistant for a
+    variety of computer science courses.
   </Text>
   <Text sm>
     I founded and used to manage

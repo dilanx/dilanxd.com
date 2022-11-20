@@ -4,7 +4,7 @@
 </script>
 
 <div class:big class:open>
-  <a href="/">Dilan N</a>
+  <a href="/" on:click>Dilan Nair</a>
 </div>
 
 <style lang="scss">

@@ -77,16 +77,22 @@
     &.mobileVertical {
       @include theme.sm {
         flex-direction: column;
+        align-items: center;
         flex-wrap: nowrap;
 
+        a {
+          width: 220px;
+        }
+
         i {
-          text-align: center;
-          flex: 30%;
+          //text-align: center;
+          //flex: 30%;
         }
 
         p {
-          text-align: left;
-          flex: 70%;
+          text-align: right;
+          flex: 1 0 auto;
+          //flex: 70%;
         }
       }
     }

@@ -5,9 +5,9 @@
 </script>
 
 <ul class:big>
-  <NavTextLink to="/projects" title="Projects" />
-  <NavTextLink to="https://dilan.blog" title="Blog" />
-  <NavTextLink to="https://dilan.statuspage.io" title="Status" />
+  <NavTextLink to="/projects" title="Projects" on:click />
+  <NavTextLink to="https://dilan.blog" title="Blog" on:click />
+  <NavTextLink to="https://dilan.statuspage.io" title="Status" on:click />
 </ul>
 
 <style lang="scss">
