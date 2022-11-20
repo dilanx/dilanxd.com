@@ -23,11 +23,6 @@
     display: block;
     margin: 5px;
     color: theme.$footer-primary;
-
-    &.version {
-      font-weight: bold;
-      color: theme.$footer-secondary;
-    }
   }
 
   a {
