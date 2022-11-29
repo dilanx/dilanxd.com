@@ -189,8 +189,8 @@
   <Heading h2 large class="s left" anchor="about">A bit about me.</Heading>
 
   <Text sm>
-    Hey, I'm Dilan, a third-year undergraduate student at Northwestern
-    University studying computer science. I've been a CS enjoyer for over 9
+    Hey, I'm Dilan, a full-stack software engineer and third-year undergraduate student at Northwestern
+    University studying computer science. I've been coding for over 10
     years, working on
     <Link to="/projects">projects</Link>
     ranging anywhere from desktop and mobile applications to developer tools to websites
@@ -206,11 +206,11 @@
     At Northwestern, I created <Link to="/paper">Paper</Link>, a course planning
     and scheduling tool sponsored by the university and used by thousands of
     students. I'm on the tech team for
-    <Link to="https://dilloday.com/">Mayfest Productions (Dillo Day)</Link>
-    and am the Director of Web Development for
+    <Link to="https://dilloday.com/">Mayfest Productions</Link>, the organization behind <Link to="https://en.wikipedia.org/wiki/Dillo_Day">Dillo Day</Link>.
+    I'm also the Director of Web Development for
     <Link to="https://www.wildhacks.net">WildHacks</Link>, Northwestern's
-    largest hackathon. I also serve as an undergraduate teaching assistant for a
-    variety of computer science courses.
+    largest hackathon. I serve as an undergraduate teaching assistant for a
+    variety of computer science courses. I'm also a member of the <Link to="https://nudrumline.org"> Northwestern University Drumline</Link>.
   </Text>
   <Text sm>
     I founded and used to manage
