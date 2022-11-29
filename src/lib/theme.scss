@@ -17,6 +17,9 @@ $footer-primary: #a0a0a0;
 $footer-secondary: #646464;
 $footer-link: #e0e0e0;
 
+$kb-link-primary: #4169e1;
+$kb-link-light: #d9e1f9;
+
 $widths: (
   s: 800px,
   m: 1000px,
@@ -43,4 +46,9 @@ $heights: (
   @media (min-width: 900px) {
     @content;
   }
+}
+
+@mixin button {
+  background: none;
+  border: none;
 }

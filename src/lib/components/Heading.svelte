@@ -8,15 +8,16 @@
   export let h3 = false;
   export let hidden = false;
   export let large = false;
-  export let anchor: string | undefined = undefined;
-  let className: string | undefined = undefined;
+  export let topic: O<string> = undefined;
+  export let anchor: O<string> = undefined;
+  let className: O<string> = undefined;
   export { className as class };
-  export let socials: SocialIconLink[] | undefined = undefined;
+  export let socials: O<SocialIconLink[]> = undefined;
 </script>
 
 {#if socials}
   <div class="container" class:large>
-    <HeadingText {h1} {h2} {h3} {hidden} {large} {anchor} {className}>
+    <HeadingText {h1} {h2} {h3} {hidden} {large} {anchor} {className} {topic}>
       <slot />
     </HeadingText>
     {#if socials}
@@ -24,7 +25,7 @@
     {/if}
   </div>
 {:else}
-  <HeadingText {h1} {h2} {h3} {hidden} {large} {anchor} {className}>
+  <HeadingText {h1} {h2} {h3} {hidden} {large} {anchor} {className} {topic}>
     <slot />
   </HeadingText>
 {/if}

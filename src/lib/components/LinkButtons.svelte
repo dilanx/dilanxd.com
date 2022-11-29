@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let links: LinkButton[];
+  export let links: LinkData[];
 
   export let margin = false;
   export let highlight = false;
