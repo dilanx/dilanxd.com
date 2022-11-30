@@ -2,6 +2,10 @@
   export let xs = false;
   export let sm = false;
   export let md = false;
+  export let lg = false;
+  export let xl = false;
+  export let center = false;
+  export let bold = false;
   export let noPadding = false;
   export let centerOnMobile = false;
   let className: string | undefined = undefined;
@@ -12,6 +16,10 @@
   class:xs
   class:sm
   class:md
+  class:lg
+  class:xl
+  class:center
+  class:bold
   class:noPadding
   class:centerOnMobile
   class={className}
@@ -40,12 +48,25 @@
       font-size: 16px;
     }
 
+    &.lg {
+      font-size: 20px;
+    }
+
+    &.xl {
+      font-size: 24px;
+    }
+
     &.noPadding {
       padding: 0;
     }
 
-    &.centerOnMobile {
+    &.centerOnMobile,
+    &.center {
       text-align: center;
+    }
+
+    &.bold {
+      font-weight: bold;
     }
 
     :global(a) {
@@ -66,6 +87,12 @@
     p {
       &.md {
         font-size: 20px;
+      }
+      &.lg {
+        font-size: 28px;
+      }
+      &.xl {
+        font-size: 32px;
       }
       &.centerOnMobile {
         text-align: left;
