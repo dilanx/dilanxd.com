@@ -4,7 +4,7 @@
   export let icon: string;
   export let title: string;
   export let subtitle: O<string> = undefined;
-  export let buttons: O<LinkButton[]> = undefined;
+  export let buttons: O<LinkData[]> = undefined;
   export let buttonsHighlighted = false;
   export let dark = false;
 </script>

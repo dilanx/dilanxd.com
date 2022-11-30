@@ -8,7 +8,12 @@
   export let large: boolean;
   export let anchor: string | undefined;
   export let className: string | undefined;
+  export let topic: O<string>;
 </script>
+
+{#if topic}
+  <p>{topic}</p>
+{/if}
 
 {#if h1}
   <h1 class:hidden class:large class={className}>
@@ -34,8 +39,16 @@
 <style lang="scss">
   @use '../../theme';
 
+  p {
+    text-align: center;
+    font-size: 18px;
+    margin: 12px 0;
+    letter-spacing: 4px;
+  }
+
   h1 {
     text-align: center;
+    padding: 0 24px;
     &.large {
       font-size: 40px;
     }

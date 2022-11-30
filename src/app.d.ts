@@ -12,8 +12,25 @@ declare namespace App {
 
 declare type O<T> = T | undefined;
 
-declare interface LinkButton {
+declare interface LinkData {
   to: string;
   text: string;
   icon?: string;
+}
+
+declare namespace KB {
+  interface Article {
+    id: string;
+    title: string;
+  }
+
+  interface Category {
+    category: string;
+    col: number;
+    articles: Article[];
+  }
+
+  interface Outline {
+    kb: Category[];
+  }
 }
