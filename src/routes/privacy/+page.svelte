@@ -15,7 +15,7 @@
 <Section ws hm>
   <ImageTitle images={['fas fa-lock']}>Privacy</ImageTitle>
 
-  <Text sm class="s center">
+  <Text sm center>
     Below, you'll find everything you need to know about what happens with the
     data you provide to the applications or services created or run by me. If
     you have any further questions or concerns, feel free to send an email to <a
@@ -23,7 +23,7 @@
     > at any time.
   </Text>
 
-  <Text sm class="s medium center">Last updated 2022-10-31</Text>
+  <Text sm center class="s medium">Last updated 2022-10-31</Text>
 </Section>
 
 <Section ws hs>
