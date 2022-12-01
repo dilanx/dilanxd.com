@@ -6,7 +6,7 @@
 
 <ul class:big>
   <NavTextLink to="/projects" title="Projects" on:click />
-  <NavTextLink to="/kb" title="Knowledge Base" on:click />
+  <NavTextLink to="/kb" title="Help" on:click />
   <NavTextLink to="https://dilan.blog" title="Blog" on:click />
   <NavTextLink to="https://dilan.statuspage.io" title="Status" on:click />
 </ul>
