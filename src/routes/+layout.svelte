@@ -5,10 +5,6 @@
 </script>
 
 <svelte:head>
-  <script
-    src="https://kit.fontawesome.com/272ac1b8d8.js"
-    crossorigin="anonymous"
-  ></script>
   {#if import.meta.env.PROD}
     <script
       async

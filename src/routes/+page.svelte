@@ -5,13 +5,12 @@
   import HeadingBlock from '$lib/components/HeadingBlock.svelte';
   import Link from '$lib/components/Link.svelte';
   import LinkButtons from '$lib/components/LinkButtons.svelte';
+  import Meta from '$lib/components/Meta.svelte';
   import Section from '$lib/components/Section.svelte';
   import Text from '$lib/components/Text.svelte';
 </script>
 
-<svelte:head>
-  <title>Dilan Nair</title>
-</svelte:head>
+<Meta description="Full-stack software developer" />
 
 <HeadingBlock title="Hey there, I'm Dilan.">
   <LinkButtons
@@ -23,7 +22,7 @@
         icon: 'fas fa-face-smile',
       },
       {
-        to: 'mailto:support@dilanxd.com',
+        to: '/contact',
         text: 'Get in touch',
         icon: 'fas fa-envelope',
       },
@@ -189,9 +188,9 @@
   <Heading h2 large class="s left" anchor="about">A bit about me.</Heading>
 
   <Text sm>
-    Hey, I'm Dilan, a full-stack software engineer and third-year undergraduate student at Northwestern
-    University studying computer science. I've been coding for over 10
-    years, working on
+    Hey, I'm Dilan, a full-stack software engineer and third-year undergraduate
+    student at Northwestern University studying computer science. I've been
+    coding for over 10 years, working on
     <Link to="/projects">projects</Link>
     ranging anywhere from desktop and mobile applications to developer tools to websites
     and web APIs to video games and game mods, many of which you'll find here on
@@ -206,11 +205,17 @@
     At Northwestern, I created <Link to="/paper">Paper</Link>, a course planning
     and scheduling tool sponsored by the university and used by thousands of
     students. I'm on the tech team for
-    <Link to="https://dilloday.com/">Mayfest Productions</Link>, the organization behind <Link to="https://en.wikipedia.org/wiki/Dillo_Day">Dillo Day</Link>.
-    I'm also the Director of Web Development for
+    <Link to="https://dilloday.com/">Mayfest Productions</Link>, the
+    organization behind <Link to="https://en.wikipedia.org/wiki/Dillo_Day"
+      >Dillo Day</Link
+    >. I'm also the Director of Web Development for
     <Link to="https://www.wildhacks.net">WildHacks</Link>, Northwestern's
     largest hackathon. I serve as an undergraduate teaching assistant for a
-    variety of computer science courses. I'm also a member of the <Link to="https://nudrumline.org"> Northwestern University Drumline</Link>.
+    variety of computer science courses. I'm also a member of the <Link
+      to="https://www.nudrumline.org"
+    >
+      Northwestern University Drumline</Link
+    >.
   </Text>
   <Text sm>
     I founded and used to manage
@@ -224,9 +229,6 @@
     in tech, adventure and story-driven video games, and music.
   </Text>
   <Text sm>
-    If you ever need to contact me (including for any technical support for any
-    of my apps and services), send me an email at <a
-      href="mailto:support@dilanxd.com">support@dilanxd.com</a
-    >.
+    Feel free to <Link to="/contact">get in touch</Link>!
   </Text>
 </Section>

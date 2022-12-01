@@ -68,6 +68,7 @@
           content: '';
           border-bottom: 1px solid var(--color);
           transform: scaleX(1);
+          transform-origin: 0% 50%;
         }
 
         &:not(.active) {

@@ -4,7 +4,10 @@
   import Heading from '$lib/components/Heading.svelte';
   import KnowledgeFocus from '$lib/components/KnowledgeFocus.svelte';
   import KnowledgeList from '$lib/components/KnowledgeList.svelte';
+  import LinkButtons from '$lib/components/LinkButtons.svelte';
+  import Meta from '$lib/components/Meta.svelte';
   import Section from '$lib/components/Section.svelte';
+  import Text from '$lib/components/Text.svelte';
   import { onMount } from 'svelte';
 
   export let data: KB.Outline;
@@ -14,14 +17,16 @@
   let focus: O<string> = undefined;
   onMount(() => {
     const params = new URLSearchParams(window.location.search);
-    focus = params.get('f') || undefined;
+    focus = params.get('f')?.replaceAll('-', ' ') || undefined;
   });
 
   let focusedKb: O<KB.Category> = undefined;
 
   $: {
     if (focus) {
-      focusedKb = kb.find((c) => c.category === focus);
+      focusedKb = kb.find(
+        (c) => c.category.toLowerCase() === focus?.toLowerCase()
+      );
     } else {
       focusedKb = undefined;
     }
@@ -33,16 +38,17 @@
   });
 </script>
 
-<svelte:head>
-  <title>Knowledge Base - Dilan Nair</title>
-</svelte:head>
+<Meta
+  title="Knowledge Base"
+  description="Find answers to commonly asked questions here."
+/>
 
 <Heading h1>Find answers here.</Heading>
 
 <Section wm hm>
   <KnowledgeFocus
     categories={kb}
-    {focus}
+    focus={focusedKb?.category}
     select={(name) => {
       focus = name;
     }}
@@ -66,4 +72,17 @@
       {/each}
     </Columns>
   {/if}
+</Section>
+
+<Section ws hs>
+  <Text md center noPadding>Can't find what you're looking for?</Text>
+  <LinkButtons
+    links={[
+      {
+        to: '/contact',
+        text: 'Get in touch',
+        icon: 'fas fa-envelope',
+      },
+    ]}
+  />
 </Section>

@@ -1,10 +1,19 @@
 <footer>
   <p>Copyright &#169; 2022 Dilan Nair</p>
   <p>
-    <a href="https://dilan.statuspage.io">System Status</a> |
-    <a href="https://github.com/sponsors/dilanx">Sponsor</a> |
+    <a href="https://dilan.statuspage.io" target="_blank" rel="noreferrer"
+      >System Status</a
+    >
+    |
+    <a
+      href="https://github.com/sponsors/dilanx"
+      target="_blank"
+      rel="noreferrer">Sponsor</a
+    >
+    |
     <a href="/privacy">Privacy</a>
-    | <a href="/attributions">Attributions</a>
+    | <a href="/attributions">Attributions</a> |
+    <a href="/contact">Contact Me</a>
   </p>
 </footer>
 

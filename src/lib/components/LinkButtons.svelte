@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { linkAttributes } from '$lib/common';
+
   export let links: LinkData[];
 
   export let margin = false;
@@ -7,8 +9,8 @@
 </script>
 
 <div class:margin class:mobileVertical>
-  {#each links as { to, text, icon }}
-    <a href={to} class:highlight>
+  {#each links.map( ({ to, text, icon }) => ({ ...linkAttributes(to), text, icon }) ) as { href, target, rel, text, icon }}
+    <a {href} {target} {rel} class:highlight>
       {#if icon}
         <i class={icon} />
         <p>{text}</p>

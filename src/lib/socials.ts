@@ -9,10 +9,6 @@ export const socials = {
       url: 'https://github.com/dilanx',
     },
     {
-      icon: 'fab fa-twitter',
-      url: 'https://twitter.com/dilans4k',
-    },
-    {
       icon: 'fab fa-linkedin',
       url: 'https://linkedin.com/in/dilann',
     },

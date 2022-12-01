@@ -1,6 +1,4 @@
 <script lang="ts">
-  import LinkButtons from './LinkButtons.svelte';
-
   export let title: string;
   export let links: LinkData[];
   export let focused = false;

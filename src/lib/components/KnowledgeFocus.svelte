@@ -43,19 +43,19 @@
 
   button {
     @include theme.button;
-    border: 2px solid #808080;
+    //border: 2px solid #808080;
     border-radius: 8px;
-    padding: 4px 12px;
+    padding: 8px 16px;
     font-size: 14px;
     background-color: #e9e9e9;
     color: #505050;
 
     &:hover {
-      background-color: #fafafa;
+      background-color: #f4f4f4;
     }
 
     &:active {
-      background-color: #ffffff;
+      background-color: #fafafa;
     }
 
     &.sel {

@@ -14,7 +14,9 @@ const config = {
       fallback: '404.html',
       precompress: false,
     }),
-
+    prerender: {
+      origin: 'https://www.dilanxd.com',
+    },
     trailingSlash: 'always',
   },
 };

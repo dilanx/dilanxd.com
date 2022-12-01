@@ -42,4 +42,21 @@ export interface SectionLabel {
   subtitle?: string;
 }
 
-export type Ostring = string | undefined;
+export interface LinkAttributes {
+  href: string;
+  target?: string;
+  rel?: string;
+}
+
+export const linkAttributes = (to: string): LinkAttributes => {
+  if (to.startsWith('https://') || to.startsWith('http://')) {
+    return {
+      href: to,
+      target: '_blank',
+      rel: 'noreferrer',
+    };
+  }
+  return {
+    href: to,
+  };
+};

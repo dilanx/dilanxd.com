@@ -1,4 +1,6 @@
 <script lang="ts">
+  import BubbleConditionalLink from './_bubble/BubbleConditionalLink.svelte';
+
   export let to: string | undefined = undefined;
   export let newTab = false;
   export let title: string;
@@ -13,42 +15,35 @@
   export let dark = false;
 </script>
 
-<a href={to} target={newTab ? '_blank' : undefined}>
+<BubbleConditionalLink {to} {newTab}>
   <div
+    class="content"
     class:dark
+    class:no-link={to === undefined}
     style:background-color={backgroundColor || defaultColor}
     style:background-image={backgroundImage}
     style:cursor={to ? 'pointer' : 'not-allowed'}
   >
+    {#if role}
+      <p class="role">{role}</p>
+    {/if}
     <p class="title">{title}</p>
     {#if description}
       <p class="desc">{description}</p>
     {/if}
-    {#if role}
-      <p class="role">{role}</p>
-    {/if}
   </div>
-</a>
+</BubbleConditionalLink>
 
 <style lang="scss">
   @use '../theme';
 
-  a {
-    text-decoration: none;
-    display: block;
-    margin: 20px 0;
-    padding: 0;
-    opacity: 1;
-    transition: opacity 150ms;
-  }
-
   div {
-    height: 112px;
+    height: 132px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
       rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     color: theme.$text-primary;
     padding: 4px 20px;
-    border-radius: 5px;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,6 +61,9 @@
 
     &:hover {
       border-color: theme.$link-primary;
+      &.no-link {
+        border-color: #808080;
+      }
     }
 
     .title {
@@ -80,16 +78,10 @@
     }
 
     .role {
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 800;
       margin: 0;
       opacity: 0.64;
-    }
-  }
-
-  @include theme.lg {
-    a {
-      margin: 0;
     }
   }
 </style>

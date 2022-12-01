@@ -1,33 +1,33 @@
 <script lang="ts">
   import Heading from '$lib/components/Heading.svelte';
   import ImageTitle from '$lib/components/ImageTitle.svelte';
-  import Link from '$lib/components/Link.svelte';
   import LinkButtons from '$lib/components/LinkButtons.svelte';
+  import Meta from '$lib/components/Meta.svelte';
   import Section from '$lib/components/Section.svelte';
   import Text from '$lib/components/Text.svelte';
-  import ContentPage from '$lib/templates/ContentPage.svelte';
 </script>
 
-<ContentPage title="Contact">
-  <Heading h1 hidden>Contact Me</Heading>
-  <Section ws hm>
-    <ImageTitle images={['fas fa-envelope']}>Get in touch</ImageTitle>
-    <Text md center>
-      First, check out the knowledge base for help with common issues.
-    </Text>
-    <LinkButtons
-      links={[
-        {
-          text: 'Knowledge Base',
-          to: '/kb',
-        },
-      ]}
-    />
-    <Text md center>
-      Otherwise, for inquiries of all kinds, send a message to
-    </Text>
-    <Text xl center bold noPadding>
-      <Link to="mailto:support@dilanxd.com">support@dilanxd.com</Link>
-    </Text>
-  </Section>
-</ContentPage>
+<Meta title="Contact" />
+<Heading h1 hidden>Contact Me</Heading>
+
+<Section ws hm>
+  <ImageTitle images={['fas fa-envelope']}>Get in touch</ImageTitle>
+  <Text md center>
+    First, check out the knowledge base for help with common issues.
+  </Text>
+  <LinkButtons
+    links={[
+      {
+        text: 'Knowledge Base',
+        to: '/kb',
+        icon: 'fas fa-book',
+      },
+    ]}
+  />
+  <Text md center>
+    Otherwise, for inquiries of all kinds, send a message to
+  </Text>
+  <Text xl center bold noPadding>
+    <a href="mailto:support@dilanxd.com">support@dilanxd.com</a>
+  </Text>
+</Section>

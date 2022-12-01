@@ -44,7 +44,7 @@
         }
 
         i {
-          font-size: 24px;
+          font-size: 28px;
           margin: 0;
         }
       }

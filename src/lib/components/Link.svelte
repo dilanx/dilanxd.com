@@ -1,14 +1,11 @@
 <script lang="ts">
+  import { linkAttributes } from '$lib/common';
+
   export let to: string;
 
-  let target: O<string> = undefined;
-  let rel: O<string> = undefined;
-  if (!to.startsWith('/')) {
-    target = '_blank';
-    rel = 'noreferrer';
-  }
+  const { href, target, rel } = linkAttributes(to);
 </script>
 
-<a href={to} {target} {rel}>
+<a {href} {target} {rel}>
   <slot />
 </a>
