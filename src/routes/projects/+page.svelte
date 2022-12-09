@@ -187,6 +187,8 @@
 >
   <BubbleContainer>
     <Bubble
+      to="https://github.com/dilanx/WedBars"
+      newTab
       title="WedBars"
       description="Hypixel's Bed Wars but way better. Trust me."
       backgroundImage="
