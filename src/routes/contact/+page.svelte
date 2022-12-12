@@ -27,7 +27,7 @@
   <Text md center>
     Otherwise, for inquiries of all kinds, send a message to
   </Text>
-  <Text xl center bold noPadding>
+  <Text xl center bold nom>
     <a href="mailto:support@dilanxd.com">support@dilanxd.com</a>
   </Text>
 </Section>

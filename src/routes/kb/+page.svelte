@@ -75,7 +75,7 @@
 </Section>
 
 <Section ws hs>
-  <Text md center noPadding>Can't find what you're looking for?</Text>
+  <Text md center nom>Can't find what you're looking for?</Text>
   <LinkButtons
     links={[
       {

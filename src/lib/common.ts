@@ -32,6 +32,13 @@ export const ext = (text: string, url: string): DisplayLink => ({
   text,
 });
 
+export const blog = (post: string): DisplayLink => ({
+  to: 'https://dilan.blog/' + post,
+  newTab: true,
+  icon: 'fas fa-book-open',
+  text: 'Read',
+});
+
 export interface SocialIconLink {
   icon: string;
   url: string;

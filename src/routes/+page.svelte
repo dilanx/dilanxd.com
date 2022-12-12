@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { ext, gh, lm } from '$lib/common';
+  import { blog, ext, gh, lm } from '$lib/common';
   import Display from '$lib/components/Display.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import HeadingBlock from '$lib/components/HeadingBlock.svelte';
@@ -39,6 +39,22 @@
     ]}
   />
 </HeadingBlock>
+
+<Display
+  backgroundImage="https://dilan.blog/img/preview/how-paper-manages-hundreds-of-thousands-of-lines-of-data.jpg"
+  darkenBackgroundImage
+  links={[blog('how-paper-manages-hundreds-of-thousands-of-lines-of-data')]}
+  dark
+  blog={7}
+  mini
+  icon="fas fa-book-bookmark"
+>
+  <h2>How Paper Manages Hundreds of Thousands of Lines of Data</h2>
+  <p>
+    If you're interested in what goes on behind the scenes of the Paper course
+    scheduler, check out this new blog post!
+  </p>
+</Display>
 
 <Display
   backgroundColor="#0c5041"
@@ -116,11 +132,7 @@
   dark
   featured
 >
-  <img
-    src="/images/paper-thick-white.png"
-    alt="Plan Northwestern logo"
-    slot="image"
-  />
+  <img src="/images/paper-thick-white.png" alt="Paper logo" slot="image" />
   <h2>Paper</h2>
   <p>
     An online tool used by thousands of Northwestern students to plan and
@@ -129,13 +141,7 @@
 </Display>
 
 <Display
-  backgroundImage="
-    linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url('/images/mcshaders1.jpg')
-  "
+  backgroundImage="/images/mcshaders1.jpg"
   links={[gh('dilanx/dmslauncher')]}
   linkColor="#ffff8f"
   dark
@@ -151,13 +157,7 @@
 </Display>
 
 <Display
-  backgroundImage="
-    linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url('/images/discord.png')
-  "
+  backgroundImage="/images/discord.png"
   links={[gh('dilanx/switchpresence')]}
   linkColor="#b8beff"
   dark
@@ -226,7 +226,10 @@
     at Northwestern University, one of the largest student-run computer science organizations
     on campus focusing on the collaborative development of software applications
     and interactive entertainment. Outside of computer science, I have a strong interest
-    in tech, adventure and story-driven video games, and music.
+    in tech, adventure and story-driven video games, and music (fun fact: I used
+    to play a lot of Minecraft and made a bunch of <Link to="/minecraft-maps"
+      >Minecraft worlds</Link
+    > played on by popular YouTubers like CaptainSparklez, DanTDM, and more).
   </Text>
   <Text sm>
     Feel free to <Link to="/contact">get in touch</Link>!

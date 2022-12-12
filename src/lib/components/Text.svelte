@@ -6,7 +6,7 @@
   export let xl = false;
   export let center = false;
   export let bold = false;
-  export let noPadding = false;
+  export let nom = false;
   export let centerOnMobile = false;
   let className: string | undefined = undefined;
   export { className as class };
@@ -20,7 +20,7 @@
   class:xl
   class:center
   class:bold
-  class:noPadding
+  class:nom
   class:centerOnMobile
   class={className}
 >
@@ -56,7 +56,7 @@
       font-size: 24px;
     }
 
-    &.noPadding {
+    &.nom {
       padding: 0;
     }
 

@@ -201,6 +201,7 @@
       dark
     />
     <Bubble
+      to="/minecraft-maps"
       title="Minecraft Maps"
       description="Old Minecraft game worlds available for download. Played by YouTubers like DanTDM, CaptainSparklez, Logdotzip, and more."
       backgroundImage="

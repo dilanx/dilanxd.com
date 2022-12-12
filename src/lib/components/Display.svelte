@@ -4,6 +4,7 @@
   export let backgroundColor: string | undefined = undefined;
   export let borderColor: string | undefined = undefined;
   export let backgroundImage: string | undefined = undefined;
+  export let darkenBackgroundImage = false;
 
   export let dark = false;
 
@@ -14,10 +15,18 @@
   export let labels: DisplayLabel[] | undefined = undefined;
 
   export let featured = false;
+  export let blog: number | undefined = undefined;
 
-  let tag: string | undefined = undefined;
+  export let tag: string | undefined = undefined;
+  export let mini = false;
+  export let icon: string | undefined = undefined;
+
   if (featured) {
     tag = 'FEATURED PROJECT';
+  }
+
+  if (blog) {
+    tag = `NEW BLOG POST • ${blog} MIN READ`;
   }
 
   let regularLinks: DisplayLink[] = [];
@@ -32,19 +41,33 @@
       }
     }
   }
+
+  const imageOverlayOpacity = darkenBackgroundImage ? 0.75 : 0.2;
 </script>
 
 <div
   class="display"
-  style:background-image={backgroundImage}
+  style:background-image={`linear-gradient(rgba(0, 0, 0, ${imageOverlayOpacity}), rgba(0, 0, 0, ${imageOverlayOpacity})), url(${backgroundImage})`}
   style:background-color={backgroundColor}
   style:border={borderColor ? `4px solid ${borderColor}` : undefined}
 >
   <div class="content">
-    <div class="image">
-      <slot name="image" />
-    </div>
-    <div class="text" class:dark>
+    {#if $$slots.image && !icon}
+      <div class="image">
+        <slot name="image" />
+      </div>
+    {/if}
+    {#if icon}
+      <div class="icon" class:dark>
+        <i class={icon} />
+      </div>
+    {/if}
+    <div
+      class="text"
+      class:dark
+      class:noImage={!$$slots.image && !icon}
+      class:mini
+    >
       <slot />
       {#if regularLinks.length !== 0}
         <div class="links" style:color={linkColor}>
@@ -126,12 +149,30 @@
       }
     }
 
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: theme.$text-primary;
+      &.dark {
+        color: theme.$text-primary-dark;
+      }
+
+      :global(i) {
+        font-size: 128px;
+      }
+    }
+
     .text {
       margin: 20px 0;
       text-align: center;
       color: theme.$text-primary;
       &.dark {
         color: theme.$text-primary-dark;
+      }
+      &.noImage {
+        margin: 20px 20px;
       }
 
       :global(h2) {
@@ -143,6 +184,16 @@
       :global(p) {
         font-size: 18px;
         margin: 0;
+      }
+
+      &.mini {
+        :global(h2) {
+          font-size: 24px;
+        }
+
+        :global(p) {
+          font-size: 16px;
+        }
       }
 
       .links {
@@ -218,7 +269,7 @@
 
       &.dark {
         color: theme.$text-primary-dark;
-        opacity: 0.5;
+        opacity: 0.75;
       }
     }
   }
@@ -233,7 +284,8 @@
         align-items: center;
       }
 
-      .image {
+      .image,
+      .icon {
         flex: 40%;
       }
 
@@ -244,6 +296,16 @@
         :global(h2) {
           font-size: 48px;
           font-weight: bold;
+        }
+
+        &.mini {
+          :global(h2) {
+            font-size: 32px;
+          }
+
+          :global(p) {
+            font-size: 16px;
+          }
         }
 
         .links {
