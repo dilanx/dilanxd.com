@@ -1,6 +1,7 @@
 {
   "name": "dilanx-site",
   "version": "1.0.0",
+  "private": true,
   "prettier": "@dilanx/config/prettier",
   "scripts": {
     "dev": "vite dev",
