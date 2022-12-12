@@ -229,7 +229,7 @@
     in tech, adventure and story-driven video games, and music (fun fact: I used
     to play a lot of Minecraft and made a bunch of <Link to="/minecraft-maps"
       >Minecraft worlds</Link
-    > played on by popular YouTubers like CaptainSparklez, DanTDM, and more).
+    > played by popular YouTubers like CaptainSparklez, DanTDM, and more).
   </Text>
   <Text sm>
     Feel free to <Link to="/contact">get in touch</Link>!
