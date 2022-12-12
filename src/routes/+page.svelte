@@ -44,6 +44,7 @@
   backgroundImage="https://dilan.blog/img/preview/how-paper-manages-hundreds-of-thousands-of-lines-of-data.jpg"
   darkenBackgroundImage
   links={[blog('how-paper-manages-hundreds-of-thousands-of-lines-of-data')]}
+  linkColor="#ee97b1"
   dark
   blog={7}
   mini
@@ -113,6 +114,13 @@
     ext('Use Paper', 'https://www.paper.nu'),
     gh('dilanx/paper.nu'),
     {
+      to: 'https://dilan.blog/tags/paper',
+      newTab: true,
+      icon: 'fas fa-book-bookmark',
+      sublink: true,
+      text: 'Read about what goes on behind the scenes of Paper!',
+    },
+    {
       to: 'https://www.mccormick.northwestern.edu/news/articles/2022/02/undergraduate-launches-course-planning-web-application/',
       newTab: true,
       icon: 'fas fa-newspaper',
@@ -123,9 +131,8 @@
   linkColor="#ffffff"
   labels={[
     {
-      to: 'https://github.com/dilanx/plan-northwestern',
-      image:
-        'https://img.shields.io/github/stars/dilanx/plan-northwestern?color=red',
+      to: 'https://github.com/dilanx/paper.nu',
+      image: 'https://img.shields.io/github/stars/dilanx/paper.nu?color=red',
       alt: 'paper.nu GitHub stars',
     },
   ]}
