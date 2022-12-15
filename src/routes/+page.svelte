@@ -46,7 +46,7 @@
   links={[blog('a-comprehensive-react-tutorial-for-beginners')]}
   linkColor="#ee97b1"
   dark
-  blog={25}
+  blog={26}
   mini
   icon="fas fa-code"
 >
