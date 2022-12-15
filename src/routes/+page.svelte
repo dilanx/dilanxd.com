@@ -41,7 +41,25 @@
 </HeadingBlock>
 
 <Display
-  backgroundImage="https://dilan.blog/img/preview/how-paper-manages-hundreds-of-thousands-of-lines-of-data.jpg"
+  backgroundImage="https://dilan.blog/img/a-comprehensive-react-tutorial-for-beginners/preview.jpg"
+  darkenBackgroundImage
+  links={[blog('a-comprehensive-react-tutorial-for-beginners')]}
+  linkColor="#ee97b1"
+  dark
+  blog={25}
+  mini
+  icon="fas fa-code"
+>
+  <h2>A Comprehensive React Tutorial for Beginners</h2>
+  <p>
+    Trying to use the <strong>React</strong> UI library but not sure where to start?
+    Check out this fun guide that covers all of the basics while building a simple
+    Wordle clone!
+  </p>
+</Display>
+
+<Display
+  backgroundImage="https://dilan.blog/img/how-paper-manages-hundreds-of-thousands-of-lines-of-data/preview.jpg"
   darkenBackgroundImage
   links={[blog('how-paper-manages-hundreds-of-thousands-of-lines-of-data')]}
   linkColor="#ee97b1"
