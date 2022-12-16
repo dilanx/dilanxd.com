@@ -238,7 +238,7 @@
         }
 
         &.sublink {
-          color: #a3a3a3;
+          color: theme.$display-sublink;
           transition: color 150ms;
           margin: 0 8px;
           display: block;

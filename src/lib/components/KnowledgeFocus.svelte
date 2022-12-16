@@ -31,7 +31,7 @@
     margin: 4px 0;
     letter-spacing: 2px;
     font-weight: 800;
-    color: #c0c0c0;
+    color: theme.$kb-focus-text;
   }
 
   .buttons {
@@ -43,19 +43,18 @@
 
   button {
     @include theme.button;
-    //border: 2px solid #808080;
     border-radius: 8px;
     padding: 8px 16px;
     font-size: 14px;
-    background-color: #e9e9e9;
-    color: #505050;
+    background-color: theme.$kb-focus-bg;
+    color: theme.$kb-focus-fg;
 
     &:hover {
-      background-color: #f4f4f4;
+      background-color: theme.$kb-focus-bg-hover;
     }
 
     &:active {
-      background-color: #fafafa;
+      background-color: theme.$kb-focus-bg-active;
     }
 
     &.sel {

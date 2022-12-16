@@ -8,6 +8,7 @@
   import Meta from '$lib/components/Meta.svelte';
   import Section from '$lib/components/Section.svelte';
   import Text from '$lib/components/Text.svelte';
+  import Christmas from '$lib/themes/christmas/Christmas.svelte';
 </script>
 
 <Meta description="Full-stack software developer" />
@@ -260,3 +261,5 @@
     Feel free to <Link to="/contact">get in touch</Link>!
   </Text>
 </Section>
+
+<Christmas />

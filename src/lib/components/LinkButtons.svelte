@@ -39,7 +39,7 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      color: #808080;
+      color: theme.$button-text;
       &.highlight {
         color: theme.$link-light;
       }
@@ -53,16 +53,16 @@
       transition: all 150ms;
 
       &:hover {
-        background-color: #f0f2f4;
-        color: black;
+        background-color: theme.$button-bg-hover;
+        color: theme.$button-text-hover;
         &.highlight {
           color: theme.$link-primary;
         }
       }
 
       &:active {
-        background-color: #e0e2e4;
-        color: black;
+        background-color: theme.$button-bg-active;
+        color: theme.$button-text-hover;
         &.highlight {
           color: theme.$link-primary;
         }

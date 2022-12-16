@@ -47,6 +47,7 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
+    color: theme.$text-primary;
   }
 
   div.icons {

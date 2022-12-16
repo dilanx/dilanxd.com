@@ -1,4 +1,7 @@
+@use 'lib/theme.scss';
+
 body {
+  background-color: theme.$background;
   margin: 0;
   font-family: Poppins;
 }

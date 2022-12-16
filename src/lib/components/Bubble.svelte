@@ -9,8 +9,8 @@
 
   export let backgroundColor: string | undefined = undefined;
   export let backgroundImage: string | undefined = undefined;
-  let defaultColor =
-    !backgroundColor && !backgroundImage ? '#fafafa' : undefined;
+  //let defaultColor =
+  !backgroundColor && !backgroundImage ? '#fafafa' : undefined;
 
   export let dark = false;
 </script>
@@ -20,7 +20,8 @@
     class="content"
     class:dark
     class:no-link={to === undefined}
-    style:background-color={backgroundColor || defaultColor}
+    class:no-bg={!backgroundColor && !backgroundImage}
+    style:background-color={backgroundColor}
     style:background-image={backgroundImage}
     style:cursor={to ? 'pointer' : 'not-allowed'}
   >
@@ -41,7 +42,7 @@
     height: 132px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
       rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    color: theme.$text-primary;
+    color: theme.$text-primary-force-light;
     padding: 4px 20px;
     border-radius: 12px;
     display: flex;
@@ -59,10 +60,15 @@
       color: theme.$text-primary-dark;
     }
 
+    &.no-bg {
+      color: theme.$text-primary;
+      background-color: theme.$bubble-background;
+    }
+
     &:hover {
       border-color: theme.$link-primary;
       &.no-link {
-        border-color: #808080;
+        border-color: theme.$link-disabled;
       }
     }
 

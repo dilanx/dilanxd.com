@@ -33,6 +33,9 @@
   },
   "type": "module",
   "dependencies": {
-    "svelte-media-queries": "^1.4.0"
+    "svelte-media-queries": "^1.4.0",
+    "svelte-particles": "^2.6.0",
+    "tsparticles-engine": "^2.6.0",
+    "tsparticles-preset-snow": "^2.6.0"
   }
 }

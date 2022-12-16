@@ -39,6 +39,10 @@
 <style lang="scss">
   @use '../../theme';
 
+  * {
+    color: theme.$text-primary;
+  }
+
   p {
     text-align: center;
     font-size: 18px;
