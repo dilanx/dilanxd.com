@@ -5,7 +5,7 @@
   export let dark = false;
 </script>
 
-<div class="heading-block" class:lessPadding class:dark>
+<div id="heading-block" class="heading-block" class:lessPadding class:dark>
   <div class="content">
     {#if title}
       <h1>{title}</h1>

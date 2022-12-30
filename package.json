@@ -36,6 +36,7 @@
     "svelte-media-queries": "^1.4.0",
     "svelte-particles": "^2.6.0",
     "tsparticles-engine": "^2.6.0",
+    "tsparticles-preset-fireworks": "^2.7.1",
     "tsparticles-preset-snow": "^2.6.0"
   }
 }

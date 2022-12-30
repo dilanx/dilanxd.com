@@ -8,7 +8,7 @@
   import Meta from '$lib/components/Meta.svelte';
   import Section from '$lib/components/Section.svelte';
   import Text from '$lib/components/Text.svelte';
-  import Christmas from '$lib/themes/christmas/Christmas.svelte';
+  import Christmas from '$lib/themes/Christmas.svelte';
 </script>
 
 <Meta description="Full-stack software developer" />
