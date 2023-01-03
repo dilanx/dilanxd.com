@@ -261,5 +261,3 @@
     Feel free to <Link to="/contact">get in touch</Link>!
   </Text>
 </Section>
-
-<Christmas />
