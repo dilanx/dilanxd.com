@@ -36,6 +36,8 @@
     margin: 0;
     color: theme.$text-primary;
 
+    font-size: 16px;
+
     &.xs {
       font-size: 14px;
     }

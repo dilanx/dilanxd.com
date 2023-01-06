@@ -1,5 +1,5 @@
 <footer>
-  <p>Copyright &#169; 2022 Dilan Nair</p>
+  <p>Copyright &#169; 2023 Dilan Nair</p>
   <p>
     <a href="https://dilan.statuspage.io" target="_blank" rel="noreferrer"
       >System Status</a
