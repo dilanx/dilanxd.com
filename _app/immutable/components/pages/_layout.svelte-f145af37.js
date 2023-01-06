@@ -1,10 +1,10 @@
-import{S as j,i as P,s as q,k as _,q as A,a as T,l as p,m as b,r as G,h as g,c as V,n as m,b as k,C as v,B as C,D as te,w as L,x as N,E as w,y as D,f as E,t as y,z as I,F as W,u as ie,G as z,o as re,H as le,e as ne,I as oe,J as fe,K as ce,L as ue,M as ge}from"../../chunks/index-cd5f678e.js";import{a as me}from"../../chunks/Navigation.svelte_svelte_type_style_lang-7051d5fb.js";function he(r){let e,n,l,s,a,t,i,o,c,$,h,u,f,d,S,K,B,F,H;return{c(){e=_("footer"),n=_("p"),l=A("Copyright \xA9 2022 Dilan Nair"),s=T(),a=_("p"),t=_("a"),i=A("System Status"),o=A(`
+import{S as j,i as P,s as q,k as _,q as A,a as T,l as p,m as b,r as G,h as g,c as V,n as m,b as k,C as v,B as C,D as te,w as L,x as N,E as w,y as D,f as E,t as y,z as I,F as W,u as ie,G as z,o as re,H as le,e as ne,I as oe,J as fe,K as ce,L as ue,M as ge}from"../../chunks/index-cd5f678e.js";import{a as me}from"../../chunks/Navigation.svelte_svelte_type_style_lang-283c5034.js";function he(r){let e,n,l,s,a,t,i,o,c,$,h,u,f,d,S,K,B,F,H;return{c(){e=_("footer"),n=_("p"),l=A("Copyright \xA9 2023 Dilan Nair"),s=T(),a=_("p"),t=_("a"),i=A("System Status"),o=A(`
     |
     `),c=_("a"),$=A("Sponsor"),h=A(`
     |
     `),u=_("a"),f=A("Privacy"),d=A(`
     | `),S=_("a"),K=A("Attributions"),B=A(` |
-    `),F=_("a"),H=A("Contact Me"),this.h()},l(R){e=p(R,"FOOTER",{class:!0});var O=b(e);n=p(O,"P",{class:!0});var Q=b(n);l=G(Q,"Copyright \xA9 2022 Dilan Nair"),Q.forEach(g),s=V(O),a=p(O,"P",{class:!0});var M=b(a);t=p(M,"A",{href:!0,target:!0,rel:!0,class:!0});var X=b(t);i=G(X,"System Status"),X.forEach(g),o=G(M,`
+    `),F=_("a"),H=A("Contact Me"),this.h()},l(R){e=p(R,"FOOTER",{class:!0});var O=b(e);n=p(O,"P",{class:!0});var Q=b(n);l=G(Q,"Copyright \xA9 2023 Dilan Nair"),Q.forEach(g),s=V(O),a=p(O,"P",{class:!0});var M=b(a);t=p(M,"A",{href:!0,target:!0,rel:!0,class:!0});var X=b(t);i=G(X,"System Status"),X.forEach(g),o=G(M,`
     |
     `),c=p(M,"A",{href:!0,target:!0,rel:!0,class:!0});var Y=b(c);$=G(Y,"Sponsor"),Y.forEach(g),h=G(M,`
     |
