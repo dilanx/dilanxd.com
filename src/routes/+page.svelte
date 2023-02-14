@@ -42,41 +42,6 @@
 </HeadingBlock>
 
 <Display
-  backgroundImage="https://dilan.blog/img/a-comprehensive-react-tutorial-for-beginners/preview.jpg"
-  darkenBackgroundImage
-  links={[blog('a-comprehensive-react-tutorial-for-beginners')]}
-  linkColor="#ee97b1"
-  dark
-  blog={26}
-  mini
-  icon="fas fa-code"
->
-  <h2>A Comprehensive React Tutorial for Beginners</h2>
-  <p>
-    Trying to use the <strong>React</strong> UI library but not sure where to start?
-    Check out this fun guide that covers all of the basics while building a simple
-    Wordle clone!
-  </p>
-</Display>
-
-<Display
-  backgroundImage="https://dilan.blog/img/how-paper-manages-hundreds-of-thousands-of-lines-of-data/preview.jpg"
-  darkenBackgroundImage
-  links={[blog('how-paper-manages-hundreds-of-thousands-of-lines-of-data')]}
-  linkColor="#ee97b1"
-  dark
-  blog={7}
-  mini
-  icon="fas fa-book-bookmark"
->
-  <h2>How Paper Manages Hundreds of Thousands of Lines of Data</h2>
-  <p>
-    If you're interested in what goes on behind the scenes of the Paper course
-    scheduler, check out this new blog post!
-  </p>
-</Display>
-
-<Display
   backgroundColor="#0c5041"
   links={[
     {
@@ -163,6 +128,24 @@
   <p>
     An online tool used by thousands of Northwestern students to plan and
     schedule their courses.
+  </p>
+</Display>
+
+<Display
+  backgroundImage="https://dilan.blog/img/a-comprehensive-react-tutorial-for-beginners/preview.jpg"
+  darkenBackgroundImage
+  links={[blog('a-comprehensive-react-tutorial-for-beginners')]}
+  linkColor="#ee97b1"
+  dark
+  blog={26}
+  mini
+  icon="fas fa-code"
+>
+  <h2>A Comprehensive React Tutorial for Beginners</h2>
+  <p>
+    Trying to use the <strong>React</strong> UI library but not sure where to start?
+    Check out this fun guide that covers all of the basics while building a simple
+    Wordle clone!
   </p>
 </Display>
 
