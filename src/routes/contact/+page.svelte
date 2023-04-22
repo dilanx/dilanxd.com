@@ -19,7 +19,7 @@
     links={[
       {
         text: 'Knowledge Base',
-        to: '/kb',
+        to: 'https://kb.dilanxd.com',
         icon: 'fas fa-book',
       },
     ]}
