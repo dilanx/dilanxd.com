@@ -17,7 +17,6 @@ const config = {
     prerender: {
       origin: 'https://www.dilanxd.com',
     },
-    trailingSlash: 'always',
   },
 };
 
