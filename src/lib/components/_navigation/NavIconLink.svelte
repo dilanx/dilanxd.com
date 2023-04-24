@@ -4,7 +4,7 @@
 </script>
 
 <li>
-  <a href={to}> <i class={icon} /></a>
+  <a href={to} target="_blank" rel="noreferrer"><i class={icon} /></a>
 </li>
 
 <style lang="scss">

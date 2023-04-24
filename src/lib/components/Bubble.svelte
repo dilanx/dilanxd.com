@@ -1,4 +1,6 @@
 <script lang="ts">
+  import type { Badge } from '$lib/common';
+  import BubbleBadge from './_bubble/BubbleBadge.svelte';
   import BubbleConditionalLink from './_bubble/BubbleConditionalLink.svelte';
 
   export let to: string | undefined = undefined;
@@ -9,10 +11,36 @@
 
   export let backgroundColor: string | undefined = undefined;
   export let backgroundImage: string | undefined = undefined;
-  //let defaultColor =
-  !backgroundColor && !backgroundImage ? '#fafafa' : undefined;
+  export let borderColor: string | undefined = undefined;
+
+  export let badges: Badge[] = [];
 
   export let dark = false;
+
+  export let old = false;
+  if (old) {
+    badges.push({
+      text: 'OLD PROJECT',
+      color: '#60a5fab0',
+    });
+  }
+
+  export let deprecated = false;
+  if (deprecated) {
+    badges.push({
+      text: 'DEPRECATED',
+      color: '#fb923cb0',
+    });
+  }
+
+  export let date = '';
+  if (date) {
+    badges.push({
+      text: date,
+      color: '#646464a0',
+      size: 'md',
+    });
+  }
 </script>
 
 <BubbleConditionalLink {to} {newTab}>
@@ -23,6 +51,7 @@
     class:no-bg={!backgroundColor && !backgroundImage}
     style:background-color={backgroundColor}
     style:background-image={backgroundImage}
+    style:border-color={borderColor}
     style:cursor={to ? 'pointer' : 'not-allowed'}
   >
     {#if role}
@@ -32,13 +61,21 @@
     {#if description}
       <p class="desc">{description}</p>
     {/if}
+    {#if badges.length > 0}
+      <div class="badges">
+        {#each badges as badge}
+          <BubbleBadge {badge} />
+        {/each}
+      </div>
+    {/if}
   </div>
 </BubbleConditionalLink>
 
 <style lang="scss">
   @use '../theme';
 
-  div {
+  .content {
+    position: relative;
     height: 132px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
       rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -66,9 +103,9 @@
     }
 
     &:hover {
-      border-color: theme.$link-primary;
+      border-color: theme.$link-primary !important;
       &.no-link {
-        border-color: theme.$link-disabled;
+        border-color: theme.$link-disabled !important;
       }
     }
 
@@ -88,6 +125,14 @@
       font-weight: 800;
       margin: 0;
       opacity: 0.64;
+    }
+
+    .badges {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      display: flex;
+      gap: 8px;
     }
   }
 </style>

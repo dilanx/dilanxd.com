@@ -12,6 +12,12 @@ export interface DisplayLabel {
   alt: string;
 }
 
+export interface Badge {
+  text: string;
+  color: string;
+  size?: 'sm' | 'md';
+}
+
 export const lm = (route: string): DisplayLink => ({
   to: route,
   text: 'Learn more',

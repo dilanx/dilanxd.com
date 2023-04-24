@@ -31,6 +31,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 8px;
     &.margin {
       margin: 24px;
     }
@@ -78,22 +79,25 @@
 
     &.mobileVertical {
       @include theme.sm {
-        flex-direction: column;
+        //flex-direction: column;
         align-items: center;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
 
         a {
-          width: 220px;
+          width: 128px;
+          height: 128px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
 
         i {
-          //text-align: center;
-          //flex: 30%;
+          font-size: 32px;
         }
 
         p {
-          text-align: right;
-          flex: 1 0 auto;
+          text-align: center;
+          font-size: 16px;
           //flex: 70%;
         }
       }
