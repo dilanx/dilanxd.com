@@ -1,5 +1,6 @@
 <script lang="ts">
   import { blog, ext, gh, lm } from '$lib/common';
+  import Cursor from '$lib/components/Cursor.svelte';
   import Display from '$lib/components/Display.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import HeadingBlock from '$lib/components/HeadingBlock.svelte';
