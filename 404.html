@@ -28,23 +28,30 @@
       }
     </style>
     <meta http-equiv="content-security-policy" content="">
-		<link rel="modulepreload" href="/_app/immutable/start-a2223941.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/index-cd5f678e.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/singletons-365ad951.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/preload-helper-b21cceae.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/start.832ff6c7.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index.a4cad43b.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/singletons.6df8a522.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.37c5b7db.js">
   </head>
   <body>
     <div id="site-content">
-		<script type="module" data-sveltekit-hydrate="45h">
-			import { start } from "/_app/immutable/start-a2223941.js";
+			<script>
+				{
+					__sveltekit_y8z8id = {
+						base: "",
+						env: {}
+					};
 
-			start({
-				env: {},
-				hydrate: null,
-				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
-				trailing_slash: "always"
-			});
-		</script></div>
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/_app/immutable/entry/start.832ff6c7.js"),
+						import("/_app/immutable/entry/app.37c5b7db.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
   </body>
 </html>
