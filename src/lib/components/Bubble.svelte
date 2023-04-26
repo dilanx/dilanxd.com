@@ -109,6 +109,10 @@
       }
     }
 
+    &:active:not(.no-link) {
+      border-color: theme.$link-secondary !important;
+    }
+
     .title {
       font-size: 28px;
       font-weight: bold;

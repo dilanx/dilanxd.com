@@ -1,25 +1,25 @@
 @font-face {
-  font-family: Poppins;
-  src: url(/fonts/Poppins-ExtraLight.ttf);
+  font-family: Nunito;
+  src: url(/fonts/Nunito-ExtraLight.ttf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: Nunito;
+  src: url(/fonts/Nunito-Light.ttf);
   font-weight: 300;
 }
 @font-face {
-  font-family: Poppins;
-  src: url(/fonts/Poppins-Light.ttf);
-  font-weight: normal;
+  font-family: Nunito;
+  src: url(/fonts/Nunito-Regular.ttf);
+  font-weight: 400;
 }
 @font-face {
-  font-family: Poppins;
-  src: url(/fonts/Poppins-Regular.ttf);
+  font-family: Nunito;
+  src: url(/fonts/Nunito-Medium.ttf);
   font-weight: 500;
 }
 @font-face {
-  font-family: Poppins;
-  src: url(/fonts/Poppins-Medium.ttf);
-  font-weight: bold;
-}
-@font-face {
-  font-family: Poppins;
-  src: url(/fonts/Poppins-Bold.ttf);
-  font-weight: 800;
+  font-family: Nunito;
+  src: url(/fonts/Nunito-Bold.ttf);
+  font-weight: 700;
 }
