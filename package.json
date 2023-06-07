@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
+    "postbuild": "bash generate-redirects.sh",
     "package": "svelte-kit package",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
