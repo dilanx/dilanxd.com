@@ -23,3 +23,13 @@
   src: url(/fonts/Nunito-Bold.ttf);
   font-weight: 700;
 }
+@font-face {
+  font-family: Nunito;
+  src: url(/fonts/Nunito-ExtraBold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: Nunito;
+  src: url(/fonts/Nunito-Black.ttf);
+  font-weight: 900;
+}
