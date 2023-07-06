@@ -91,7 +91,7 @@
     background-size: cover;
     background-origin: border-box;
     border: 4px solid transparent;
-    transition: outline 50ms;
+    transition: transform 250ms;
 
     &.dark {
       color: theme.$text-primary-dark;
@@ -103,14 +103,11 @@
     }
 
     &:hover {
-      border-color: theme.$link-primary !important;
-      &.no-link {
-        border-color: theme.$link-disabled !important;
-      }
+      transform: scale(1.02);
     }
 
     &:active:not(.no-link) {
-      border-color: theme.$link-secondary !important;
+      transform: scale(0.98);
     }
 
     .title {

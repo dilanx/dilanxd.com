@@ -74,6 +74,7 @@
     :global(a) {
       color: theme.$link-primary;
       text-decoration: none;
+      text-underline-offset: 2px;
 
       &:hover {
         text-decoration: underline;
@@ -87,6 +88,12 @@
 
   @include theme.lg {
     p {
+      &.xs {
+        font-size: 16px;
+      }
+      &.sm {
+        font-size: 18px;
+      }
       &.md {
         font-size: 20px;
       }

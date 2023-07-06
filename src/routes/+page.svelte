@@ -2,6 +2,8 @@
   import { blog, ext, gh, lm } from '$lib/common';
   import Cursor from '$lib/components/Cursor.svelte';
   import Display from '$lib/components/Display.svelte';
+  import ExperienceItem from '$lib/components/ExperienceItem.svelte';
+  import ExperienceList from '$lib/components/ExperienceList.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import HeadingBlock from '$lib/components/HeadingBlock.svelte';
   import Link from '$lib/components/Link.svelte';
@@ -127,8 +129,8 @@
   <img src="/images/paper-thick-white.png" alt="Paper logo" slot="image" />
   <h2>Paper</h2>
   <p>
-    An online tool used by thousands of Northwestern students to plan and
-    schedule their courses.
+    An online tool sponsored by the university and used by thousands of
+    Northwestern students to plan and schedule their courses.
   </p>
 </Display>
 
@@ -206,42 +208,135 @@
     and web APIs to video games and game mods, many of which you'll find here on
     my site.
   </Text>
-  <Text sm>
-    I'm a big proponent of open source software, with my most notable project
-    being <Link to="https://github.com/dilanx/craco">CRACO</Link>, a mainstream
-    library for React development.
-  </Text>
-  <Text sm>
-    At Northwestern, I created <Link to="/paper">Paper</Link>, a course planning
-    and scheduling tool sponsored by the university and used by thousands of
-    students. I'm on the tech team for
-    <Link to="https://dilloday.com/">Mayfest Productions</Link>, the
-    organization behind <Link to="https://en.wikipedia.org/wiki/Dillo_Day"
-      >Dillo Day</Link
-    >. I'm also the Director of Web Development for
-    <Link to="https://www.wildhacks.net">WildHacks</Link>, Northwestern's
-    largest hackathon. I serve as an undergraduate teaching assistant for a
-    variety of computer science courses. I'm also a member of the <Link
-      to="https://www.nudrumline.org"
+
+  <ExperienceList>
+    <ExperienceItem
+      type="education"
+      time="2020 - 2024"
+      title="Northwestern University"
+      subtitle="Bachelor of Science, Computer Science"
+      img="/images/nu-seal.png"
+    />
+
+    <ExperienceItem
+      type="organization"
+      time="2022 - Present"
+      title="WildHacks"
+      subtitle="Director"
+      img="/images/wildhacks.png"
+      next
     >
-      Northwestern University Drumline</Link
-    >.
-  </Text>
-  <Text sm>
-    I founded and used to manage
-    <span class="s medium">Voidstone Software</span>, an online store dedicated
-    to the development of private, custom game modifications on request. I'm
-    also the founder and former president of the
-    <span class="s medium">Software and Game Development Group</span>
-    at Northwestern University, one of the largest student-run computer science organizations
-    on campus focusing on the collaborative development of software applications
-    and interactive entertainment. Outside of computer science, I have a strong interest
-    in tech, adventure and story-driven video games, and music (fun fact: I used
-    to play a lot of Minecraft and made a bunch of <Link to="/minecraft-maps"
-      >Minecraft worlds</Link
-    > played by popular YouTubers like CaptainSparklez, DanTDM, and more).
-  </Text>
-  <Text sm>
-    Feel free to <Link to="/contact">get in touch</Link>!
-  </Text>
+      <Link to="https://www.wildhacks.net">WildHacks</Link> is Northwestern's largest
+      hackathon. I was the Director of Website Development for WildHacks 2023, leading
+      the development of the WildHacks website and dashboard. For WildHacks 2024,
+      I am directing the entire event.
+    </ExperienceItem>
+
+    <ExperienceItem
+      type="organization"
+      time="2022 - Present"
+      title="Mayfest Productions"
+      subtitle="Director of Tech"
+      img="/images/dillo.png"
+      prev
+      next
+    >
+      <Link to="https://dilloday.com">Mayfest Productions</Link> is the organization
+      behind <Link to="https://en.wikipedia.org/wiki/Dillo_Day">Dillo Day</Link
+      >, the nation's largest student-run music festival. I was a member of the
+      tech team for 2022-2023 and am directing the team for 2023-2024.
+    </ExperienceItem>
+
+    <ExperienceItem
+      type="organization"
+      time="2020 - 2022"
+      title="Northwestern Drumline"
+      subtitle="Snare Player"
+      img="/images/drumline-logo.png"
+      prev
+      next
+    >
+      The <Link to="https://www.nudrumline.org"
+        >Northwestern University Drumline</Link
+      > is the official drumline of the Northwestern University Marching Band. I
+      played snare for 3 years on the line.
+    </ExperienceItem>
+
+    <ExperienceItem
+      type="organization"
+      time="2021 - 2022"
+      title="The Software and Game Development Group"
+      subtitle="Founder and President"
+      img="/images/sgdg.png"
+      prev
+    >
+      <span class="s bold">SGDG</span> was the premier student organization for software
+      and game development at Northwestern University. I founded the organization
+      to connect developers of all kinds together, but eventually stepped down to
+      focus on other commitments.
+    </ExperienceItem>
+
+    <ExperienceItem
+      type="work"
+      time="2023 - 2023"
+      title="Apple"
+      subtitle="Software Engineer Intern"
+      img="/images/apple.svg"
+      next
+    >
+      Over the summer of 2023, I worked at <Link to="https://www.apple.com/"
+        >Apple</Link
+      > as a Software Engineer Intern on the <Link
+        to="https://developer.apple.com/xcode/">Xcode</Link
+      > team.
+    </ExperienceItem>
+
+    <ExperienceItem
+      type="work"
+      time="2021 - Present"
+      title="Northwestern University"
+      subtitle="Undergraduate Teaching Assistant"
+      img="/images/nu-seal.png"
+      prev
+      next
+    >
+      <ul>
+        <li>
+          COMP_SCI 211: Fundamentals of Computer Programming II (Spring 2021,
+          Fall 2021, Winter 2022, Spring 2022)
+        </li>
+        <li>COMP_SCI 343: Operating Systems (Fall 2022)</li>
+        <li>COMP_SCI 213: Intro to Computer Systems (Winter 2023)</li>
+        <li>COMP_SCI 310: Scalable Software Architectures (Spring 2023)</li>
+      </ul>
+    </ExperienceItem>
+
+    <ExperienceItem
+      type="work"
+      time="2022 - 2022"
+      title="Northwestern Mutual"
+      subtitle="Software Engineer Intern"
+      img="/images/northwestern-mutual.png"
+      prev
+      next
+    >
+      Over the summer of 2022, I worked at <Link
+        to="https://www.northwesternmutual.com/">Northwestern Mutual</Link
+      > as a Software Engineer Intern.
+    </ExperienceItem>
+
+    <ExperienceItem
+      type="work"
+      time="2015 - 2020"
+      title="Voidstone Software"
+      subtitle="Founder and Software Developer"
+      img="/images/voidstone.png"
+      prev
+    >
+      As a child learning to code, I created <span class="s bold"
+        >Voidstone Software</span
+      >, an online store dedicated to the development of private, custom game
+      modifications on request.
+    </ExperienceItem>
+  </ExperienceList>
 </Section>

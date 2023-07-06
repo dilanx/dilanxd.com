@@ -22,7 +22,8 @@
     display: block;
     margin: 0;
     font-size: 56px;
-    font-weight: 800;
+    font-weight: 900;
+    letter-spacing: 4px;
 
     a {
       text-decoration: none;
@@ -42,6 +43,7 @@
       margin: 0 10px;
       font-size: 14px;
       font-weight: normal;
+      letter-spacing: 1px;
 
       a {
         --color: #{theme.$nav-fg};
@@ -49,6 +51,8 @@
         .big & {
           --color: #{theme.$nav-fg-big};
         }
+
+        font-size: 16px;
 
         opacity: 1;
         transition: none;

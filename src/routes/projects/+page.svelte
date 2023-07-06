@@ -102,6 +102,8 @@
       newTab
       title="CRACO"
       description="An easy and comprehensible configuration layer for Create React App."
+      backgroundColor="#0c5041"
+      dark
     />
     <Bubble
       to="https://github.com/dilanx/create-tutorial"
@@ -169,7 +171,7 @@
       newTab
       title="Mayfest Productions"
       description="The Northwestern University student organization behind Dillo Day, the nation's largest student-run music festival."
-      role="tech team software developer"
+      role="director of tech"
       backgroundImage="
         linear-gradient(
           rgba(0, 0, 0, 0.2),
@@ -185,7 +187,7 @@
       newTab
       title="Northwestern Drumline"
       description="The drumline section of the Northwestern University Marching Band."
-      role="snare player and website developer"
+      role="former snare player and website developer"
       backgroundImage="
         linear-gradient(
           rgba(0, 0, 0, 0.2),
@@ -209,7 +211,7 @@
       title="Voidstone Software"
       description="Quality custom software and game modifications curated to your taste."
       backgroundColor="black"
-      role="founder and software developer"
+      role="founder and former software developer"
       dark
       date="2015 - 2020"
     />

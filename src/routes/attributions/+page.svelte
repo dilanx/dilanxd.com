@@ -38,16 +38,16 @@
     <Text xs nom>
       <ul>
         <li>
+          Icons provided by <Link to="https://fontawesome.com/"
+            >Font Awesome</Link
+          >
+        </li>
+        <li>
           Minecraft background images taken by myself on the <Link
             to="https://www.drehmal.net/">Drehmal: PRIMORDIAL</Link
           >
           Minecraft map using
           <Link to="https://sildurs-shaders.github.io/">Sildur's Shaders</Link>
-        </li>
-        <li>
-          Icons provided by <Link to="https://fontawesome.com/"
-            >Font Awesome</Link
-          >
         </li>
         <li>
           This site is <Link to="https://github.com/dilanx/dilanxd.com"
@@ -64,12 +64,35 @@
     <Text xs nom>
       <ul>
         <li>
-          This site runs a highly-modified version of <Link
-            to="https://docusaurus.io/">Docusaurus</Link
-          > and its blog-only mode
+          This site runs a modified version of <Link to="https://docusaurus.io/"
+            >Docusaurus</Link
+          > on blog-only mode using <Link to="https://github.com/dilanx/themes"
+            >@dilanx/themes</Link
+          >
         </li>
         <li>
           This site is <Link to="https://github.com/dilanx/dilan.blog"
+            >open source</Link
+          >
+        </li>
+      </ul>
+    </Text>
+  </ContentGroup>
+
+  <ContentGroup sm>
+    <Heading h3>Knowledge Base</Heading>
+    <Text nom><Link to="https://kb.dilanxd.com">kb.dilanxd.com</Link></Text>
+    <Text xs nom>
+      <ul>
+        <li>
+          This site runs a modified version of <Link to="https://docusaurus.io/"
+            >Docusaurus</Link
+          > using <Link to="https://github.com/dilanx/themes"
+            >@dilanx/themes</Link
+          >
+        </li>
+        <li>
+          This site is <Link to="https://github.com/dilanx/kb.dilanxd.com"
             >open source</Link
           >
         </li>
