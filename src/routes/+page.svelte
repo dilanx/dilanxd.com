@@ -1,5 +1,7 @@
 <script lang="ts">
   import { blog, ext, gh, lm } from '$lib/common';
+  import AwardTextItem from '$lib/components/AwardTextItem.svelte';
+  import AwardTextList from '$lib/components/AwardTextList.svelte';
   import Cursor from '$lib/components/Cursor.svelte';
   import Display from '$lib/components/Display.svelte';
   import ExperienceItem from '$lib/components/ExperienceItem.svelte';
@@ -216,7 +218,14 @@
       title="Northwestern University"
       subtitle="Bachelor of Science, Computer Science"
       img="/images/nu-seal.png"
-    />
+    >
+      <AwardTextList>
+        <AwardTextItem>Computer Science Student Hero (2022-2023)</AwardTextItem>
+        <AwardTextItem
+          >Computer Science Outstanding Peer Mentor (Winter 2022)</AwardTextItem
+        >
+      </AwardTextList>
+    </ExperienceItem>
 
     <ExperienceItem
       type="organization"
