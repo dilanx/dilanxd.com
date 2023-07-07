@@ -221,9 +221,9 @@
     >
       <AwardTextList>
         <AwardTextItem>Computer Science Student Hero (2022-2023)</AwardTextItem>
-        <AwardTextItem
-          >Computer Science Outstanding Peer Mentor (Winter 2022)</AwardTextItem
-        >
+        <AwardTextItem>
+          Computer Science Outstanding Peer Mentor (Winter 2022)
+        </AwardTextItem>
       </AwardTextList>
     </ExperienceItem>
 
