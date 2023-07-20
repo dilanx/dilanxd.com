@@ -42,7 +42,7 @@
     {#if prev}
       <div class="line prev" style:background-color={color} />
     {/if}
-    <div class="circle" style:background-color={color} />
+    <div class="point" style:background-color={color} />
     {#if next}
       <div class="line next" style:background-color={color} />
     {/if}
@@ -122,10 +122,10 @@
       }
     }
 
-    .circle {
+    .point {
       width: 20px;
       height: 20px;
-      border-radius: 50%;
+      border-radius: 25%;
       position: absolute;
       left: 50%;
       top: 50%;
