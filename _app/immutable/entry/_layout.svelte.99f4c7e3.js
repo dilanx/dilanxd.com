@@ -1,4 +1,4 @@
-import{S as C,i as P,s as j,k as d,q as S,a as N,l as p,m as b,r as V,h as g,c as L,n as m,b as k,C as v,D as G,E as te,y as D,z as I,F as w,A as T,g as E,d as y,B as q,G as W,u as ie,H as B,I as se,o as le,J as oe,e as ne,K as fe,L as ce,M as ue,N as ge}from"../chunks/index.afa1daf7.js";import{a as me}from"../chunks/Navigation.svelte_svelte_type_style_lang.b17d5d09.js";function he(i){let e,n,r,s,a,t,l,o,u,$,h,c,f,_,A,O,K,M,H;return{c(){e=d("footer"),n=d("p"),r=S("Copyright © 2023 Dilan Nair"),s=N(),a=d("p"),t=d("a"),l=S("System Status"),o=S(`
+import{S as C,i as P,s as j,k as d,q as S,a as N,l as p,m as b,r as V,h as g,c as L,n as m,b as k,C as v,D as G,E as te,y as D,z as I,F as w,A as T,g as E,d as y,B as q,G as W,u as ie,H as B,I as se,o as le,J as oe,e as ne,K as fe,L as ce,M as ue,N as ge}from"../chunks/index.afa1daf7.js";import{a as me}from"../chunks/Navigation.svelte_svelte_type_style_lang.47150db0.js";function he(i){let e,n,r,s,a,t,l,o,u,$,h,c,f,_,A,O,K,M,H;return{c(){e=d("footer"),n=d("p"),r=S("Copyright © 2023 Dilan Nair"),s=N(),a=d("p"),t=d("a"),l=S("System Status"),o=S(`
     |
     `),u=d("a"),$=S("Sponsor"),h=S(`
     |
