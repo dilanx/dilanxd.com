@@ -1,7 +1,7 @@
 <script lang="ts">
   import { blog, ext, gh, lm } from '$lib/common';
-  import AwardTextItem from '$lib/components/AwardTextItem.svelte';
-  import AwardTextList from '$lib/components/AwardTextList.svelte';
+  import ExperienceFeatureItem from '$lib/components/ExperienceFeatureItem.svelte';
+  import ExperienceFeatureList from '$lib/components/ExperienceFeatureList.svelte';
   import Cursor from '$lib/components/Cursor.svelte';
   import Display from '$lib/components/Display.svelte';
   import ExperienceItem from '$lib/components/ExperienceItem.svelte';
@@ -219,12 +219,20 @@
       subtitle="Bachelor of Science, Computer Science"
       img="/images/nu-seal.png"
     >
-      <AwardTextList>
-        <AwardTextItem>Computer Science Student Hero (2022-2023)</AwardTextItem>
-        <AwardTextItem>
+      <ExperienceFeatureList>
+        <ExperienceFeatureItem award>
+          Computer Science Student Hero (2022-2023)
+        </ExperienceFeatureItem>
+        <ExperienceFeatureItem award>
           Computer Science Outstanding Peer Mentor (Winter 2022)
-        </AwardTextItem>
-      </AwardTextList>
+        </ExperienceFeatureItem>
+        <ExperienceFeatureItem presentation>
+          <Link
+            to="https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f2ef1c03-693e-4279-a613-af9c016b4a62"
+            >Tech Talk: Finding your Passion Project</Link
+          > by Dilan Nair (February 2023)
+        </ExperienceFeatureItem>
+      </ExperienceFeatureList>
     </ExperienceItem>
 
     <ExperienceItem
