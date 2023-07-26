@@ -29,14 +29,23 @@ while read line; do
     continue
   fi
 
+  if [[ ! "$one" =~ ^\/.*$ ]]; then
+    echo "genredir: invalid redirect path '$one', it must start with a slash"
+    exit 1
+  fi
+
+  if [[ ! "$one" =~ ^.*\/$ ]]; then
+    path="$one/"
+  fi
+
   if [ -z "$two" ]; then
     echo "genredir: no redirect target for '/$one', skipping"
     continue
   fi
   
   html="<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><title>Redirecting...</title><script>window.location.replace(\`$two\`);</script></head></html>"
-  mkdir -p $OUT/$one
-  echo "$html" > $OUT/$one/index.html
-  
-  echo "genredir: mapped /$one to '$two'"
+  mkdir -p $OUT$path
+  echo "$html" > $OUT$path/index.html
+
+  echo "genredir: mapped $one to '$two'"
 done
