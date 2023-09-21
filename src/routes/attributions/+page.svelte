@@ -28,13 +28,41 @@
 </Section>
 
 <Section ws hs>
-  <Heading h2 anchor="other-acknowledgements" class="s left"
-    >Other Acknowledgements</Heading
-  >
+  <Heading h2 anchor="general-software-acknowledgements" class="s left">
+    General Software Acknowledgements
+  </Heading>
 
   <ContentGroup sm>
-    <Heading h3>Website</Heading>
-    <Text nom><Link to="https://www.dilanxd.com">dilanxd.com</Link></Text>
+    <Heading h3 anchor="paper">Paper</Heading>
+    <Text nom>
+      <Link to="https://www.paper.nu">paper.nu</Link>
+    </Text>
+    <Text xs nom>
+      <ul>
+        <li>
+          Thanks to <Link to="https://github.com/Everthings">Andy Xu</Link>, the
+          creator of <Link to="https://github.com/Everthings/salad.nu"
+            >salad.nu</Link
+          >, for permitting the merge of his product with Plan Northwestern (<Link
+            to="https://github.com/dilanx/paper.nu/blob/main/CHANGELOG.md#200"
+            >Paper v1</Link
+          >) into what is now Paper.
+        </li>
+      </ul>
+    </Text>
+  </ContentGroup>
+</Section>
+
+<Section ws hs>
+  <Heading h2 anchor="other-acknowledgements" class="s left">
+    Other Acknowledgements
+  </Heading>
+
+  <ContentGroup sm>
+    <Heading h3 anchor="website">Website</Heading>
+    <Text nom>
+      <Link to="https://www.dilanxd.com">dilanxd.com</Link>
+    </Text>
     <Text xs nom>
       <ul>
         <li>
@@ -59,14 +87,17 @@
   </ContentGroup>
 
   <ContentGroup sm>
-    <Heading h3>Blog</Heading>
-    <Text nom><Link to="https://dilan.blog">dilan.blog</Link></Text>
+    <Heading h3 anchor="blog">Blog</Heading>
+    <Text nom>
+      <Link to="https://dilan.blog">dilan.blog</Link>
+    </Text>
     <Text xs nom>
       <ul>
         <li>
           This site runs a modified version of <Link to="https://docusaurus.io/"
             >Docusaurus</Link
-          > on blog-only mode using <Link to="https://github.com/dilanx/themes"
+          > on blog-only mode using <Link
+            to="https://github.com/dilanx/pkg/tree/main/packages/themes"
             >@dilanx/themes</Link
           >
         </li>
@@ -80,19 +111,22 @@
   </ContentGroup>
 
   <ContentGroup sm>
-    <Heading h3>Knowledge Base</Heading>
-    <Text nom><Link to="https://kb.dilanxd.com">kb.dilanxd.com</Link></Text>
+    <Heading h3 anchor="help-center">Help Center</Heading>
+    <Text nom>
+      <Link to="https://support.dilanxd.com">support.dilanxd.com</Link>
+    </Text>
     <Text xs nom>
       <ul>
         <li>
           This site runs a modified version of <Link to="https://docusaurus.io/"
             >Docusaurus</Link
-          > using <Link to="https://github.com/dilanx/themes"
+          > using <Link
+            to="https://github.com/dilanx/pkg/tree/main/packages/themes"
             >@dilanx/themes</Link
           >
         </li>
         <li>
-          This site is <Link to="https://github.com/dilanx/kb.dilanxd.com"
+          This site is <Link to="https://github.com/dilanx/support.dilanxd.com"
             >open source</Link
           >
         </li>

@@ -14,13 +14,17 @@
 <style lang="scss">
   @use '../../theme';
 
-  :global(h2:hover) a.button {
-    opacity: 1;
-    &:hover {
-      opacity: 0.8;
-    }
-    &:active {
-      opacity: 0.5;
+  :global(h1:hover),
+  :global(h2:hover),
+  :global(h3:hover) {
+    a.button {
+      opacity: 1;
+      &:hover {
+        opacity: 0.8;
+      }
+      &:active {
+        opacity: 0.5;
+      }
     }
   }
 

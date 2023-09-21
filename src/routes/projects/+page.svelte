@@ -124,6 +124,12 @@
       description="A dark theme for Redoc."
     />
     <Bubble
+      to="https://github.com/dilanx/pkg"
+      newTab
+      title="pkg"
+      description="A collection of developer resources and configuration presets for myself and other developers."
+    />
+    <Bubble
       to="https://github.com/dilanx/ChoccyStatus"
       newTab
       title="ChoccyStatus"
@@ -253,37 +259,6 @@
         url('/images/mcshaders3.jpg')
       "
       dark
-    />
-  </BubbleContainer>
-</Section>
-
-<Section
-  wm
-  hs
-  label={{
-    title: 'DEVELOPER RESOURCES',
-    subtitle:
-      'Resources and configuration presets for myself and other developers',
-  }}
->
-  <BubbleContainer>
-    <Bubble
-      to="https://github.com/dilanx/config"
-      newTab
-      title="config"
-      description="Maintain consistency across your projects with consistent styling and configuration."
-    />
-    <Bubble
-      to="https://github.com/dilanx/avatar"
-      newTab
-      title="avatar"
-      description="A simple letter-color avatar component for auth.dilanxd.com avatars."
-    />
-    <Bubble
-      to="https://github.com/dilanx/themes"
-      newTab
-      title="themes"
-      description="A collection of themes used on my websites."
     />
   </BubbleContainer>
 </Section>

@@ -13,13 +13,13 @@
 <Section ws hm>
   <ImageTitle images={['fas fa-envelope']}>Get in touch</ImageTitle>
   <Text md center>
-    First, check out the knowledge base for help with common issues.
+    First, check out the help center for help with common issues.
   </Text>
   <LinkButtons
     links={[
       {
-        text: 'Knowledge Base',
-        to: 'https://kb.dilanxd.com',
+        text: 'Help Center',
+        to: 'https://support.dilanxd.com',
         icon: 'fas fa-book',
       },
     ]}
