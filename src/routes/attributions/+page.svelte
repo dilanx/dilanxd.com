@@ -80,7 +80,7 @@
         <li>
           This site is <Link to="https://github.com/dilanx/dilanxd.com"
             >open source</Link
-          >
+          >, written in <Link to="https://svelte.dev/">Svelte</Link>.
         </li>
       </ul>
     </Text>
