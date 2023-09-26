@@ -324,7 +324,9 @@
         </li>
         <li>COMP_SCI 343: Operating Systems (Fall 2022)</li>
         <li>COMP_SCI 213: Intro to Computer Systems (Winter 2023)</li>
-        <li>COMP_SCI 310: Scalable Software Architectures (Spring 2023)</li>
+        <li>
+          COMP_SCI 310: Scalable Software Architectures (Spring 2023, Fall 2023)
+        </li>
       </ul>
     </ExperienceItem>
 
