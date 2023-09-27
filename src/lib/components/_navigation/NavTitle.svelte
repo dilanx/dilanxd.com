@@ -27,7 +27,7 @@
   a {
     font-size: 24px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 500;
     text-decoration: none;
     opacity: 1;
     transition: opacity 150ms;

@@ -17,6 +17,10 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 
     @include theme.lg {
       margin: 0 10px;

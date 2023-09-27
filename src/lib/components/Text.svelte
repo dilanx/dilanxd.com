@@ -89,10 +89,10 @@
   @include theme.lg {
     p {
       &.xs {
-        font-size: 16px;
+        font-size: 14px;
       }
       &.sm {
-        font-size: 18px;
+        font-size: 16px;
       }
       &.md {
         font-size: 20px;

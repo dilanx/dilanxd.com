@@ -40,47 +40,36 @@
 
     @include theme.lg {
       display: inline-block;
-      margin: 0 10px;
+      margin: 0;
       font-size: 14px;
       font-weight: normal;
       letter-spacing: 1px;
 
       a {
         --color: #{theme.$nav-fg};
+        --color-hover: #{theme.$nav-bg-hover};
+        --color-active: #{theme.$nav-fg-active};
 
         .big & {
           --color: #{theme.$nav-fg-big};
+          --color-hover: #{theme.$nav-bg-big-hover};
+          --color-active: #{theme.$nav-fg-big-active};
         }
 
-        font-size: 16px;
+        font-size: 14px;
 
         opacity: 1;
-        transition: none;
+        transition: background-color 150ms;
         color: var(--color);
+        padding: 4px;
+        border-radius: 4px;
 
-        &:after {
-          display: block;
-          content: '';
-          border-bottom: 1px solid var(--color);
-          transform: scaleX(0);
-          transition: transform 250ms ease-out;
-          transform-origin: 100% 50%;
+        &:hover {
+          background-color: var(--color-hover);
         }
 
-        &.active:after {
-          display: block;
-          content: '';
-          border-bottom: 1px solid var(--color);
-          transform: scaleX(1);
-          transform-origin: 0% 50%;
-        }
-
-        &:not(.active) {
-          &:hover:after,
-          &:focus:after {
-            transform: scaleX(1);
-            transform-origin: 0% 50%;
-          }
+        &.active {
+          color: var(--color-active);
         }
       }
     }

@@ -18,8 +18,13 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
 
     @include theme.lg {
+      flex-direction: row;
       margin: 0 10px;
     }
   }
