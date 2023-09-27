@@ -50,7 +50,7 @@
       font-weight: 500;
       margin: 0;
       padding: 8px 16px;
-      border-radius: 12px;
+      border-radius: 8px;
       transition: all 150ms;
 
       &:hover {

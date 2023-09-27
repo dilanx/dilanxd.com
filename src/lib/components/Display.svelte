@@ -219,7 +219,7 @@
         &:not(.sublink) {
           margin: 0 4px;
           padding: 4px 8px;
-          border-radius: 12px;
+          border-radius: 8px;
           transition: all 150ms;
           &:hover {
             background-color: rgba(140, 142, 144, 0.16);
