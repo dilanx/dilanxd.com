@@ -11,8 +11,8 @@
 <Heading h1 hidden>Contact Me</Heading>
 
 <Section ws hm>
-  <ImageTitle images={['fas fa-envelope']}>Get in touch</ImageTitle>
-  <Text md center>
+  <ImageTitle images={['fas fa-person-falling-burst']}>Get in touch</ImageTitle>
+  <Text sm center>
     First, check out the help center for help with common issues.
   </Text>
   <LinkButtons
@@ -24,10 +24,10 @@
       },
     ]}
   />
-  <Text md center>
+  <Text sm center>
     Otherwise, for inquiries of all kinds, send a message to
   </Text>
-  <Text xl center bold nom>
+  <Text lg center bold nom>
     <a href="mailto:support@dilanxd.com">support@dilanxd.com</a>
   </Text>
 </Section>
