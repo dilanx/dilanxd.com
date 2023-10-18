@@ -2,7 +2,7 @@
 # Generate redirects from a text file
 
 # Run locally like this:
-# bash -c "$(curl -fsSL dilanxd.com/genredir.sh.txt)" < REDIRECT_FILE_NAME
+# bash -c "$(curl -fsSL dilanxd.com/genredir.sh)" < REDIRECT_FILE_NAME
 # 
 # Specify output directory like this:
 # OUT=build bash -c "$(curl -fsSL dilanxd.com/genredir.sh)" < REDIRECT_FILE_NAME
