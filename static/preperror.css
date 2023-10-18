@@ -6,21 +6,38 @@ body {
   font-family: Inter;
   justify-content: center;
   align-items: center;
+  padding: 24px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 main {
-  padding: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   gap: 16px;
+  justify-content: center;
 }
 
 .heading {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.heading a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.heading a:hover {
+  opacity: 0.75;
+}
+
+.heading a:active {
+  opacity: 0.5;
 }
 
 .heading img {
@@ -42,7 +59,7 @@ main {
 }
 
 p {
-  font-size: 18px;
+  font-size: 24px;
   margin: 0;
   font-weight: 300;
 }
