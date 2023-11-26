@@ -13,7 +13,7 @@
 
   function update() {
     big =
-      document.body.scrollTop > 80 || document.documentElement.scrollTop < 80;
+      document.body.scrollTop > 32 || document.documentElement.scrollTop < 32;
   }
 
   $: {
