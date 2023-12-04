@@ -1,3 +1,3 @@
 /cs446-vncgpu https://docs.google.com/presentation/d/1MyyOItWFSbVk7y3yPSPj3OgHPIO8ZhZJYw_J5EDZotw/edit?usp=sharing
-/resume https://www.dilanxd.com/Dilan_Nair_Resume.pdf
+/resume https://docs.dilanxd.com/resume/Dilan_Nair_Resume.pdf
 /help https://www.dilanxd.com/contact/
