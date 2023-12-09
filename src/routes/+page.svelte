@@ -203,8 +203,9 @@
 
   <Text sm>
     Hey, I'm Dilan, a full-stack software engineer and fourth-year undergraduate
-    student at Northwestern University studying computer science. I've been
-    coding for over 11 years, working on
+    student at Northwestern University studying computer science. I have a huge
+    passion for quality software, beautiful user interfaces, and automation.
+    I've been coding for over 11 years, working on
     <Link to="/projects">projects</Link>
     ranging anywhere from desktop and mobile applications to developer tools to websites
     and web APIs to video games and game mods, many of which you'll find here on
