@@ -77,7 +77,7 @@
     },
     {
       to: 'https://github.com/dilanx/craco',
-      image: 'https://img.shields.io/github/stars/dilanx/craco?color=red',
+      image: 'https://img.shields.io/github/stars/dilanx/craco?style=flat&color=red',
       alt: 'CRACO GitHub stars',
     },
   ]}
@@ -121,7 +121,7 @@
   labels={[
     {
       to: 'https://github.com/dilanx/paper.nu',
-      image: 'https://img.shields.io/github/stars/dilanx/paper.nu?color=red',
+      image: 'https://img.shields.io/github/stars/dilanx/paper.nu?style=flat&color=red',
       alt: 'paper.nu GitHub stars',
     },
   ]}
