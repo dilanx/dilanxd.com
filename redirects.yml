@@ -1,0 +1,9 @@
+# https://github.com/dilanx/redirects
+
+redirects:
+  - from: /resume
+    to: https://docs.dilanxd.com/resume/Dilan_Nair_Resume.pdf
+  - from: /schedule-meeting
+    to: https://calendly.com/dilann/meeting
+  - from: /cs446-vncgpu
+    to: https://docs.google.com/presentation/d/1MyyOItWFSbVk7y3yPSPj3OgHPIO8ZhZJYw_J5EDZotw/edit?usp=sharing
