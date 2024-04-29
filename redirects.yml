@@ -5,5 +5,11 @@ redirects:
     to: https://docs.dilanxd.com/resume/Dilan_Nair_Resume.pdf
   - from: /schedule-meeting
     to: https://calendly.com/dilann/meeting
+    title: Schedule a Meeting with Dilan
+    description: Find availability for a meeting with Dilan.
   - from: /cs446-vncgpu
     to: https://docs.google.com/presentation/d/1MyyOItWFSbVk7y3yPSPj3OgHPIO8ZhZJYw_J5EDZotw/edit?usp=sharing
+
+seo:
+  image: https://www.dilanxd.com/logo.jpg
+  theme-color: '#ffffff'
