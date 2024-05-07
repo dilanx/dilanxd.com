@@ -77,7 +77,8 @@
     },
     {
       to: 'https://github.com/dilanx/craco',
-      image: 'https://img.shields.io/github/stars/dilanx/craco?style=flat&color=red',
+      image:
+        'https://img.shields.io/github/stars/dilanx/craco?style=flat&color=red',
       alt: 'CRACO GitHub stars',
     },
   ]}
@@ -121,7 +122,8 @@
   labels={[
     {
       to: 'https://github.com/dilanx/paper.nu',
-      image: 'https://img.shields.io/github/stars/dilanx/paper.nu?style=flat&color=red',
+      image:
+        'https://img.shields.io/github/stars/dilanx/paper.nu?style=flat&color=red',
       alt: 'paper.nu GitHub stars',
     },
   ]}
@@ -238,31 +240,31 @@
 
     <ExperienceItem
       type="organization"
-      time="2022 - Present"
-      title="WildHacks"
-      subtitle="Director"
-      img="/images/wildhacks.png"
-      next
-    >
-      <Link to="https://www.wildhacks.net">WildHacks</Link> is Northwestern's largest
-      hackathon. I was the Director of Website Development for WildHacks 2023, leading
-      the development of the WildHacks website and dashboard. For WildHacks 2024,
-      I am directing the entire event.
-    </ExperienceItem>
-
-    <ExperienceItem
-      type="organization"
-      time="2022 - Present"
+      time="2022 - 2024"
       title="Mayfest Productions"
       subtitle="Director of Tech"
       img="/images/dillo.png"
-      prev
       next
     >
       <Link to="https://dilloday.com">Mayfest Productions</Link> is the organization
       behind <Link to="https://en.wikipedia.org/wiki/Dillo_Day">Dillo Day</Link
       >, the nation's largest student-run music festival. I was a member of the
       tech team for 2022-2023 and am directing the team for 2023-2024.
+    </ExperienceItem>
+
+    <ExperienceItem
+      type="organization"
+      time="2022 - 2024"
+      title="WildHacks"
+      subtitle="Director"
+      img="/images/wildhacks.png"
+      prev
+      next
+    >
+      <Link to="https://www.wildhacks.net">WildHacks</Link> is Northwestern's largest
+      hackathon. I was the Director of Website Development for WildHacks 2023, leading
+      the development of the WildHacks website and dashboard. For WildHacks 2024,
+      I am directing the entire event.
     </ExperienceItem>
 
     <ExperienceItem
@@ -296,10 +298,26 @@
 
     <ExperienceItem
       type="work"
-      time="2023 - 2023"
+      time="Starting August 2024"
+      title="Apple"
+      subtitle="Software Engineer"
+      img="/images/apple.svg"
+      next
+    >
+      Starting in August 2024, I will be joining <Link
+        to="https://www.apple.com/">Apple</Link
+      > as an <Link to="https://developer.apple.com/xcode-cloud/"
+        >Xcode Cloud</Link
+      > Distributed Systems Software Engineer.
+    </ExperienceItem>
+
+    <ExperienceItem
+      type="work"
+      time="2023"
       title="Apple"
       subtitle="Software Engineer Intern"
       img="/images/apple.svg"
+      prev
       next
     >
       Over the summer of 2023, I worked at <Link to="https://www.apple.com/"
@@ -311,7 +329,7 @@
 
     <ExperienceItem
       type="work"
-      time="2021 - Present"
+      time="2021 - 2024"
       title="Northwestern University"
       subtitle="Undergraduate Teaching Assistant"
       img="/images/nu-seal.png"
@@ -328,12 +346,16 @@
         <li>
           COMP_SCI 310: Scalable Software Architectures (Spring 2023, Fall 2023)
         </li>
+        <li>
+          COMP_SCI 396: Special Topics in Computer Science: Full Stack Software
+          Engineering (Winter 2024, Spring 2024)
+        </li>
       </ul>
     </ExperienceItem>
 
     <ExperienceItem
       type="work"
-      time="2022 - 2022"
+      time="2022"
       title="Northwestern Mutual"
       subtitle="Software Engineer Intern"
       img="/images/northwestern-mutual.png"
