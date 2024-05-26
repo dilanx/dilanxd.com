@@ -1,0 +1,1 @@
+const e=t=>({to:t,text:"Learn more",icon:"fas fa-arrow-right"}),a=t=>({to:"https://github.com/"+t,newTab:!0,icon:"fab fa-github",text:"GitHub"}),n=(t,r)=>({to:r,newTab:!0,icon:"fas fa-external-link-alt",text:t}),s=t=>t.startsWith("https://")||t.startsWith("http://")?{href:t,target:"_blank",rel:"noreferrer"}:{href:t};export{s as a,n as e,a as g,e as l};
