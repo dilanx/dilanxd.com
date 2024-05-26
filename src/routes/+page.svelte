@@ -47,6 +47,47 @@
 </HeadingBlock>
 
 <Display
+  backgroundColor="#262626"
+  links={[
+    lm('paper'),
+    ext('Use Paper', 'https://www.paper.nu'),
+    gh('dilanx/paper.nu'),
+    {
+      to: 'https://dilan.blog/tags/paper',
+      newTab: true,
+      icon: 'fas fa-book-bookmark',
+      sublink: true,
+      text: 'Read about what goes on behind the scenes of Paper!',
+    },
+    {
+      to: 'https://www.mccormick.northwestern.edu/news/articles/2022/02/undergraduate-launches-course-planning-web-application/',
+      newTab: true,
+      icon: 'fas fa-newspaper',
+      sublink: true,
+      text: 'Read the official article by Northwestern Engineering!',
+    },
+  ]}
+  linkColor="#ffffff"
+  labels={[
+    {
+      to: 'https://github.com/dilanx/paper.nu',
+      image:
+        'https://img.shields.io/github/stars/dilanx/paper.nu?style=flat&color=red',
+      alt: 'paper.nu GitHub stars',
+    },
+  ]}
+  dark
+  featured
+>
+  <img src="/images/paper-thick-white.png" alt="Paper logo" slot="image" />
+  <h2>Paper</h2>
+  <p>
+    An online tool sponsored by the university and used by thousands of
+    Northwestern students to plan and schedule their courses.
+  </p>
+</Display>
+
+<Display
   backgroundColor="#0c5041"
   links={[
     {
@@ -97,100 +138,6 @@
   </p>
 </Display>
 
-<Display
-  backgroundColor="#262626"
-  links={[
-    lm('paper'),
-    ext('Use Paper', 'https://www.paper.nu'),
-    gh('dilanx/paper.nu'),
-    {
-      to: 'https://dilan.blog/tags/paper',
-      newTab: true,
-      icon: 'fas fa-book-bookmark',
-      sublink: true,
-      text: 'Read about what goes on behind the scenes of Paper!',
-    },
-    {
-      to: 'https://www.mccormick.northwestern.edu/news/articles/2022/02/undergraduate-launches-course-planning-web-application/',
-      newTab: true,
-      icon: 'fas fa-newspaper',
-      sublink: true,
-      text: 'Read the official article by Northwestern Engineering!',
-    },
-  ]}
-  linkColor="#ffffff"
-  labels={[
-    {
-      to: 'https://github.com/dilanx/paper.nu',
-      image:
-        'https://img.shields.io/github/stars/dilanx/paper.nu?style=flat&color=red',
-      alt: 'paper.nu GitHub stars',
-    },
-  ]}
-  dark
-  featured
->
-  <img src="/images/paper-thick-white.png" alt="Paper logo" slot="image" />
-  <h2>Paper</h2>
-  <p>
-    An online tool sponsored by the university and used by thousands of
-    Northwestern students to plan and schedule their courses.
-  </p>
-</Display>
-
-<Display
-  backgroundImage="https://dilan.blog/img/a-comprehensive-react-tutorial-for-beginners/preview.jpg"
-  darkenBackgroundImage
-  links={[blog('a-comprehensive-react-tutorial-for-beginners')]}
-  linkColor="#ee97b1"
-  dark
-  blog={26}
-  mini
-  icon="fas fa-code"
->
-  <h2>A Comprehensive React Tutorial for Beginners</h2>
-  <p>
-    Trying to use the <strong>React</strong> UI library but not sure where to start?
-    Check out this fun guide that covers all of the basics while building a simple
-    Wordle clone!
-  </p>
-</Display>
-
-<Display
-  backgroundImage="/images/mcshaders1.jpg"
-  links={[gh('dilanx/dmslauncher')]}
-  linkColor="#ffff8f"
-  dark
-  featured
->
-  <img
-    src="/images/dmslauncher.png"
-    alt="DMSLauncher screenshot"
-    slot="image"
-  />
-  <h2>DMSLauncher</h2>
-  <p>An automatic modded client updater and launcher for Minecraft.</p>
-</Display>
-
-<Display
-  backgroundImage="/images/discord.png"
-  links={[gh('dilanx/switchpresence')]}
-  linkColor="#b8beff"
-  dark
-  featured
->
-  <img
-    src="/images/switchpresence.png"
-    alt="SwitchPresence logo"
-    slot="image"
-  />
-  <h2>SwitchPresence</h2>
-  <p>
-    A cross-platform desktop application that allows you to display Nintendo
-    Switch games as your current activity on Discord.
-  </p>
-</Display>
-
 <LinkButtons
   links={[
     {
@@ -224,10 +171,22 @@
     >
       <ExperienceFeatureList>
         <ExperienceFeatureItem award>
-          Computer Science Student Hero (2022-2023)
+          <Link
+            to="https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2023/2023-cs-annual-award-winners.html"
+            >Computer Science Student Hero</Link
+          > (2022-2023)
         </ExperienceFeatureItem>
         <ExperienceFeatureItem award>
-          Computer Science Outstanding Peer Mentor (Winter 2022)
+          <Link
+            to="https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2024/2024-outstanding-cs-seniors.html"
+            >Computer Science Outstanding Senior</Link
+          > (2024)
+        </ExperienceFeatureItem>
+        <ExperienceFeatureItem award>
+          <Link
+            to="https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2022/northwestern-cs-recognizes-outstanding-teaching-assistant-and-peer-mentors.html"
+            >Computer Science Outstanding Peer Mentor</Link
+          > (Winter 2022)
         </ExperienceFeatureItem>
         <ExperienceFeatureItem presentation>
           <Link
@@ -351,20 +310,6 @@
           Engineering (Winter 2024, Spring 2024)
         </li>
       </ul>
-    </ExperienceItem>
-
-    <ExperienceItem
-      type="work"
-      time="2022"
-      title="Northwestern Mutual"
-      subtitle="Software Engineer Intern"
-      img="/images/northwestern-mutual.png"
-      prev
-      next
-    >
-      Over the summer of 2022, I worked at <Link
-        to="https://www.northwesternmutual.com/">Northwestern Mutual</Link
-      > as a Software Engineer Intern.
     </ExperienceItem>
 
     <ExperienceItem
