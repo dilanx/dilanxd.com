@@ -9,6 +9,8 @@ redirects:
     description: Find availability for a meeting with Dilan.
   - from: /cs446-vncgpu
     to: https://docs.google.com/presentation/d/1MyyOItWFSbVk7y3yPSPj3OgHPIO8ZhZJYw_J5EDZotw/edit?usp=sharing
+  - from: /paper/changelog
+    to: https://github.com/dilanx/paper.nu/blob/main/CHANGELOG.md
 
 seo:
   image: https://www.dilanxd.com/logo.jpg
