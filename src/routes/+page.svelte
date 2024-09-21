@@ -257,17 +257,16 @@
 
     <ExperienceItem
       type="work"
-      time="Starting August 2024"
+      time="2024 - Present"
       title="Apple"
       subtitle="Software Engineer"
       img="/images/apple.svg"
       next
     >
-      Starting in August 2024, I will be joining <Link
-        to="https://www.apple.com/">Apple</Link
-      > as an <Link to="https://developer.apple.com/xcode-cloud/"
+      I currently work at <Link to="https://www.apple.com/">Apple</Link> as a software
+      engineer on the <Link to="https://developer.apple.com/xcode-cloud/"
         >Xcode Cloud</Link
-      > Distributed Systems Software Engineer.
+      > team.
     </ExperienceItem>
 
     <ExperienceItem
