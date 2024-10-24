@@ -18,8 +18,9 @@
   "devDependencies": {
     "@dilanx/config": "^1.1.2",
     "@sveltejs/adapter-auto": "next",
-    "@sveltejs/adapter-static": "^2.0.2",
-    "@sveltejs/kit": "^1.20.4",
+    "@sveltejs/adapter-static": "^3.0.0",
+    "@sveltejs/kit": "^2.0.0",
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "gh-pages": "^5.0.0",
     "prettier": "^2.8.8",
     "prettier-plugin-svelte": "^2.10.1",
@@ -29,7 +30,7 @@
     "svelte-preprocess": "^5.0.3",
     "tslib": "^2.5.0",
     "typescript": "^5.0.4",
-    "vite": "^4.3.1"
+    "vite": "^5.0.0"
   },
   "type": "module",
   "dependencies": {
