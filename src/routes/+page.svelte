@@ -264,9 +264,9 @@
       next
     >
       I currently work at <Link to="https://www.apple.com/">Apple</Link> as a software
-      engineer working on <Link to="https://developer.apple.com"
-        >Tools and Frameworks</Link
-      >.
+      engineer on the <Link to="https://developer.apple.com/xcode-cloud/"
+        >Xcode Cloud</Link
+      > team.
     </ExperienceItem>
 
     <ExperienceItem
@@ -280,9 +280,9 @@
     >
       Over the summer of 2023, I worked at <Link to="https://www.apple.com/"
         >Apple</Link
-      > as a Software Engineer Intern working on <Link
-        to="https://developer.apple.com">Tools and Frameworks</Link
-      >.
+      > as a Software Engineer Intern on the <Link
+        to="https://developer.apple.com/xcode/">Xcode</Link
+      > team.
     </ExperienceItem>
 
     <ExperienceItem
