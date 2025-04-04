@@ -163,17 +163,7 @@
 >
   <BubbleContainer>
     <Bubble
-      to="https://www.wildhacks.net"
-      newTab
-      title="WildHacks"
-      description="Northwestern University's largest hackathon."
-      role="director"
-      backgroundColor="#180b2f"
-      dark
-      date="2022 +"
-    />
-    <Bubble
-      to="https://dilloday.com"
+      to="https://www.dilloday.com"
       newTab
       title="Mayfest Productions"
       description="The Northwestern University student organization behind Dillo Day, the nation's largest student-run music festival."
@@ -186,7 +176,17 @@
         url('/images/dilloday.jpeg')
       "
       dark
-      date="2022 +"
+      date="2022 - 2024"
+    />
+    <Bubble
+      to="https://www.wildhacks.net"
+      newTab
+      title="WildHacks"
+      description="Northwestern University's largest hackathon."
+      role="director"
+      backgroundColor="#180b2f"
+      dark
+      date="2022 - 2024"
     />
     <Bubble
       to="https://www.nudrumline.org"
