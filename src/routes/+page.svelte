@@ -207,8 +207,9 @@
     >
       <Link to="https://dilloday.com">Mayfest Productions</Link> is the organization
       behind <Link to="https://en.wikipedia.org/wiki/Dillo_Day">Dillo Day</Link
-      >, the nation's largest student-run music festival. I was a member of the
-      tech team for 2022-2023 and am directing the team for 2023-2024.
+      >, the nation's largest student-run music festival. I was on the executive
+      board and directed the technology team for 2023-2024, and I was a member
+      of the tech team for 2022-2023.
     </ExperienceItem>
 
     <ExperienceItem
@@ -221,9 +222,9 @@
       next
     >
       <Link to="https://www.wildhacks.net">WildHacks</Link> is Northwestern's largest
-      hackathon. I was the Director of Website Development for WildHacks 2023, leading
-      the development of the WildHacks website and dashboard. For WildHacks 2024,
-      I am directing the entire event.
+      hackathon. For WildHacks 2024, I directed the entire event. Back for WildHacks
+      2023, I was the Director of Website Development for WildHacks 2023, leading
+      the development of the WildHacks website and dashboard.
     </ExperienceItem>
 
     <ExperienceItem
