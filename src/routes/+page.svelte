@@ -151,10 +151,11 @@
   <Heading h2 large class="s left" anchor="about">A bit about me.</Heading>
 
   <Text sm>
-    Hey, I'm Dilan, a software engineer and recently graduated my undergraduate
-    years at Northwestern University studying computer science, now working full
-    time at Apple. I have a huge passion for quality software, beautiful user
-    interfaces, and automation. I've been coding for over 11 years, working on
+    Hey, I'm Dilan, a software engineer and recently graduated from Northwestern
+    University, where I did my undergraduate studies in computer science. Now, I
+    work full time at Apple. I have a huge passion for quality software,
+    beautiful user interfaces, and automation. I've been coding for over 11
+    years, working on
     <Link to="/projects">projects</Link>
     ranging anywhere from desktop and mobile applications to developer tools to websites
     and web APIs to video games and game mods, many of which you'll find here on
