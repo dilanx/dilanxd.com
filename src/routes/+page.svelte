@@ -151,7 +151,7 @@
   <Heading h2 large class="s left" anchor="about">A bit about me.</Heading>
 
   <Text sm>
-    Hey, I'm Dilan, a software engineer and recently graduated from Northwestern
+    Hey, I'm Dilan, a software engineer from Iowa in the United States. I recently graduated from Northwestern
     University, where I did my undergraduate studies in computer science. Now, I
     work full time at Apple. I have a huge passion for quality software,
     beautiful user interfaces, and automation. I've been coding for over 11
