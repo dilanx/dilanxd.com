@@ -87,30 +87,6 @@
   </ContentGroup>
 
   <ContentGroup sm>
-    <Heading h3 anchor="blog">Blog</Heading>
-    <Text nom>
-      <Link to="https://dilan.blog">dilan.blog</Link>
-    </Text>
-    <Text xs nom>
-      <ul>
-        <li>
-          This site runs a modified version of <Link to="https://docusaurus.io/"
-            >Docusaurus</Link
-          > on blog-only mode using <Link
-            to="https://github.com/dilanx/pkg/tree/main/packages/themes"
-            >@dilanx/themes</Link
-          >
-        </li>
-        <li>
-          This site is <Link to="https://github.com/dilanx/dilan.blog"
-            >open source</Link
-          >
-        </li>
-      </ul>
-    </Text>
-  </ContentGroup>
-
-  <ContentGroup sm>
     <Heading h3 anchor="help-center">Help Center</Heading>
     <Text nom>
       <Link to="https://support.dilanxd.com">support.dilanxd.com</Link>

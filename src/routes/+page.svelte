@@ -1,8 +1,7 @@
 <script lang="ts">
-  import { blog, ext, gh, lm } from '$lib/common';
+  import { ext, gh, lm } from '$lib/common';
   import ExperienceFeatureItem from '$lib/components/ExperienceFeatureItem.svelte';
   import ExperienceFeatureList from '$lib/components/ExperienceFeatureList.svelte';
-  import Cursor from '$lib/components/Cursor.svelte';
   import Display from '$lib/components/Display.svelte';
   import ExperienceItem from '$lib/components/ExperienceItem.svelte';
   import ExperienceList from '$lib/components/ExperienceList.svelte';
@@ -13,10 +12,9 @@
   import Meta from '$lib/components/Meta.svelte';
   import Section from '$lib/components/Section.svelte';
   import Text from '$lib/components/Text.svelte';
-  import Christmas from '$lib/themes/Christmas.svelte';
 </script>
 
-<Meta description="Full-stack software developer" />
+<Meta description="Software developer" />
 
 <HeadingBlock title="Hey there, I'm Dilan.">
   <LinkButtons
@@ -37,11 +35,6 @@
         text: 'Support my work',
         icon: 'fas fa-heart',
       },
-      {
-        to: 'https://dilan.blog',
-        text: 'Check out my blog',
-        icon: 'fas fa-book-bookmark',
-      },
     ]}
   />
 </HeadingBlock>
@@ -52,13 +45,6 @@
     lm('paper'),
     ext('Use Paper', 'https://www.paper.nu'),
     gh('dilanx/paper.nu'),
-    {
-      to: 'https://dilan.blog/tags/paper',
-      newTab: true,
-      icon: 'fas fa-book-bookmark',
-      sublink: true,
-      text: 'Read about what goes on behind the scenes of Paper!',
-    },
     {
       to: 'https://www.mccormick.northwestern.edu/news/articles/2022/02/undergraduate-launches-course-planning-web-application/',
       newTab: true,
@@ -151,11 +137,11 @@
   <Heading h2 large class="s left" anchor="about">A bit about me.</Heading>
 
   <Text sm>
-    Hey, I'm Dilan, a software engineer from Iowa in the United States. I recently graduated from Northwestern
-    University, where I did my undergraduate studies in computer science. Now, I
-    work full time at Apple. I have a huge passion for quality software,
-    beautiful user interfaces, and automation. I've been coding for over 11
-    years, working on
+    Hey, I'm Dilan, a software engineer from Iowa in the United States. I
+    recently graduated from Northwestern University, where I did my
+    undergraduate studies in computer science. Now, I work full time at Apple. I
+    have a huge passion for quality software, beautiful user interfaces, and
+    automation. I've been coding for over 11 years, working on
     <Link to="/projects">projects</Link>
     ranging anywhere from desktop and mobile applications to developer tools to websites
     and web APIs to video games and game mods, many of which you'll find here on

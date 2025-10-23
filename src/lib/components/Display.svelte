@@ -15,7 +15,6 @@
   export let labels: DisplayLabel[] | undefined = undefined;
 
   export let featured = false;
-  export let blog: number | undefined = undefined;
 
   export let tag: string | undefined = undefined;
   export let mini = false;
@@ -23,10 +22,6 @@
 
   if (featured) {
     tag = 'FEATURED PROJECT';
-  }
-
-  if (blog) {
-    tag = `NEW BLOG POST • ${blog} MIN READ`;
   }
 
   let regularLinks: DisplayLink[] = [];
